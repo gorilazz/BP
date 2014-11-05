@@ -27,10 +27,10 @@ WeightedWin1Threshold=70;
 	path_IJC = "../Features/IJC/IJC.csv";
 	path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 	path_consensus = "../GroundTruth/Consensus.csv";
-	path_ARSocialMetric = "../Model/201410/experiments_AR_Social_Model_13.csv";
+	path_ARSocialMetric = "../Model/201410/experiments_AR_Social_Model_10.csv";
 
-	path_outPrediction = paste("../Model/201410/experiments_AR_Social_Model_13a_Ensemble","Prediction.csv",sep='_');
-	path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_13a_Ensemble","Metric.csv",sep='_');
+	path_outPrediction = paste("../Model/201410/experiments_AR_Social_Model_10a_Ensemble","Prediction.csv",sep='_');
+	path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_10a_Ensemble","Metric.csv",sep='_');
 
 
 	path_inMetric = path_ARSocialMetric;
@@ -101,10 +101,6 @@ WeightedWin1Threshold=70;
 	pos = 1;
 	for(i in 1:length(candidate$Features))
 	{
-		if(as.character(candidate$Features[i])=="NumTweets_Month1_all_Absolute+NumPopularTweets_Month1_all_Absolute+NumTweets_Week1_all_Absolute+NumPopularTweets_Week1_all_Absolute+NumTweets_Week2_all_Absolute+NumPopularTweets_Week2_all_Absolute")
-		{
-			print(candidate$Features[i]);
-		}
 		combo = unlist(strsplit(as.character(candidate$Features[i]),split='[+]'));
 		# if(length(combo)>8)
 		# {

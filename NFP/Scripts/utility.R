@@ -65,13 +65,13 @@ GeneralLinearModel = function(feature_training, feature_testing, featureNames, l
 	return(list(model=model,prediction=prediction));
 }
 
-ModelTraining = function(df,featureNames,label,consensus,lambda=0.0,directionalConstraint=FALSE)
+ModelTraining_RollingTesting = function(df,label,consensus,rollingWindow=12,lambda=0.0,directionalConstraint=FALSE)
 {
 	
 	predictions = c();
 	residuals = c();
 	labels = c();
-	for(i in 13:1)
+	for(i in rollingWindow:1)
 	{
 		num_rows = nrow(df)-i;
 		df_training = df[1:num_rows,];
@@ -93,15 +93,74 @@ ModelTraining = function(df,featureNames,label,consensus,lambda=0.0,directionalC
 		labels = c(labels, label_testing[1]);
 	}
 
-	prediction_latest = predictions[length(predictions)];
-	predictions = predictions[1:(length(predictions)-1)];
-	residuals = residuals[1:(length(residuals)-1)];
-	labels = labels[1:(length(labels)-1)];
-
-	return(list(predictions=predictions, residuals=residuals, labels=labels, prediction_latest=prediction_latest));
+	return(list(predictions=predictions, residuals=residuals, labels=labels));
 }
 
+ModelTraining_RandomSampling = function(df,label,consensus,iteration=100,sampleSize=10,lambda=0.0,directionalConstraint=FALSE)
+{
+	
+	metricList = matrix(nrow=0,ncol=10);
+	for(i in 1:iteration)
+	{
+		num_rows = nrow(df);
+		sample_rows = sample(1:num_rows, sampleSize, replace=F);
 
+		df_training = df[-sample_rows,];
+		df_testing = df[sample_rows,];
+
+		label_training = label[-sample_rows];
+		label_testing = label[sample_rows];
+
+		consensus_training = consensus[-sample_rows,]$Consensus1;
+		consensus_testing = consensus[sample_rows,];
+
+		if(directionalConstraint==FALSE)
+		{
+			result = LinearRegression(df_training, df_testing, label_training);
+		} else{
+			result = LinearRegression_QP(df_training, df_testing, label_training, consensus_training, lambda);
+		}
+
+		model = list(predictions=result$prediction, residuals=abs(label_testing-result$prediction), labels=label_testing);
+		metrics = ComputeMetrics(model, consensus_testing);
+
+		metricList <- rbind(metricList, metrics);
+	}
+
+	colnames(metricList) = c("L1","medianL1","L2","medianL2","Win1","Win2","DirectionalWin1",
+		"DirectionalWin2","WeightedWin1","WeightedWin2");
+
+	return(metricList);
+}
+
+metricAggregation = function(metrics,type)
+{
+	if(type=="median")
+	{
+		result = apply(metrics,2,median);
+	}else if(type=="mean")
+	{
+		result = apply(metrics,2,mean);
+	}else if(type=="threshold")
+	{
+		num_rows = nrow(metrics);
+		candidate = data.frame(metrics);
+		candidate_L1 = nrow(candidate[candidate$L1<=45,])/num_rows;
+		candidate_medianL1 = nrow(candidate[candidate$medianL1<=45,])/num_rows;
+		candidate_L2 = nrow(candidate[candidate$L2<=50,])/num_rows;
+		candidate_medianL2 = nrow(candidate[candidate$medianL2<=50,])/num_rows;
+		candidate_Win1 = nrow(candidate[candidate$Win1>=7,])/num_rows;
+		candidate_DWin1 = nrow(candidate[candidate$DirectionalWin1>=7,])/num_rows;
+		candidate_Win2 = nrow(candidate[candidate$Win2>=5,])/num_rows;
+		candidate_DWin2 = nrow(candidate[candidate$DirectionalWin2>=7,])/num_rows;
+		candidate_WWin1 = nrow(candidate[candidate$WeightedWin1>=0,])/num_rows;
+		candidate_WWin2 = nrow(candidate[candidate$WeightedWin2>=0,])/num_rows;
+
+		result = c(candidate_L1,candidate_medianL1,candidate_L2,candidate_medianL2,candidate_Win1,candidate_Win2,candidate_DWin1,candidate_DWin2,candidate_WWin1,candidate_WWin2);
+	}
+	
+	return(result);
+}
 
 ComputeMetrics = function(model, consensus)
 {
@@ -120,23 +179,56 @@ ComputeMetrics = function(model, consensus)
 }
 
 
-CompileTrainingResults = function(featureFull,featureCombos,label,consensus,lambda,directionalConstraint=FALSE)
+CompileTrainingResults_RollingTesting = function(featureFull,featureCombos,label,consensus,lambda,directionalConstraint=FALSE)
 {
 	metricList = data.frame(Features=character(),"L1"=character(),"medianL1"=character(),
 		"L2"=character(),"medianL2"=character(),"Win1"=character(),"Win2"=character(),"DirectionalWin1"=character(),
-		"DirectionalWin2"=character(),"WeightedWin1"=character(),"WeightedWin2"=character(),"Prediction"=character(),stringsAsFactors=FALSE);
+		"DirectionalWin2"=character(),"WeightedWin1"=character(),"WeightedWin2"=character(),stringsAsFactors=FALSE);
 	for(i in 1:length(featureCombos))
 	{
 		print(i);
 		currentFeatureCombo = featureCombos[[i]];
 		df = featureFull[currentFeatureCombo];
-		currentModel = ModelTraining(df,currentFeatureCombo,label,consensus$Consensus1,lambda,directionalConstraint);
+		currentModel = ModelTraining_RollingTesting(df,label,consensus$Consensus1,12,lambda,directionalConstraint);
 		consensusTesting = consensus[(nrow(consensus)-11):nrow(consensus),];
 		metrics = ComputeMetrics(currentModel, consensusTesting);
-		metricList[nrow(metricList)+1,] <- c(paste(currentFeatureCombo,collapse="+"),metrics,currentModel$prediction_latest);	
+		metricList[nrow(metricList)+1,] <- c(paste(currentFeatureCombo,collapse="+"),metrics);	
 	}
 
 	return(metricList);
+}
+
+CompileTrainingResults_RandomSampling = function(featureFull,featureCombos,label,consensus,lambda,directionalConstraint=FALSE,aggregationType)
+{
+	metricList = matrix(nrow=0,ncol=11);
+
+	colnames(metricList) = c("Features","L1","medianL1","L2","medianL2","Win1","Win2","DirectionalWin1",
+		"DirectionalWin2","WeightedWin1","WeightedWin2");
+
+	result = list();
+
+	for(type in aggregationType)
+	{
+		result[[type]] = metricList;
+	}
+
+	for(i in 1:length(featureCombos))
+	{
+		print(i);
+		currentFeatureCombo = featureCombos[[i]];
+		df = featureFull[currentFeatureCombo];
+		metrics = ModelTraining_RandomSampling(df,label,consensus,50,10,lambda,directionalConstraint);
+		row.names(metrics)=NULL;
+
+		for(type in aggregationType)
+		{
+			aggregatedMetric = metricAggregation(metrics,type);
+			result[[type]] = rbind(result[[type]],c(paste(currentFeatureCombo,collapse="+"),aggregatedMetric));
+		}
+
+	}
+
+	return(result);
 }
 
 GeneratePredictions = function(featureFull,featureCombos,label, consensus, nprediction, lambda, directionalConstraint)
@@ -148,7 +240,7 @@ GeneratePredictions = function(featureFull,featureCombos,label, consensus, npred
 		print(i);
 		currentFeatureCombo = featureCombos[[i]];
 		df = featureFull[currentFeatureCombo];
-		currentModel = ModelTraining(df,currentFeatureCombo,label,consensus$Consensus1,lambda,directionalConstraint);
+		currentModel = ModelTraining_RollingTesting(df,label,consensus$Consensus1,13,lambda,directionalConstraint);
 		predictions[i,] = c(currentModel$predictions,currentModel$prediction_latest);
 	}
 
@@ -272,7 +364,7 @@ PrepareFeatureCombos_IJC = function(features)
 
 PrepareFeatureCombos_Consensus = function()
 {
-	featureNames = c("Consensus1","Consensus2");
+	featureNames = c("Consensus1");
 
 	featureCombos = GetAllCombinations(featureNames,2);
 	return(featureCombos);

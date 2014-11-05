@@ -1,13 +1,15 @@
 source('utility.R');
 
 lambda = 0.0;
+aggregationType = c("median","mean","threshold");
+testingType = "rolling";
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
 path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC.csv";
-path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_13",".csv",sep="");
+path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_10_temp",".csv",sep="");
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -35,51 +37,49 @@ for(i in 1:nrow(IJCFull))
 
 
 # get the data
-data_start = "201103"
-data_end = "201409"
+data_start = "201103";		# earliest data to use	
+data_end = "201409";	# latest data to use for testing
 
-data_feature_end = "201410"
-
+# subset the data frames to get the right segments
 start_featureAR = which(featureARFull$Date==data_start)[1];
-end_featureAR = which(featureARFull$Date==data_feature_end)[1];
+end_featureAR = which(featureARFull$Date==data_end)[1];
 start_featureSocial = which(featureSocialFull$Date==data_start)[1];
-end_featureSocial = which(featureSocialFull$Date==data_feature_end)[1];
-start_featureConsensus = which(consensusFull$Date==data_start)[1];
-end_featureConsensus = which(consensusFull$Date==data_feature_end)[1];
+end_featureSocial = which(featureSocialFull$Date==data_end)[1];
 start_featureIJC = which(IJCFull$Date==data_start)[1];
-end_featureIJC = which(IJCFull$Date==data_feature_end)[1];
+end_featureIJC = which(IJCFull$Date==data_end)[1];
 start_consensus = which(consensusFull$Date==data_start)[1];
 end_consensus = which(consensusFull$Date==data_end)[1];
 
 featureAR = featureARFull[start_featureAR:end_featureAR,];
 featureSocial = featureSocialFull[start_featureSocial:end_featureSocial,];
-featureConsensus = consensusFull[start_featureConsensus:end_featureConsensus,];
 featureIJC = IJCFull[start_featureIJC:end_featureIJC,];
-consensus = consensusFull[start_consensus:end_consensus,];
+consensus = consensusFull[start_consensus:end_consensus,];		#consensus to be used for testing
 label = featureAR$Label;
 
+
+# merge AR, social, consensus, IJC features to get the full feature set
 featureFull = merge(featureAR, featureSocial, by="Date");
-featureFull = merge(featureFull, featureConsensus, by="Date");
+featureFull = merge(featureFull, consensus, by="Date");
 featureFull = merge(featureFull, featureIJC, by="Date");
 
-#prepare feature combos
+# prepare feature combos
 featureARCombos = PrepareFeatureCombos_AR(featureAR);
 featureIJCCombos = PrepareFeatureCombos_IJC(featureIJC)
 featureSocialCombos = PrepareFeatureCombos_Social();
 featureConsensusCombos = PrepareFeatureCombos_Consensus();
 
-#train model and output metrics
+# merge to get all the feature combos
 featureFullCombos = list();
 pos = 1;
 for(i in 1:length(featureARCombos))
 {
 	for(t in 1:length(featureIJCCombos))
 	{
-		# for(j in 1:length(featureConsensusCombos))
-		# {
+		for(j in 1:length(featureConsensusCombos))
+		{
 			for(k in 1:length(featureSocialCombos))
 			{
-				currentFeatureCombo = c(featureARCombos[[i]], featureIJCCombos[[t]], featureSocialCombos[[k]]);
+				currentFeatureCombo = c(featureARCombos[[i]], featureIJCCombos[[t]], featureConsensusCombos[[j]], featureSocialCombos[[k]]);
 				if(length(currentFeatureCombo)==0)
 				{
 					next;
@@ -89,13 +89,27 @@ for(i in 1:length(featureARCombos))
 				pos = pos+1;
 				print(pos);
 			}
-		# }
+		}
 	}
 	
 }
 
 # options(warn=2)
 
-metricList = CompileTrainingResults(featureFull,featureFullCombos,label,consensus,lambda,directionalConstraint=TRUE);
+# training the model to get the full result
+if(testingType == "rolling")
+{
+	metricList = CompileTrainingResults_RollingTesting(featureFull,featureFullCombos,label,consensus,lambda,directionalConstraint=TRUE);
+	write.csv(metricList, file = path_outMetric);
+}else if(testingType == "randomsampling")
+{
+	metricList = CompileTrainingResults_RandomSampling(featureFull,featureFullCombos,label,consensus,lambda,directionalConstraint=TRUE,aggregationType);
 
-write.csv(metricList, file = path_outMetric);
+	for(type in aggregationType)
+	{
+		path_outMetric_type = gsub(".csv", paste(paste("_",type,sep=""),".csv",sep=""), path_outMetric);
+		write.csv(metricList[[type]], file = path_outMetric_type);
+	}
+}
+
+
