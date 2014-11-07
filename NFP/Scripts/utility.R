@@ -379,12 +379,12 @@ PrepareFeatureCombos_Social = function()
 	rawFeatureNames = c("NumTweets","NumPopularTweets","NumVerifiedTweets");
 	timeIntervals = c("Month1","Week1","Week2");
 	processingTypes = c("Absolute","AbsoluteDelta");
-	filteringTypes = c("all","allold","opportunity","opening");
+	filteringTypes = c("all","allold","opportunity","opening","posting","hiring");
 
-	Combos_rawFeatureNames = GetAllCombinations(rawFeatureNames, 3);
-	Combos_timeIntervals = GetAllCombinations(timeIntervals, 3);
+	Combos_rawFeatureNames = GetAllCombinations(rawFeatureNames, 2);
+	Combos_timeIntervals = GetAllCombinations(timeIntervals, 2);
 	Combos_processingTypes = GetAllCombinations(processingTypes, 2);
-	Combos_filteringTypes = GetAllCombinations(filteringTypes, 4);
+	Combos_filteringTypes = GetAllCombinations(filteringTypes, 2);
 
 	pos = 1;
 	maxNumFeatures = 8;

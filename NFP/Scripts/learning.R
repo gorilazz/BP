@@ -9,7 +9,7 @@ path_featureAR = "../Features/AR/ARDelta_Full.csv";
 path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC.csv";
-path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_10_temp",".csv",sep="");
+path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_14",".csv",sep="");
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -71,15 +71,15 @@ featureConsensusCombos = PrepareFeatureCombos_Consensus();
 # merge to get all the feature combos
 featureFullCombos = list();
 pos = 1;
-for(i in 1:length(featureARCombos))
-{
+# for(i in 1:length(featureARCombos))
+# {
 	for(t in 1:length(featureIJCCombos))
 	{
 		for(j in 1:length(featureConsensusCombos))
 		{
 			for(k in 1:length(featureSocialCombos))
 			{
-				currentFeatureCombo = c(featureARCombos[[i]], featureIJCCombos[[t]], featureConsensusCombos[[j]], featureSocialCombos[[k]]);
+				currentFeatureCombo = c(featureIJCCombos[[t]], featureConsensusCombos[[j]], featureSocialCombos[[k]]);
 				if(length(currentFeatureCombo)==0)
 				{
 					next;
@@ -92,7 +92,7 @@ for(i in 1:length(featureARCombos))
 		}
 	}
 	
-}
+# }
 
 # options(warn=2)
 
