@@ -14,11 +14,11 @@ PrepareFeatureCombos_Web = function(featureWeb)
 
 
 socialOnly = T;	#use social and AR features when T; use web features as well when F
-L1Threshold = 45;
+L1Threshold = 50;
 DirectionalWin1Threshold=9;
-DirectionalWin2Threshold=7;
-Win1Threshold=8;
-Win2Threshold=6;
+DirectionalWin2Threshold=0;
+Win1Threshold=0;
+Win2Threshold=0;
 WeightedWin1Threshold=70;
 
 
@@ -27,10 +27,11 @@ WeightedWin1Threshold=70;
 	path_IJC = "../Features/IJC/IJC.csv";
 	path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 	path_consensus = "../GroundTruth/Consensus.csv";
-	path_ARSocialMetric = "../Model/201410/experiments_AR_Social_Model_10.csv";
+	path_ARSocialMetric = "../Model/201410/experiments_AR_Social_Model_13.csv";
 
-	path_outPrediction = paste("../Model/201410/experiments_AR_Social_Model_10a_Ensemble","Prediction.csv",sep='_');
-	path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_10a_Ensemble","Metric.csv",sep='_');
+	path_outComboName = paste("../Model/201410/experiments_AR_Social_Model_13c_Ensemble","ComboName.csv",sep='_');
+	path_outPrediction = paste("../Model/201410/experiments_AR_Social_Model_13c_Ensemble","Prediction.csv",sep='_');
+	path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_13c_Ensemble","Metric.csv",sep='_');
 
 
 	path_inMetric = path_ARSocialMetric;
@@ -118,6 +119,8 @@ WeightedWin1Threshold=70;
 	metricList = data.frame(Features=character(),"L1"=character(),"medianL1"=character(),"L2"=character(),"medianL2"=character(),"Win1"=character(),"Win2"=character(),"DirectionalWin1"=character(),"DirectionalWin2"=character(),"WeightedWin1"=character(),"WeightedWin2"=character(),"Prediction"=character(),stringsAsFactors=FALSE);
 
 	predictions = GeneratePredictions(featureFull, candidateCombos, label, consensus, 13, lambda, TRUE);
+
+	write.csv(candidate, file=path_outComboName);
 
 	write.csv(predictions, file = path_outPrediction);
 

@@ -1,8 +1,8 @@
 source('utility.R');
 
 lambda = 0.0;
-aggregationType = c("median","mean","threshold");
-testingType = "rolling";
+aggregationType = c("median","mean");
+testingType = "randomsampling";
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";

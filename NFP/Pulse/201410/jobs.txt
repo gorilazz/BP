@@ -1,0 +1,7 @@
+health	registered nurse,physical therapist,occupational therapist,nurse rn,nurse practitioner,medical assistant,nursing assistant,staff nurse,home care,clinical nurse,practical nurse,dental assistant,physician assistant
+engineering	software engineer,web developer,developer job,java developer,development manager,php developer,graphic designer,software developer,front end,design engineer,systems administrator,database administrator,system administrator,mechanical engineer,systems engineer,quality assurance,test engineer,systems analyst,support engineer,technical writer,maintenance technician,programmer analyst
+business	business development,marketing manager,sales representative,sales manager,sales executive,business analyst,inside sales,product manager,sales consultant,retail sales,sales associate,store manager,sales marketing,sales rep,sales specialist,field sales,marketing executive,restaurant manager,marketing specialist
+administration	project manager,assistant job,human resources,administrative assistant,customer service,call center,office manager,office assistant,service representative,relationship manager,service specialist,operations manager,services manager,service manager
+finance	financial services,real estate,account executive,account manager,financial analyst,staff accountant,insurance sales
+social services	social worker
+truck driver	truck driver
