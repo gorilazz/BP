@@ -3,13 +3,15 @@ source('utility.R');
 lambda = 0.0;
 aggregationType = c("median","mean");
 testingType = "randomsampling";
+labelType = "unrevised"
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
 path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC.csv";
-path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_14",".csv",sep="");
+path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv"
+path_outMetric = paste(paste("../Model/201410/experiments_AR_Social_Model_14", labelType, sep="_"),".csv",sep="");
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -35,6 +37,12 @@ for(i in 1:nrow(IJCFull))
 	IJCFull[i,'Date'] = DateToMonthTag(IJCFull[i,'Date']);
 }
 
+labelFull = read.csv(file=path_label, head=TRUE, sep=",");
+labelFull$Date = as.character(labelFull$Date);
+for(i in 1:nrow(labelFull))
+{
+	labelFull[i,'Date'] = DateToMonthTag(labelFull[i,'Date']);
+}
 
 # get the data
 data_start = "201103";		# earliest data to use	
@@ -49,13 +57,21 @@ start_featureIJC = which(IJCFull$Date==data_start)[1];
 end_featureIJC = which(IJCFull$Date==data_end)[1];
 start_consensus = which(consensusFull$Date==data_start)[1];
 end_consensus = which(consensusFull$Date==data_end)[1];
+start_label = which(labelFull$Date==data_start)[1];
+end_label = which(labelFull$Date==data_end)[1];
+
 
 featureAR = featureARFull[start_featureAR:end_featureAR,];
 featureSocial = featureSocialFull[start_featureSocial:end_featureSocial,];
 featureIJC = IJCFull[start_featureIJC:end_featureIJC,];
 consensus = consensusFull[start_consensus:end_consensus,];		#consensus to be used for testing
-label = featureAR$Label;
-
+if(labelType=='unrevised')
+{
+	label = labelFull[start_label:end_label,]$Delta_Unrevised;
+}else
+{
+	label = labelFull[start_label:end_label,]$Delta_Revised;
+}
 
 # merge AR, social, consensus, IJC features to get the full feature set
 featureFull = merge(featureAR, featureSocial, by="Date");
@@ -111,5 +127,3 @@ if(testingType == "rolling")
 		write.csv(metricList[[type]], file = path_outMetric_type);
 	}
 }
-
-

@@ -138,25 +138,24 @@ metricAggregation = function(metrics,type)
 	if(type=="median")
 	{
 		result = apply(metrics,2,median);
+
+		for(i in 1:ncol(metrics))
+		{
+			metric = metrics[,i];
+			confidence = ConfidenceInterval(metric, 0.95, "median");
+			result = c(result, confidence[2]-confidence[1]);
+		}
+		
 	}else if(type=="mean")
 	{
 		result = apply(metrics,2,mean);
-	}else if(type=="threshold")
-	{
-		num_rows = nrow(metrics);
-		candidate = data.frame(metrics);
-		candidate_L1 = nrow(candidate[candidate$L1<=45,])/num_rows;
-		candidate_medianL1 = nrow(candidate[candidate$medianL1<=45,])/num_rows;
-		candidate_L2 = nrow(candidate[candidate$L2<=50,])/num_rows;
-		candidate_medianL2 = nrow(candidate[candidate$medianL2<=50,])/num_rows;
-		candidate_Win1 = nrow(candidate[candidate$Win1>=7,])/num_rows;
-		candidate_DWin1 = nrow(candidate[candidate$DirectionalWin1>=7,])/num_rows;
-		candidate_Win2 = nrow(candidate[candidate$Win2>=5,])/num_rows;
-		candidate_DWin2 = nrow(candidate[candidate$DirectionalWin2>=7,])/num_rows;
-		candidate_WWin1 = nrow(candidate[candidate$WeightedWin1>=0,])/num_rows;
-		candidate_WWin2 = nrow(candidate[candidate$WeightedWin2>=0,])/num_rows;
 
-		result = c(candidate_L1,candidate_medianL1,candidate_L2,candidate_medianL2,candidate_Win1,candidate_Win2,candidate_DWin1,candidate_DWin2,candidate_WWin1,candidate_WWin2);
+		for(i in 1:ncol(metrics))
+		{
+			metric = metrics[[i]];
+			confidence = ConfidenceInterval(metric, 0.95, "mean");
+			result = c(result, confidence[2]-confidence[1]);
+		}
 	}
 	
 	return(result);
@@ -177,7 +176,6 @@ ComputeMetrics = function(model, consensus)
 
 	return(c(L1,medianL1,L2,medianL2,Win1,Win2,DirectionalWin1,DirectionalWin2,WeightedWin1,WeightedWin2));
 }
-
 
 CompileTrainingResults_RollingTesting = function(featureFull,featureCombos,label,consensus,lambda,directionalConstraint=FALSE)
 {
@@ -200,10 +198,11 @@ CompileTrainingResults_RollingTesting = function(featureFull,featureCombos,label
 
 CompileTrainingResults_RandomSampling = function(featureFull,featureCombos,label,consensus,lambda,directionalConstraint=FALSE,aggregationType)
 {
-	metricList = matrix(nrow=0,ncol=11);
+	metricList = matrix(nrow=0,ncol=21);
 
 	colnames(metricList) = c("Features","L1","medianL1","L2","medianL2","Win1","Win2","DirectionalWin1",
-		"DirectionalWin2","WeightedWin1","WeightedWin2");
+		"DirectionalWin2","WeightedWin1","WeightedWin2", "L1_conf","medianL1_conf","L2_conf","medianL2_conf","Win1_conf","Win2_conf","DirectionalWin1_conf",
+		"DirectionalWin2_conf","WeightedWin1_conf","WeightedWin2_conf");
 
 	result = list();
 
@@ -447,8 +446,6 @@ ConfidenceInterval = function(samples, confidence, type)
 		left = sorted_samples[round(left_idx)];
 		right = sorted_samples[round(right_idx)];
 	}
-
-	
 
 	return(c(left, right));
 }
