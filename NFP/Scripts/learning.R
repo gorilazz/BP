@@ -5,7 +5,7 @@ source('../../Utility/automation_utility.R');
 lambda = 0.0;
 aggregationType = c("median","mean");
 testingType = "randomsampling";
-labelType = "revised"
+labelType = "unrevised"
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
