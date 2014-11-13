@@ -3,7 +3,7 @@ source('utility.R');
 lambda = 0.0;
 aggregationType = c("median","mean");
 testingType = "randomsampling";
-labelType = "unrevised"
+labelType = "revised"
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";

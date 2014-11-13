@@ -152,7 +152,7 @@ metricAggregation = function(metrics,type)
 
 		for(i in 1:ncol(metrics))
 		{
-			metric = metrics[[i]];
+			metric = metrics[,i];
 			confidence = ConfidenceInterval(metric, 0.95, "mean");
 			result = c(result, confidence[2]-confidence[1]);
 		}
