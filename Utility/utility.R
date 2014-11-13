@@ -59,7 +59,7 @@ metricAggregation = function(metrics,type)
 
 		for(i in 1:ncol(metrics))
 		{
-			metric = metrics[,i;
+			metric = metrics[,i];
 			confidence = ConfidenceInterval(metric, 0.95, "mean");
 			result = c(result, confidence[2]-confidence[1]);
 		}
@@ -86,7 +86,7 @@ ComputeMetrics = function(model, consensus)
 }
 
 # Compute the metrics given the predictions
-ComputerMetrics_Prediction = function(predictions,labels,consensus,type)
+ComputeMetrics_Prediction = function(predictions,labels,consensus,type)
 {
 
 	if(type=="mean")
@@ -97,8 +97,8 @@ ComputerMetrics_Prediction = function(predictions,labels,consensus,type)
 		result = apply(predictions,2,median);
 	}
 
-	prediction_latest = result[len(result)];
-	predictions = result[1:(len(result)-1),];
+	prediction_latest = result[length(result)];
+	predictions = result[1:(length(result)-1)];
 	residuals = abs(predictions-labels);
 
 	model = list(predictions=predictions, residuals=residuals, labels=labels, prediction_latest=prediction_latest);

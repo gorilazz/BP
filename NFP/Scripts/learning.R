@@ -1,8 +1,6 @@
-# source('../../Utility/utility.R');
-# source('../../Utility/learning_utility.R');
-# source('../../Utility/automation_utility.R');
-
-source('utility.R');
+source('../../Utility/utility.R');
+source('../../Utility/learning_utility.R');
+source('../../Utility/automation_utility.R');
 
 lambda = 0.0;
 aggregationType = c("median","mean");
@@ -13,7 +11,7 @@ labelType = "revised"
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
 path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
-path_IJC = "../Features/IJC/IJC.csv";
+path_IJC = "../Features/IJC/IJC_3_weeks.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv"
 path_outMetric = paste(paste("../Model/201410/experiments_AR_Social_Model_14", labelType, sep="_"),".csv",sep="");
 
