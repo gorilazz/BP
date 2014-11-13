@@ -3,8 +3,8 @@ source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
 
 
-L1Threshold = 45;
-DirectionalWin1Threshold=5;
+L1Threshold = 50;
+DirectionalWin1Threshold=6;
 DirectionalWin2Threshold=0;
 Win1Threshold=0;
 Win2Threshold=0;
@@ -16,11 +16,11 @@ path_featureAR = "../Features/AR/ARDelta_Full.csv";
 path_IJC = "../Features/IJC/IJC_3_weeks.csv";
 path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
-path_ARSocialMetric = "../Model/201410/experiments_AR_Social_Model_14_revised_median.csv";
+path_ARSocialMetric = "../Model/201410/experiments_AR_Social_Model_14_unrevised_mean.csv";
 
-path_outComboName = paste("../Model/201410/experiments_AR_Social_Model_14_revised_median_Ensemble","ComboName.csv",sep='_');
-path_outPrediction = paste("../Model/201410/experiments_AR_Social_Model_14_revised_median_Ensemble","Prediction.csv",sep='_');
-path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_14_revised_median_Ensemble","Metric.csv",sep='_');
+path_outComboName = paste("../Model/201410/experiments_AR_Social_Model_14_unrevised_mean_Ensemble","ComboName.csv",sep='_');
+path_outPrediction = paste("../Model/201410/experiments_AR_Social_Model_14_unrevised_mean_Ensemble","Prediction.csv",sep='_');
+path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_14_unrevised_mean_Ensemble","Metric.csv",sep='_');
 
 
 path_inMetric = path_ARSocialMetric;
