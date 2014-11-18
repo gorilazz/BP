@@ -86,19 +86,11 @@ ComputeMetrics = function(model, consensus)
 }
 
 # Compute the metrics given the predictions
-ComputeMetrics_Prediction = function(predictions,labels,consensus,type)
+ComputeMetrics_Prediction = function(predictions,labels,consensus)
 {
 
-	if(type=="mean")
-	{
-		result = apply(predictions,2,mean);
-	} else
-	{
-		result = apply(predictions,2,median);
-	}
-
-	prediction_latest = result[length(result)];
-	predictions = result[1:(length(result)-1)];
+	prediction_latest = predictions[length(predictions)];
+	predictions = predictions[1:(length(predictions)-1)];
 	residuals = abs(predictions-labels);
 
 	model = list(predictions=predictions, residuals=residuals, labels=labels, prediction_latest=prediction_latest);

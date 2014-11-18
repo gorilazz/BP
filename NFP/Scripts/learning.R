@@ -4,7 +4,7 @@ source('../../Utility/automation_utility.R');
 
 lambda = 0.0;
 aggregationType = c("median","mean");
-testingType = "randomsampling";
+testingType = "rolling";
 labelType = "unrevised"
 
 # path initialization

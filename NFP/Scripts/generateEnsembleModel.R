@@ -3,11 +3,11 @@ source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
 
 
-L1Threshold = 50;
-DirectionalWin1Threshold=6;
-DirectionalWin2Threshold=0;
-Win1Threshold=0;
-Win2Threshold=0;
+L1Threshold = 45;
+DirectionalWin1Threshold=9;
+DirectionalWin2Threshold=7;
+Win1Threshold=8;
+Win2Threshold=6;
 WeightedWin1Threshold=70;
 
 
@@ -16,11 +16,11 @@ path_featureAR = "../Features/AR/ARDelta_Full.csv";
 path_IJC = "../Features/IJC/IJC_3_weeks.csv";
 path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
-path_ARSocialMetric = "../Model/201410/experiments_AR_Social_Model_14_unrevised_mean.csv";
+path_ARSocialMetric = "../Model/201410/experiments_AR_Social_Model_14_unrevised.csv";
 
-path_outComboName = paste("../Model/201410/experiments_AR_Social_Model_14_unrevised_mean_Ensemble","ComboName.csv",sep='_');
-path_outPrediction = paste("../Model/201410/experiments_AR_Social_Model_14_unrevised_mean_Ensemble","Prediction.csv",sep='_');
-path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_14_unrevised_mean_Ensemble","Metric.csv",sep='_');
+path_outComboName = paste("../Model/201410/experiments_AR_Social_Model_14_unrevised_Ensemble","ComboName.csv",sep='_');
+path_outPrediction = paste("../Model/201410/experiments_AR_Social_Model_14_unrevised_Ensemble","Prediction.csv",sep='_');
+path_outMetric = paste("../Model/201410/experiments_AR_Social_Model_14_unrevised_Ensemble","Metric.csv",sep='_');
 
 
 path_inMetric = path_ARSocialMetric;
@@ -111,10 +111,13 @@ write.csv(predictions, file = path_outPrediction);
 labelTesting = label[(length(label)-12):(length(label)-1)];
 consensusTesting = consensus[(nrow(consensus)-12):(nrow(consensus)-1),];
 
-metrics_median = ComputeMetrics_Prediction(predictions,labelTesting,consensusTesting,'median');
+
+result = apply(predictions,2,median);
+metrics_median = ComputeMetrics_Prediction(result,labelTesting,consensusTesting);
 metricList[1,] <- c("median",metrics_median);	
 
-metrics_mean = ComputeMetrics_Prediction(predictions,labelTesting,consensusTesting,'mean');
+result = apply(predictions,2,mean);
+metrics_mean = ComputeMetrics_Prediction(result,labelTesting,consensusTesting);
 metricList[2,] <- c("mean",metrics_mean);	
 
 write.csv(metricList, file = path_outMetric);

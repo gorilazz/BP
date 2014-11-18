@@ -1,3 +1,23 @@
+# Computing the predictions on a rolling testing set
+ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,consensus,predictionWindow,lambda,directionalConstraint=FALSE)
+{
+	predictionResult = data.frame(matrix(nrow=0,ncol=(predictionWindow+1)));
+
+	for(i in 1:length(featureCombos))
+	{
+		print(i);
+		currentFeatureCombo = featureCombos[[i]];
+		df = featureFull[currentFeatureCombo];
+		currentModel = ModelTraining_RollingTesting(df, label, consensus$Consensus1, predictionWindow, lambda, directionalConstraint);
+		predictionResult[nrow(predictionResult)+1,] = c(paste(currentFeatureCombo,collapse="+"),currentModel$predictions);
+	}
+
+	predictionDates = consensus$Date[(nrow(consensus)-predictionWindow+1):nrow(consensus)];
+
+	colnames(predictionResult) = c("Features",predictionDates);
+
+	return(predictionResult);
+}
 
 # Compiling the model training results measured on a rolling testing set
 CompileTrainingResults_RollingTesting = function(featureFull,featureCombos,label,consensus,lambda,directionalConstraint=FALSE)
