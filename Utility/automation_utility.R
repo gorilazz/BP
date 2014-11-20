@@ -8,7 +8,7 @@ ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,con
 		print(i);
 		currentFeatureCombo = featureCombos[[i]];
 		df = featureFull[currentFeatureCombo];
-		currentModel = ModelTraining_RollingTesting(df, label, consensus$Consensus1, predictionWindow, lambda, directionalConstraint);
+		currentModel = ModelTraining_RollingTesting(df, label, consensus, predictionWindow, lambda, directionalConstraint);
 		predictionResult[nrow(predictionResult)+1,] = c(paste(currentFeatureCombo,collapse="+"),currentModel$predictions);
 	}
 
