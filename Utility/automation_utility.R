@@ -84,7 +84,7 @@ GeneratePredictions = function(featureFull,featureCombos,label, consensus, npred
 		print(i);
 		currentFeatureCombo = featureCombos[[i]];
 		df = featureFull[currentFeatureCombo];
-		currentModel = ModelTraining_RollingTesting(df,label,consensus$Consensus1,nprediction,lambda,directionalConstraint);
+		currentModel = ModelTraining_RollingTesting(df,label,consensus,nprediction,lambda,directionalConstraint);
 		predictions[i,] = currentModel$predictions;
 	}
 

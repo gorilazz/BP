@@ -1,6 +1,7 @@
 # Get predictions for each individual model
 start = Sys.time();
 
+source('../../Utility/NFP_utility.R');
 source('../../Utility/utility.R');
 source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
@@ -118,7 +119,7 @@ pos = 1;
 
 # training the model to get the full predictions
 predictionWindow = 25;
-predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus,predictionWindow,lambda,directionalConstraint=TRUE);
+predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$Consensus1,predictionWindow,lambda,directionalConstraint=TRUE);
 write.csv(predictionResult, file = path_outPrediction);
 
 end = Sys.time();

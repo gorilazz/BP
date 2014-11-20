@@ -1,4 +1,4 @@
-input_paths = c('../Features/201410_2/Features_All_candiate_seperated');
+input_paths = c('../Features/201411/Features_All_candiate_seperated', '../Features/201411/Features_NFP_All_candiate_seperated');
 
 for(i in 1:length(input_paths))
 {

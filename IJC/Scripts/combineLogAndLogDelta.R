@@ -1,7 +1,7 @@
 require('plyr');
 
 
-input_paths = c('../Features/201410_2/Features_All_candiate_seperated_Absolute','../Features/201410_2/Features_NFP_All_candiate_seperated_Absolute');
+input_paths = c('../Features/201411/Features_All_candiate_seperated_Absolute','../Features/201411/Features_NFP_All_candiate_seperated_Absolute');
 
 for(i in 1:length(input_paths))
 {
