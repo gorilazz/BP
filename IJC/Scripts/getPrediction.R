@@ -82,7 +82,7 @@ for(i in 1:length(featureARCombos))
 
 predictionWindow = 60;
 
-predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$DeltaConsensus,predictionWindow,lambda,directionalConstraint=TRUE);
+predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$DeltaConsensus,predictionWindow,lambda,directionalConstraint=FALSE);
 write.csv(predictionResult, file = path_outPrediction);
 
 end = Sys.time();

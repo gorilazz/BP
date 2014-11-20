@@ -1,3 +1,5 @@
+require(Matrix);
+
 # Computing the predictions on a rolling testing set
 ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,consensus,predictionWindow,lambda,directionalConstraint=FALSE)
 {
@@ -8,6 +10,11 @@ ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,con
 		print(i);
 		currentFeatureCombo = featureCombos[[i]];
 		df = featureFull[currentFeatureCombo];
+		df_mat = data.matrix(df, rownames.force=NA);
+		if(rankMatrix(df_mat)[[1]]<ncol(df))
+		{
+			next;
+		}
 		currentModel = ModelTraining_RollingTesting(df, label, consensus, predictionWindow, lambda, directionalConstraint);
 		predictionResult[nrow(predictionResult)+1,] = c(paste(currentFeatureCombo,collapse="+"),currentModel$predictions);
 	}

@@ -4,7 +4,7 @@ require(quadprog);
 LinearRegression = function(feature_training, feature_testing, label)
 {
 	
-	if(ncol(feature_training)>1){
+	if(typeof(feature_training)=="list"&&ncol(feature_training)>1){
 		model = lm(label ~ ., data=feature_training);
 		prediction = predict(model, newdata=feature_testing);
 	} else{
