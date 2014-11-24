@@ -2,8 +2,8 @@ source('utility.R');
 
 PrepareFeatureCombos_AR = function(featureAR)
 {
-	featureNames_OneWeek = c("OneWeekBefore","OneWeekDelta");
-	featureNames_TwoWeek = c("TwoWeekBefore","TwoWeekDelta");
+	featureNames_OneWeek = c("OneWeekBefore");
+	featureNames_TwoWeek = c("TwoWeekBefore");
 
 	featureCombos_OneWeek = GetAllCombinations(featureNames_OneWeek,1);
 	featureCombos_TwoWeek = GetAllCombinations(featureNames_TwoWeek,1);
@@ -28,7 +28,7 @@ PrepareFeatureCombos_Consensus = function(consensus)
 {
 	featureNames = c("Consensus","DeltaConsensus");
 
-	featureCombos = GetAllCombinations(featureNames,2);
+	featureCombos = GetAllCombinations(featureNames,1);
 	return(featureCombos);
 
 }
