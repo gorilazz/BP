@@ -8,7 +8,9 @@ source('../../Utility/automation_utility.R');
 
 lambda = 0.0;
 aggregationType = c("median","mean");
-labelType = "unrevised"
+labelType = "unrevised";
+randomSample = TRUE;
+numFeatures = 4;
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
@@ -16,7 +18,7 @@ path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_sepera
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC_3_weeks.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv"
-path_outPrediction = paste(paste("../Prediction/201410/Model_14", labelType, sep="_"),"Predictions.csv",sep="_");
+path_outPrediction = paste(paste("../Prediction/201410/RandomCombo/Model_1_Sample_4", labelType, sep="_"),"Predictions.csv",sep="_");
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -83,37 +85,19 @@ featureFull = merge(featureAR, featureSocial, by="Date");
 featureFull = merge(featureFull, consensus, by="Date");
 featureFull = merge(featureFull, featureIJC, by="Date");
 
-# prepare feature combos
-featureARCombos = PrepareFeatureCombos_AR(featureAR);
-featureIJCCombos = PrepareFeatureCombos_IJC(featureIJC)
-featureSocialCombos = PrepareFeatureCombos_Social();
-featureConsensusCombos = PrepareFeatureCombos_Consensus();
+features = c('IJC','Consensus1','NumVerifiedTweets_Week2_opportunity_AbsoluteDelta',
+	'NumPopularTweets_Week2_all_AbsoluteDelta','NumVerifiedTweets_Week1_posting_AbsoluteDelta', 'NumVerifiedTweets_Month1_all_AbsoluteDelta','NumPopularTweets_Week1_posting_AbsoluteDelta');
 
 # merge to get all the feature combos
 featureFullCombos = list();
 pos = 1;
-# for(i in 1:length(featureARCombos))
-# {
-	for(t in 1:length(featureIJCCombos))
-	{
-		for(j in 1:length(featureConsensusCombos))
-		{
-			for(k in 1:length(featureSocialCombos))
-			{
-				currentFeatureCombo = c(featureIJCCombos[[t]], featureConsensusCombos[[j]], featureSocialCombos[[k]]);
-				if(length(currentFeatureCombo)==0)
-				{
-					next;
-				}
+if(randomSample==FALSE)
+{
+	featureFullCombos[[pos]] = features;
+} else{
+	featureFullCombos = GetAllCombinations(features, numFeatures);
+}
 
-				featureFullCombos[[pos]] = currentFeatureCombo;
-				pos = pos+1;
-				print(pos);
-			}
-		}
-	}
-	
-# }
 
 # options(warn=2)
 

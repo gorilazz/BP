@@ -272,7 +272,38 @@ GenerateEnsembleModel = function(predictions,label,consensus,type)
 	return(c(metrics,prediction_latest));
 }
 
-# Give a list of names, get all possible combinations
+# Give a list of names, get all possible combinations within some length
+GetAllSubsets = function(nameList, maxLength)
+{
+	currentLength = length(nameList);
+
+	result = list();
+
+	if(currentLength==1)
+	{
+		result[[1]] = c();
+		result[[2]] = c(nameList[1]);
+	}
+	else
+	{
+		result = GetAllSubsets(nameList[1:(length(nameList)-1)], maxLength);
+		num_result = length(result);
+		pos = num_result+1;
+		for(i in 1:num_result)
+		{
+			combo = result[[i]];
+			if(length(combo)<maxLength)
+			{
+				result[[pos]] = c(combo,nameList[[length(nameList)]]);
+				pos = pos+1;
+			}
+		}
+	}
+
+	return(result);
+}
+
+# Give a list of names, get all possible combinations within some length
 GetAllCombinations = function(nameList, maxLength)
 {
 	currentLength = length(nameList);
@@ -317,8 +348,8 @@ PrepareFeatureCombos_AR = function(features)
 	a = c("OneMonthBefore","TwoMonthBefore");
 	b = c("UnRevised","Revised");
 
-	aCombos = GetAllCombinations(a,2);
-	bCombos = GetAllCombinations(b,1);
+	aCombos = GetAllSubsets(a,2);
+	bCombos = GetAllSubsets(b,1);
 	# featureNames = featureNames[-c(length(featureNames))];
 
 	featureCombos = list();
@@ -339,7 +370,6 @@ PrepareFeatureCombos_AR = function(features)
 		}
 	}
 
-	# featureCombos = GetAllCombinations(featureNames,2);
 
 	return(featureCombos);
 
@@ -347,10 +377,6 @@ PrepareFeatureCombos_AR = function(features)
 
 PrepareFeatureCombos_IJC = function(features)
 {
-	# featureNames = names(features);
-	# featureNames = featureNames[-c(1)];
-
-	# featureCombos = GetAllCombinations(featureNames, 2);
 
 	featureCombos = list();
 
@@ -365,7 +391,7 @@ PrepareFeatureCombos_Consensus = function()
 {
 	featureNames = c("Consensus1");
 
-	featureCombos = GetAllCombinations(featureNames,2);
+	featureCombos = GetAllSubsets(featureNames,2);
 	return(featureCombos);
 
 }
@@ -380,10 +406,10 @@ PrepareFeatureCombos_Social = function()
 	processingTypes = c("Absolute","AbsoluteDelta");
 	filteringTypes = c("all","allold","opportunity","opening","posting","hiring");
 
-	Combos_rawFeatureNames = GetAllCombinations(rawFeatureNames, 2);
-	Combos_timeIntervals = GetAllCombinations(timeIntervals, 2);
-	Combos_processingTypes = GetAllCombinations(processingTypes, 2);
-	Combos_filteringTypes = GetAllCombinations(filteringTypes, 2);
+	Combos_rawFeatureNames = GetAllSubsets(rawFeatureNames, 2);
+	Combos_timeIntervals = GetAllSubsets(timeIntervals, 2);
+	Combos_processingTypes = GetAllSubsets(processingTypes, 2);
+	Combos_filteringTypes = GetAllSubsets(filteringTypes, 2);
 
 	pos = 1;
 	maxNumFeatures = 8;

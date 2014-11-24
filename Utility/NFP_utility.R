@@ -8,8 +8,8 @@ PrepareFeatureCombos_AR = function(features)
 	a = c("OneMonthBefore","TwoMonthBefore");
 	b = c("UnRevised","Revised");
 
-	aCombos = GetAllCombinations(a,2);
-	bCombos = GetAllCombinations(b,1);
+	aCombos = GetAllSubsets(a,2);
+	bCombos = GetAllSubsets(b,1);
 	# featureNames = featureNames[-c(length(featureNames))];
 
 	featureCombos = list();
@@ -30,18 +30,13 @@ PrepareFeatureCombos_AR = function(features)
 		}
 	}
 
-	# featureCombos = GetAllCombinations(featureNames,2);
-
 	return(featureCombos);
 
 }
 
 PrepareFeatureCombos_IJC = function(features)
 {
-	# featureNames = names(features);
-	# featureNames = featureNames[-c(1)];
 
-	# featureCombos = GetAllCombinations(featureNames, 2);
 
 	featureCombos = list();
 
@@ -56,7 +51,7 @@ PrepareFeatureCombos_Consensus = function()
 {
 	featureNames = c("Consensus1");
 
-	featureCombos = GetAllCombinations(featureNames,2);
+	featureCombos = GetAllSubsets(featureNames,2);
 	return(featureCombos);
 
 }
@@ -71,10 +66,10 @@ PrepareFeatureCombos_Social = function()
 	processingTypes = c("Absolute","AbsoluteDelta");
 	filteringTypes = c("all","allold","opportunity","opening","posting","hiring");
 
-	Combos_rawFeatureNames = GetAllCombinations(rawFeatureNames, 2);
-	Combos_timeIntervals = GetAllCombinations(timeIntervals, 2);
-	Combos_processingTypes = GetAllCombinations(processingTypes, 2);
-	Combos_filteringTypes = GetAllCombinations(filteringTypes, 2);
+	Combos_rawFeatureNames = GetAllSubsets(rawFeatureNames, 2);
+	Combos_timeIntervals = GetAllSubsets(timeIntervals, 2);
+	Combos_processingTypes = GetAllSubsets(processingTypes, 2);
+	Combos_filteringTypes = GetAllSubsets(filteringTypes, 2);
 
 	pos = 1;
 	maxNumFeatures = 8;

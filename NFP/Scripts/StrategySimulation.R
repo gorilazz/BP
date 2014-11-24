@@ -5,21 +5,21 @@ source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
 
 
-L1Threshold = 45;
-DirectionalWin1Threshold=9;
-DirectionalWin2Threshold=7;
-Win1Threshold=8;
-Win2Threshold=6;
+L1Threshold = 10000;
+DirectionalWin1Threshold=0;
+DirectionalWin2Threshold=0;
+Win1Threshold=0;
+Win2Threshold=0;
 WeightedWin1Threshold=70;
 
 
 #readin data & initialization
-path_prediction = "../Prediction/201410/Model_14_unrevised_Predictions.csv";
+path_prediction = "../Prediction/201410/RandomCombo/Model_1_Sample_4_unrevised_Predictions.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
 
-path_outMetric_mean = paste("../Simulation/201410/Model_14_unrevised_Ensemble_45","mean.csv",sep='_');
-path_outMetric_median = paste("../Simulation/201410/Model_14_unrevised_Ensemble_45","median.csv",sep='_');
+path_outMetric_mean = paste("../Simulation/201410/RandomCombo/Model_1_Sample_4_unrevised_Ensemble","mean.csv",sep='_');
+path_outMetric_median = paste("../Simulation/201410/RandomCombo/Model_1_Sample_4_unrevised_Ensemble","median.csv",sep='_');
 
 # read in data
 predictionFull = read.csv(file=path_prediction, head=TRUE, sep=",");

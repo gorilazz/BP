@@ -5,8 +5,8 @@ PrepareFeatureCombos_AR = function(featureAR)
 	featureNames_OneWeek = c("OneWeekBefore","OneWeekDelta");
 	featureNames_TwoWeek = c("TwoWeekBefore","TwoWeekDelta");
 
-	featureCombos_OneWeek = GetAllCombinations(featureNames_OneWeek,1);
-	featureCombos_TwoWeek = GetAllCombinations(featureNames_TwoWeek,1);
+	featureCombos_OneWeek = GetAllSubsets(featureNames_OneWeek,1);
+	featureCombos_TwoWeek = GetAllSubsets(featureNames_TwoWeek,1);
 
 	featureCombos = list();
 
@@ -28,19 +28,9 @@ PrepareFeatureCombos_Consensus = function(consensus)
 {
 	featureNames = c("Consensus","DeltaConsensus");
 
-	featureCombos = GetAllCombinations(featureNames,2);
+	featureCombos = GetAllSubsets(featureNames,2);
 	return(featureCombos);
 
-}
-
-PrepareFeatureCombos_Web = function(featureWeb)
-{
-	featureNames = names(featureWeb);
-	featureNames = featureNames[-c(1)];
-
-	featureCombos = GetAllCombinations(featureNames, 2);
-	
-	return(featureCombos);
 }
 
 PrepareFeatureCombos_Social = function()
@@ -55,10 +45,10 @@ PrepareFeatureCombos_Social = function()
 	# filteringTypes = c("canned","downsized","outsourced","fired","beenfired");
 	filteringTypes = c("all", "all_old", "hashtags", "job_opening", "job_opportunity", "job_posting", "we_are_hiring");
 
-	Combos_rawFeatureNames = GetAllCombinations(rawFeatureNames, 2);
-	Combos_timeIntervals = GetAllCombinations(timeIntervals, 2);
-	Combos_processingTypes = GetAllCombinations(processingTypes, 2);
-	Combos_filteringTypes = GetAllCombinations(filteringTypes, 2);
+	Combos_rawFeatureNames = GetAllSubsets(rawFeatureNames, 2);
+	Combos_timeIntervals = GetAllSubsets(timeIntervals, 2);
+	Combos_processingTypes = GetAllSubsets(processingTypes, 2);
+	Combos_filteringTypes = GetAllSubsets(filteringTypes, 2);
 
 	pos = 2;
 	maxNumFeatures = 4;

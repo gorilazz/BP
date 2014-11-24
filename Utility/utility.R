@@ -100,8 +100,8 @@ ComputeMetrics_Prediction = function(predictions,labels,consensus)
 	return(c(metrics,prediction_latest));
 }
 
-# Give a list of names, get all possible combinations
-GetAllCombinations = function(nameList, maxLength)
+# Give a list of names, get all possible subsets
+GetAllSubsets = function(nameList, maxLength)
 {
 	currentLength = length(nameList);
 
@@ -114,7 +114,7 @@ GetAllCombinations = function(nameList, maxLength)
 	}
 	else
 	{
-		result = GetAllCombinations(nameList[1:(length(nameList)-1)], maxLength);
+		result = GetAllSubsets(nameList[1:(length(nameList)-1)], maxLength);
 		num_result = length(result);
 		pos = num_result+1;
 		for(i in 1:num_result)
@@ -131,3 +131,41 @@ GetAllCombinations = function(nameList, maxLength)
 	return(result);
 }
 
+# Give a list of names, get all possible combinations
+GetAllCombinations = function(nameList, l)
+{
+
+	result = list();
+	pos = 1;
+	if(length(nameList)<l || l==0)
+	{
+		return(result);
+	}
+	else
+	{
+		if(l==1)
+		{
+			for(i in 1:length(nameList))
+			{
+				result[[pos]] = c(nameList[i]);
+				pos = pos + 1;
+			}
+		}
+		else
+		{
+			result = GetAllCombinations(nameList[1:(length(nameList)-1)], l);
+			prev_result = GetAllCombinations(nameList[1:(length(nameList)-1)], l-1);
+
+			num_result = length(result);
+			pos = num_result+1;
+			for(i in 1:length(prev_result))
+			{
+				combo = prev_result[[i]];
+				result[[pos]] = c(combo,nameList[[length(nameList)]]);
+				pos = pos+1;
+			}
+		}
+	}
+
+	return(result);
+}

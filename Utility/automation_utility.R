@@ -5,6 +5,8 @@ ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,con
 {
 	predictionResult = data.frame(matrix(nrow=0,ncol=(predictionWindow+1)));
 
+	consensusTraining = consensus$Consensus1;
+
 	for(i in 1:length(featureCombos))
 	{
 		print(i);
@@ -15,7 +17,7 @@ ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,con
 		{
 			next;
 		}
-		currentModel = ModelTraining_RollingTesting(df, label, consensus, predictionWindow, lambda, directionalConstraint);
+		currentModel = ModelTraining_RollingTesting(df, label, consensusTraining, predictionWindow, lambda, directionalConstraint);
 		predictionResult[nrow(predictionResult)+1,] = c(paste(currentFeatureCombo,collapse="+"),currentModel$predictions);
 	}
 
