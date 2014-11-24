@@ -13,7 +13,7 @@ source('../../Utility/automation_utility.R');
 path_featureAR = "../Features/AR/Features_AR_Delta.csv";
 path_featureSocial = "../Features/201411/Features_NFP_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
-path_outPrediction = "../Prediction/201411/Model_NFP_Predictions.csv";
+path_outPrediction = "../Prediction/201411/Model_1_NFP_Predictions.csv";
 
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
 featureARFull$Date = as.character(featureARFull$Date)
@@ -82,7 +82,9 @@ for(i in 1:length(featureARCombos))
 
 predictionWindow = 60;
 
-predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$DeltaConsensus,predictionWindow,lambda,directionalConstraint=FALSE);
+predictionDates = consensus$Date[(nrow(consensus)-predictionWindow+1):nrow(consensus)];
+
+predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$DeltaConsensus,predictionWindow,predictionDates,lambda,directionalConstraint=TRUE);
 write.csv(predictionResult, file = path_outPrediction);
 
 end = Sys.time();

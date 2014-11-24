@@ -1,7 +1,7 @@
 require(Matrix);
 
 # Computing the predictions on a rolling testing set
-ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,consensus,predictionWindow,lambda,directionalConstraint=FALSE)
+ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,consensus,predictionWindow,predictionDates,lambda,directionalConstraint=FALSE)
 {
 	predictionResult = data.frame(matrix(nrow=0,ncol=(predictionWindow+1)));
 
@@ -20,8 +20,6 @@ ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,con
 		currentModel = ModelTraining_RollingTesting(df, label, consensusTraining, predictionWindow, lambda, directionalConstraint);
 		predictionResult[nrow(predictionResult)+1,] = c(paste(currentFeatureCombo,collapse="+"),currentModel$predictions);
 	}
-
-	predictionDates = consensus$Date[(nrow(consensus)-predictionWindow+1):nrow(consensus)];
 
 	colnames(predictionResult) = c("Features",predictionDates);
 

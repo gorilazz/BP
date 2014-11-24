@@ -2,8 +2,8 @@ source('utility.R');
 
 PrepareFeatureCombos_AR = function(featureAR)
 {
-	featureNames_OneWeek = c("OneWeekBefore","OneWeekDelta");
-	featureNames_TwoWeek = c("TwoWeekBefore","TwoWeekDelta");
+	featureNames_OneWeek = c("OneWeekBefore");
+	featureNames_TwoWeek = c("TwoWeekBefore");
 
 	featureCombos_OneWeek = GetAllSubsets(featureNames_OneWeek,1);
 	featureCombos_TwoWeek = GetAllSubsets(featureNames_TwoWeek,1);
