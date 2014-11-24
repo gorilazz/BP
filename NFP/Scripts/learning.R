@@ -4,7 +4,6 @@ source('../../Utility/automation_utility.R');
 
 lambda = 0.0;
 aggregationType = c("median","mean");
-testingType = "rolling";
 labelType = "unrevised"
 
 # path initialization
@@ -67,6 +66,7 @@ featureAR = featureARFull[start_featureAR:end_featureAR,];
 featureSocial = featureSocialFull[start_featureSocial:end_featureSocial,];
 featureIJC = IJCFull[start_featureIJC:end_featureIJC,];
 consensus = consensusFull[start_consensus:end_consensus,];		#consensus to be used for testing
+
 if(labelType=='unrevised')
 {
 	label = labelFull[start_label:end_label,]$Delta_Unrevised;
@@ -115,17 +115,10 @@ pos = 1;
 # options(warn=2)
 
 # training the model to get the full result
-if(testingType == "rolling")
-{
-	metricList = CompileTrainingResults_RollingTesting(featureFull,featureFullCombos,label,consensus,lambda,directionalConstraint=TRUE);
-	write.csv(metricList, file = path_outMetric);
-}else if(testingType == "randomsampling")
-{
-	metricList = CompileTrainingResults_RandomSampling(featureFull,featureFullCombos,label,consensus,lambda,directionalConstraint=TRUE,aggregationType);
+metricList = CompileTrainingResults_RandomSampling(featureFull,featureFullCombos,label,consensus$Consensus1,lambda,directionalConstraint=TRUE,aggregationType);
 
-	for(type in aggregationType)
-	{
-		path_outMetric_type = gsub(".csv", paste(paste("_",type,sep=""),".csv",sep=""), path_outMetric);
-		write.csv(metricList[[type]], file = path_outMetric_type);
-	}
+for(type in aggregationType)
+{
+	path_outMetric_type = gsub(".csv", paste(paste("_",type,sep=""),".csv",sep=""), path_outMetric);
+	write.csv(metricList[[type]], file = path_outMetric_type);
 }

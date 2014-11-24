@@ -13,13 +13,13 @@ source('../../Utility/automation_utility.R');
 path_featureAR = "../Features/AR/Features_AR_Delta.csv";
 path_featureSocial = "../Features/201411/Features_NFP_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
-path_outPrediction = "../Prediction/201411/Model_1_NFP_Predictions.csv";
+path_outPrediction = "../Prediction/201411/Model_1a_NFP_Predictions.csv";
 
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
 featureARFull$Date = as.character(featureARFull$Date)
 for(i in 1:nrow(featureARFull))
 {
-	featureARFull[i,'WeekId'] = DateToWeekTag(featureARFull[i,'Date']);
+	featureARFull[i,'Date'] = DateToWeekTag(featureARFull[i,'Date']);
 }
 
 featureSocialFull = read.csv(file=path_featureSocial, head=TRUE, sep=",");
@@ -28,22 +28,22 @@ for(i in 1:nrow(featureSocialFull))
 {
 	date = strsplit(featureSocialFull[i,'WeekId'], "[-]");
 	weekid = paste(date[[1]][2],date[[1]][3],date[[1]][1],sep="/");
-	featureSocialFull[i,'WeekId'] = DateToWeekTag(weekid);
+	featureSocialFull[i,'Date'] = DateToWeekTag(weekid);
 }
 
 consensusFull = read.csv(file=path_consensus, head=TRUE, sep=",");
 consensusFull$Date = as.character(consensusFull$Date)
 for(i in 1:nrow(consensusFull))
 {
-	consensusFull[i,'WeekId'] = DateToWeekTag(consensusFull[i,'Date']);
+	consensusFull[i,'Date'] = DateToWeekTag(consensusFull[i,'Date']);
 }
 
 start_date = "20120106";	#earliest data to use
 end_date = "20141107";	#latest data to use
 
-featureAR = featureARFull[which(featureARFull$WeekId==start_date)[1]:which(featureARFull$WeekId==end_date)[1],];
-featureSocial = featureSocialFull[which(featureSocialFull$WeekId==start_date)[1]:which(featureSocialFull$WeekId==end_date)[1],];
-consensus = consensusFull[which(consensusFull$WeekId==start_date)[1]:which(consensusFull$WeekId==end_date)[1],];
+featureAR = featureARFull[which(featureARFull$Date==start_date)[1]:which(featureARFull$Date==end_date)[1],];
+featureSocial = featureSocialFull[which(featureSocialFull$Date==start_date)[1]:which(featureSocialFull$Date==end_date)[1],];
+consensus = consensusFull[which(consensusFull$Date==start_date)[1]:which(consensusFull$Date==end_date)[1],];
 
 label = featureAR$Label;
 
@@ -53,8 +53,8 @@ featureARCombos = PrepareFeatureCombos_AR(featureAR);
 featureSocialCombos = PrepareFeatureCombos_Social();
 featureConsensusCombos = PrepareFeatureCombos_Consensus();
 
-featureFull = merge(featureAR, featureSocial, by="WeekId");
-featureFull = merge(featureFull, consensus, by="WeekId");
+featureFull = merge(featureAR, featureSocial, by="Date");
+featureFull = merge(featureFull, consensus, by="Date");
 
 #train model and output metrics
 featureFullCombos = list();

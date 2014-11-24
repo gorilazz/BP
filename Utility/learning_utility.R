@@ -75,7 +75,7 @@ ModelTraining_RollingTesting = function(df,label,consensus,rollingWindow=12,lamb
 ModelTraining_RandomSampling = function(df,label,consensus,iteration=100,sampleSize=10,lambda=0.0,directionalConstraint=FALSE)
 {
 	
-	metricList = matrix(nrow=0,ncol=10);
+	metricList = matrix(nrow=0,ncol=7);
 	for(i in 1:iteration)
 	{
 		num_rows = nrow(df);
@@ -87,8 +87,8 @@ ModelTraining_RandomSampling = function(df,label,consensus,iteration=100,sampleS
 		label_training = label[-sample_rows];
 		label_testing = label[sample_rows];
 
-		consensus_training = consensus[-sample_rows,]$Consensus1;
-		consensus_testing = consensus[sample_rows,];
+		consensus_training = consensus[-sample_rows];
+		consensus_testing = consensus[sample_rows];
 
 		if(directionalConstraint==FALSE)
 		{
@@ -103,8 +103,8 @@ ModelTraining_RandomSampling = function(df,label,consensus,iteration=100,sampleS
 		metricList <- rbind(metricList, metrics);
 	}
 
-	colnames(metricList) = c("L1","medianL1","L2","medianL2","Win1","Win2","DirectionalWin1",
-		"DirectionalWin2","WeightedWin1","WeightedWin2");
+	colnames(metricList) = c("L1","medianL1","L2","medianL2","Win","DirectionalWin",
+		"WeightedWin");
 
 	return(metricList);
 }

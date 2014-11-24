@@ -75,14 +75,11 @@ ComputeMetrics = function(model, consensus)
 	medianL1 = median(model$residuals);
 	L2 = sqrt(mean(model$residuals^2));
 	medianL2 = sqrt(median(model$residuals^2));
-	Win1 = sum(model$residuals<abs(consensus$Consensus1-model$labels));
-	Win2 = sum(model$residuals<abs(consensus$Consensus2-model$labels));
-	DirectionalWin1 = sum((model$predictions-consensus$Consensus1)*(model$labels-consensus$Consensus1)>0);
-	DirectionalWin2 = sum((model$predictions-consensus$Consensus2)*(model$labels-consensus$Consensus2)>0);
-	WeightedWin1 = sum((-1)^((model$residuals<abs(consensus$Consensus1-model$labels))-1)*abs(model$residuals-abs(consensus$Consensus1-model$labels)));
-	WeightedWin2 = sum((-1)^((model$residuals<abs(consensus$Consensus2-model$labels))-1)*abs(model$residuals-abs(consensus$Consensus2-model$labels)));
+	Win = sum(model$residuals<abs(consensus-model$labels));
+	DirectionalWin = sum((model$predictions-consensus)*(model$labels-consensus)>0);
+	WeightedWin = sum((-1)^((model$residuals<abs(consensus-model$labels))-1)*abs(model$residuals-abs(consensus-model$labels)));
 
-	return(c(L1,medianL1,L2,medianL2,Win1,Win2,DirectionalWin1,DirectionalWin2,WeightedWin1,WeightedWin2));
+	return(c(L1,medianL1,L2,medianL2,Win,DirectionalWin,WeightedWin));
 }
 
 # Compute the metrics given the predictions
@@ -169,3 +166,4 @@ GetAllCombinations = function(nameList, l)
 
 	return(result);
 }
+
