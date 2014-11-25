@@ -65,6 +65,11 @@ CompileTrainingResults_RandomSampling = function(featureFull,featureCombos,label
 		print(i);
 		currentFeatureCombo = featureCombos[[i]];
 		df = featureFull[currentFeatureCombo];
+		df_mat = data.matrix(df, rownames.force=NA);
+		if(rankMatrix(df_mat)[[1]]<ncol(df))
+		{
+			next;
+		}
 		metrics = ModelTraining_RandomSampling(df,label,consensus,50,10,lambda,directionalConstraint);
 		row.names(metrics)=NULL;
 
