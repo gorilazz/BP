@@ -78,6 +78,39 @@ CompileTrainingResults_RandomSampling = function(featureFull,featureCombos,label
 	return(result);
 }
 
+# Compiling the model training results using cross-validation
+CompileTrainingResults_CV = function(featureFull,featureCombos,label,consensus,lambda,directionalConstraint=FALSE,aggregationType)
+{
+	metricList = matrix(nrow=0,ncol=15);
+
+	colnames(metricList) = c("Features","L1","medianL1","L2","medianL2","Win","DirectionalWin","WeightedWin", 
+		"L1_conf","medianL1_conf","L2_conf","medianL2_conf","Win_conf","DirectionalWin_conf","WeightedWin_conf");
+
+	result = list();
+
+	for(type in aggregationType)
+	{
+		result[[type]] = metricList;
+	}
+
+	for(i in 1:length(featureCombos))
+	{
+		print(i);
+		currentFeatureCombo = featureCombos[[i]];
+		df = featureFull[currentFeatureCombo];
+		metrics = ModelTraining_CV(df,label,consensus,50,10,lambda,directionalConstraint);
+		row.names(metrics)=NULL;
+
+		for(type in aggregationType)
+		{
+			aggregatedMetric = metricAggregation(metrics,type);
+			result[[type]] = rbind(result[[type]],c(paste(currentFeatureCombo,collapse="+"),aggregatedMetric));
+		}
+	}
+
+	return(result);
+}
+
 # Generate predictions for a list of feature combos
 GeneratePredictions = function(featureFull,featureCombos,label, consensus, nprediction, lambda, directionalConstraint)
 {

@@ -108,3 +108,51 @@ ModelTraining_RandomSampling = function(df,label,consensus,iteration=100,sampleS
 
 	return(metricList);
 }
+
+# Training model and get measurements using cross-validation
+ModelTraining_CV = function(df,label,consensus,numFolder=10,lambda=0.0,directionalConstraint=FALSE)
+{
+	
+	metricList = matrix(nrow=0,ncol=7);
+
+	num_rows = nrow(df);
+
+	samplesPerFolder = floor(num_rows/numFolder);
+
+	for(i in 1:numFolder)
+	{
+		if(i==numFolder)
+		{
+			sample_rows = ((i-1)*samplesPerFolder+1):num_rows;
+		} else
+		{
+			sample_rows = ((i-1)*samplesPerFolder+1):(i*samplesPerFolder);
+		}
+		
+		df_training = df[-sample_rows,];
+		df_testing = df[sample_rows,];
+
+		label_training = label[-sample_rows];
+		label_testing = label[sample_rows];
+
+		consensus_training = consensus[-sample_rows];
+		consensus_testing = consensus[sample_rows];
+
+		if(directionalConstraint==FALSE)
+		{
+			result = LinearRegression(df_training, df_testing, label_training);
+		} else{
+			result = LinearRegression_QP(df_training, df_testing, label_training, consensus_training, lambda);
+		}
+
+		model = list(predictions=result$prediction, residuals=abs(label_testing-result$prediction), labels=label_testing);
+		metrics = ComputeMetrics(model, consensus_testing);
+
+		metricList <- rbind(metricList, metrics);
+	}
+
+	colnames(metricList) = c("L1","medianL1","L2","medianL2","Win","DirectionalWin",
+		"WeightedWin");
+
+	return(metricList);
+}
