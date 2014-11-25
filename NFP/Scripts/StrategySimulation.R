@@ -14,7 +14,7 @@ WeightedWin1Threshold=70;
 
 
 #readin data & initialization
-path_prediction = "../Prediction/201410/RandomCombo/Model_1_Sample_4_unrevised_Predictions.csv";
+path_prediction = "../Prediction/201410/Model_14_unrevised_Predictions.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
 
@@ -46,8 +46,8 @@ month_end = "201410";	# the last month to simulate
 index_start = grep(month_start, colnames(predictionFull));
 index_end = grep(month_end, colnames(predictionFull));
 
-simulationResults_mean = data.frame(Month=character(),"Prediction"=character(),"L1"=character(),"Win1"=character(),"DWin1"=character(),stringsAsFactors=FALSE);
-simulationResults_median = data.frame(Month=character(),"Prediction"=character(),"L1"=character(),"Win1"=character(),"DWin1"=character(),stringsAsFactors=FALSE);
+simulationResults_mean = data.frame(Month=character(),"Prediction"=character(),"L1"=character(),"Win"=character(),"DWin"=character(),stringsAsFactors=FALSE);
+simulationResults_median = data.frame(Month=character(),"Prediction"=character(),"L1"=character(),"Win"=character(),"DWin"=character(),stringsAsFactors=FALSE);
 
 for(index_month in index_start:index_end)
 {

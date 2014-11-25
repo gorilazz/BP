@@ -103,7 +103,7 @@ CompileTrainingResults_CV = function(featureFull,featureCombos,label,consensus,l
 		print(i);
 		currentFeatureCombo = featureCombos[[i]];
 		df = featureFull[currentFeatureCombo];
-		metrics = ModelTraining_CV(df,label,consensus,50,10,lambda,directionalConstraint);
+		metrics = ModelTraining_CV(df,label,consensus,5,lambda,directionalConstraint);
 		row.names(metrics)=NULL;
 
 		for(type in aggregationType)

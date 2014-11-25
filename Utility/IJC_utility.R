@@ -1,5 +1,3 @@
-source('utility.R');
-
 PrepareFeatureCombos_AR = function(featureAR)
 {
 	featureNames_OneWeek = c("OneWeekDelta");
