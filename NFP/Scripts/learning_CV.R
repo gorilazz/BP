@@ -1,6 +1,7 @@
 source('../../Utility/utility.R');
 source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
+source('../../Utility/NFP_utility.R');
 
 lambda = 0.0;
 aggregationType = c("median","mean");
@@ -12,7 +13,7 @@ path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_sepera
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC_3_weeks.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv"
-path_outMetric = paste(paste("../Model/201410/experiments_AR_Social_Model_14", labelType, sep="_"),".csv",sep="");
+path_outMetric = paste(paste("../Model/201410/CV/experiments_AR_Social_Model_14", labelType, sep="_"),".csv",sep="");
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -47,7 +48,7 @@ for(i in 1:nrow(labelFull))
 
 # get the data
 data_start = "201103";		# earliest data to use	
-data_end = "201409";	# latest data to use for testing
+data_end = "201408";	# latest data to use for testing
 
 # subset the data frames to get the right segments
 start_featureAR = which(featureARFull$Date==data_start)[1];
