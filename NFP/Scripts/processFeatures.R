@@ -1,6 +1,6 @@
 require('plyr');
 
-All_Features = read.csv(file='../Features/201410/All_True_DaysBack_7_Features.txt',sep='\t');
+All_Features = read.csv(file='../Features/201411/All_True_DaysBack_7_Features.txt',sep='\t');
 
 names = names(All_Features);
 
@@ -61,4 +61,6 @@ colnames(Features_hashtags)<-names;
 
 Features_Full = join_all(list(Features_all,Features_allold,Features_opening,Features_posting,Features_opportunity,Features_hiring,Features_hashtags),by='MonthId',type='full');
 
-write.csv(Features_Full, file='../Features/201410/DaysBack_7_Features_All_candiate_seperated.csv');
+Features_Full = Features_Full[2:ncol(Features_Full)];
+
+write.csv(Features_Full, file='../Features/201411/DaysBack_7_Features_All_candiate_seperated_Absolute.csv');

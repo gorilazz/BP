@@ -12,11 +12,11 @@ labelType = "unrevised"
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
-path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
+path_featureSocial = "../Features/201411/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC_3_weeks.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv"
-path_outPrediction = paste(paste("../Prediction/201410/Model_14", labelType, sep="_"),"Predictions.csv",sep="_");
+path_outPrediction = paste(paste("../Prediction/201411/Model_14", labelType, sep="_"),"Predictions.csv",sep="_");
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -51,7 +51,7 @@ for(i in 1:nrow(labelFull))
 
 # get the data
 data_start = "201103";		# earliest data to use	
-data_end = "201410";	# latest data to use for testing
+data_end = "201411";	# latest data to use for testing
 
 # subset the data frames to get the right segments
 start_featureAR = which(featureARFull$Date==data_start)[1];
@@ -118,8 +118,10 @@ pos = 1;
 # options(warn=2)
 
 # training the model to get the full predictions
-predictionWindow = 25;
-predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus,predictionWindow,lambda,directionalConstraint=TRUE);
+predictionWindow = 15;
+predictionDates = consensus$Date[(nrow(consensus)-predictionWindow+1):nrow(consensus)];
+
+predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$Consensus1,predictionWindow,predictionDates,lambda,directionalConstraint=TRUE);
 write.csv(predictionResult, file = path_outPrediction);
 
 end = Sys.time();

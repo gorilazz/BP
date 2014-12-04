@@ -1,4 +1,5 @@
 # Get predictions for each individual model
+rm(list=ls());
 start = Sys.time();
 
 source('../../Utility/NFP_utility.R');
@@ -7,18 +8,23 @@ source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
 
 lambda = 0.0;
-aggregationType = c("median","mean");
 labelType = "unrevised";
-randomSample = TRUE;
-numFeatures = 4;
+randomSample = FALSE;
+numFeatures = 3;
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
-path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
+path_featureSocial = "../Features/201411/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC_3_weeks.csv";
-path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv"
-path_outPrediction = paste(paste("../Prediction/201410/RandomCombo/Model_1_Sample_4", labelType, sep="_"),"Predictions.csv",sep="_");
+path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv";
+path_outDir = "../Prediction/201411/SingleCombo";
+if(!file.exists(path_outDir))
+{
+	dir.create(path_outDir);
+}
+file_outPrediction = paste(paste("Model_12", labelType, sep="_"),"Predictions.csv",sep="_");
+path_outPrediction = file.path(path_outDir,file_outPrediction);
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -53,7 +59,7 @@ for(i in 1:nrow(labelFull))
 
 # get the data
 data_start = "201103";		# earliest data to use	
-data_end = "201410";	# latest data to use for testing
+data_end = "201411";	# latest data to use for testing
 
 # subset the data frames to get the right segments
 start_featureAR = which(featureARFull$Date==data_start)[1];
@@ -85,7 +91,11 @@ featureFull = merge(featureAR, featureSocial, by="Date");
 featureFull = merge(featureFull, consensus, by="Date");
 featureFull = merge(featureFull, featureIJC, by="Date");
 
-features = list(c('IJC','Consensus1','NumVerifiedTweets_Week2_opportunity_AbsoluteDelta',
+# features = list(c('IJC','Consensus1','NumVerifiedTweets_Week2_opportunity_AbsoluteDelta',
+# 	'NumPopularTweets_Week2_all_AbsoluteDelta','NumVerifiedTweets_Week1_posting_AbsoluteDelta', 
+# 	'NumVerifiedTweets_Month1_all_AbsoluteDelta','NumPopularTweets_Week1_posting_AbsoluteDelta'));
+
+features = list(c('NumVerifiedTweets_Week2_opportunity_AbsoluteDelta',
 	'NumPopularTweets_Week2_all_AbsoluteDelta','NumVerifiedTweets_Week1_posting_AbsoluteDelta', 
 	'NumVerifiedTweets_Month1_all_AbsoluteDelta','NumPopularTweets_Week1_posting_AbsoluteDelta'));
 
@@ -102,8 +112,10 @@ if(randomSample==FALSE)
 # options(warn=2)
 
 # training the model to get the full predictions
-predictionWindow = 25;
-predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus,predictionWindow,lambda,directionalConstraint=TRUE);
+predictionWindow = 15;
+predictionDates = consensus$Date[(nrow(consensus)-predictionWindow+1):nrow(consensus)];
+
+predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$Consensus1,predictionWindow,predictionDates,lambda,directionalConstraint=TRUE);
 write.csv(predictionResult, file = path_outPrediction);
 
 end = Sys.time();

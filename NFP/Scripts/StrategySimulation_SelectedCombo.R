@@ -1,16 +1,25 @@
 # Generate the ensemble model month by month and validate it
 
+rm(list=ls());
+
 source('../../Utility/utility.R');
 source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
 
-
+for(i in 1:12)
+{
 #readin data & initialization
-path_prediction = "../Prediction/201410/SingleCombo/Model_10_unrevised_Predictions.csv";
+path_prediction = paste(paste("../Prediction/201411/SingleCombo/Model",i,sep="_"),"unrevised_Predictions.csv",sep="_");
 path_consensus = "../GroundTruth/Consensus.csv";
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
 
-path_outMetric = "../Simulation/201410/SingleCombo/Model_10_unrevised_Metrics.csv";
+path_outDir = "../Simulation/201411/SingleCombo";
+if(!file.exists(path_outDir))
+{
+	dir.create(path_outDir);
+}
+file_outMetric = paste(paste("Model",i,sep="_"),"unrevised_Metrics.csv", sep="_");
+path_outMetric = file.path(path_outDir,file_outMetric);
 
 # read in data
 predictionFull = read.csv(file=path_prediction, head=TRUE, sep=",");
@@ -31,8 +40,8 @@ for(i in 1:nrow(consensus))
 
 labels = featureAR$Label;
 
-month_start = "201311";	# the first month to simulate
-month_end = "201410";	# the last month to simulate
+month_start = "201309";	# the first month to simulate
+month_end = "201411";	# the last month to simulate
 
 index_start = grep(month_start, colnames(predictionFull));
 index_end = grep(month_end, colnames(predictionFull));
@@ -53,11 +62,12 @@ for(index_month in index_start:index_end)
 
 	L1 = abs(prediction-simulate_label);
 
-	Win1 = L1 < abs(simulate_label-simulate_consensus);
+	Win = L1 < abs(simulate_label-simulate_consensus);
 
-	DWin1 = (prediction-simulate_consensus)*(simulate_label-simulate_consensus)>0;
+	DWin = (prediction-simulate_consensus)*(simulate_label-simulate_consensus)>0;
 
-	simulationResults[nrow(simulationResults)+1,] <- c(simulate_month, prediction, L1, Win1, DWin1);
+	simulationResults[nrow(simulationResults)+1,] <- c(simulate_month, prediction, L1, Win, DWin);
 }
 
 write.csv(simulationResults, file = path_outMetric);
+}

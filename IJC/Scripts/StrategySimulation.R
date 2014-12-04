@@ -11,12 +11,12 @@ WinThreshold=0;
 
 
 #readin data & initialization
-path_prediction = "../Prediction/201411/Model_1_NFP_Predictions.csv";
+path_prediction = "../Prediction/201411/Model_1a_NFP_Predictions.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_featureAR = "../Features/AR/Features_AR_Delta.csv";
 
-path_outMetric_mean = paste("../Simulation/201411/Model_1_NFP_Predictions","mean.csv",sep='_');
-path_outMetric_median = paste("../Simulation/201411/Model_1_NFP_Predictions","median.csv",sep='_');
+path_outMetric_mean = paste("../Simulation/201411/Model_1a_NFP_Predictions","mean.csv",sep='_');
+path_outMetric_median = paste("../Simulation/201411/Model_1a_NFP_Predictions","median.csv",sep='_');
 
 # read in data
 predictionFull = read.csv(file=path_prediction, head=TRUE, sep=",");
