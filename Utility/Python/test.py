@@ -1,59 +1,55 @@
 import csv
-import string
 
-blackList_match = ['job posting','job postings','job opening','job openings','job opportunity', 'job opportunities', 'full time','good fit','fit job','apply today','join team','latest job','sad news','hiring people','hiring employees', \
-'hiring talent','employment job','career search','search job','search employment','job search','entry level','job vacancy', 'make money', 'money home', 'part time', 'send resume', 'search results', 'apply today', 'united kingdom', \
-'united states', 'united arab', 'los angeles', 'las vegas', 'des moines', 'fort worth', 'palo alto', 'work home', 'accepting applications', 'aspen dental', 'assistant store', 'baker hughes', 'baylor health', 'charles schwab', \
-'care system','hiring software', 'liberty mutual insurance', 'robert half finance', 'citizens financial group', 'citizens financial', 'half finance' ,'senior account', 'senior financial', 'accountable healthcare','kraft foods']
-
-blackList_contain = ['fresenius','accounts', 'home', 'arab', 'saudi', 'singapore', 'south', 'job', 'years', 'year', 'st', 'san', 'santa', 'city', 'united', 'qatar', 'needed', 'colorado', 'england', 'midlands', 'ireland', 'vancouver', \
-'washington', 'chicago', 'houston', 'north', 'apply', 'york','london', 'money', 'canada', 'ma', 'tn', 'ne', 'il', 'ca', 'ny', 'fl', 'wa', 'va', 'tx', 'md', 'al', 'ga', 'nj', 'mo', \
-'ut', 'mi', 'nc', 'de', 'ab', 'ky', 'wi', 'nv', 'az', 'pa', 'mn', 'qc']
-
-def PartialMatch(ngram, blacklist):
-	for item in blacklist:
-		if item in ngram.split(' '):
-			return True
-
-	return False
+in_file = open('C:\\Users\\yuzhan\\Git\\Predictions\\EOY\\Tech\\MonthlyCounts.txt','rt',encoding='utf-8')
+out_file_path = 'C:\\Users\\yuzhan\\Git\\Predictions\\EOY\\Tech\\MonthlyCounts'
 
 
-def ProcessNgrams(ngrams):
-	ngramList = ngrams.split('||')
 
-	topNgrams = [ngram.split('|')[0] for ngram in ngramList]
+data = csv.reader(in_file,delimiter='\t')
 
-	topNgrams = [ngram for ngram in topNgrams if not ngram in blackList_match]
+next(data)
 
-	topNgrams = [ngram for ngram in topNgrams if not PartialMatch(ngram, blackList_contain)]
+entities = {}
 
-	topNgrams.sort()
 
-	return topNgrams
+for row in data:
+	entity = ' '.join(row[0].split(' ')[:-1])
+	area = row[0].split(' ')[-1]
+	year = row[1][0:4]
+	month = row[1][4:6]
 
-with open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Pulse\\201410\\All_True_MonthlyCountsWithNgrams_1k.txt', 'rt', encoding='UTF-8') as MonthlyPulse, \
-open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Pulse\\201410\\All_True_CommonTopJobs_1k_2014.csv', 'wt', encoding='UTF-8') as CommonTopJobs:
+	if month=='12':
+		continue
 
-	pulse = csv.reader(MonthlyPulse,delimiter="\t")
-	next(pulse)
+	num_tweets = int(row[4])
 
-	result = {}
+	if area in entities:
+		if entity in entities[area]:
+			entities[area][entity][year] = entities[area][entity].get(year,0) + num_tweets
+		else:
+			entities[area][entity] = {year:num_tweets}
+	else:
+		entities[area] = {entity:{year:num_tweets}}
 
-	keyset = []
 
-	for row in pulse:
-		filter = row[0]
-		monthid = int(row[1])
-		if monthid<201401:
-			continue
-		if filter=='all':
-			processedRow = ProcessNgrams(row[14])
-			if not keyset:
-				keyset = processedRow
-			else:
-				keyset = [ngram for ngram in keyset if ngram in processedRow]
+for area in entities:
+	out_file_cur = out_file_path + '_' + area + '.csv'
+	out_file = open(out_file_cur,'wt',encoding='utf-8')
 
-	for job in keyset:
-		CommonTopJobs.write("%s\n" % job)
+	out_list = []
 
-	CommonTopJobs.close()
+	for entity in entities[area]:
+		if not '2013' in entities[area][entity]:
+			val_2013 = '0'
+		else:
+			val_2013 = str(entities[area][entity]['2013'])
+
+		if not '2014' in entities[area][entity]:
+			val_2014 = '0'
+		else:
+			val_2014 = str(entities[area][entity]['2014'])
+
+		out_list.append(entity+','+val_2013+','+val_2014)
+
+	out_file.write('\n'.join(out_list))
+	out_file.close()

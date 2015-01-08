@@ -8,23 +8,46 @@ source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
 
 lambda = 0.0;
-labelType = "unrevised";
+algo = "lr";
 randomSample = FALSE;
 numFeatures = 3;
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
-path_featureSocial = "../Features/201411/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
+path_featureSocial = "../Features/201412/DaysBack_7_Features_All_candidate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC_3_weeks.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv";
-path_outDir = "../Prediction/201411/SingleCombo";
+path_outDir = "../Prediction/201412/SingleCombo";
 if(!file.exists(path_outDir))
 {
 	dir.create(path_outDir);
 }
-file_outPrediction = paste(paste("Model_12", labelType, sep="_"),"Predictions.csv",sep="_");
+
+# featureNames = list(
+# 	c('IJC', 'NumDistinctUsers_Week2_hiring_Absolute','NumTweets_Month1_hashtags_AbsoluteDelta','NumPopularTweets_Week1_all_AbsoluteDelta', 'NumDistinctTweets_Month2_hiring_AbsoluteDelta',
+# 		'NumTweets_Week1_opening_Absolute', 'NumPopularTweets_Week1_allold_AbsoluteDelta', 'NumVerifiedTweets_Month1_allold_Absolute', 'NumPopularTweets_Week2_hiring_Absolute', 'NumTweets_Week2_hiring_AbsoluteDelta'));
+
+# featureNames = list(
+# 	c('NumDistinctTweets_Month1_posting_Absolute', 'NumDistinctTweets_Month1_posting_AbsoluteDelta','NumTweets_Month1_opportunity_AbsoluteDelta','NumTweets_Month2_hashtags_Absolute', 'NumTweets_Month1_opportunity_Absolute',
+# 		'NumPopularTweets_Week2_posting_AbsoluteDelta', 'NumTweets_Week1_hashtags_Absolute', 'NumVerifiedTweets_Week1_allold_AbsoluteDelta', 'NumTweets_Week2_hashtags_AbsoluteDelta', 'NumVerifiedTweets_Month2_opening_AbsoluteDelta'));
+
+# featureNames = list(
+# 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute','NumVerifiedTweets_Month1_posting_AbsoluteDelta', 'NumVerifiedTweets_Month1_posting_Absolute'),
+# 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute','NumVerifiedTweets_Month1_posting_AbsoluteDelta'),
+# 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute'),
+# 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta'),
+# 	c('Consensus2'));
+
+featureNames = list(
+	c('IJC', 'Consensus1', 'Consensus2'));#, 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute','NumVerifiedTweets_Month1_posting_AbsoluteDelta', 'NumVerifiedTweets_Month1_posting_Absolute'));
+
+for(i in 12:12)
+{
+file_outPrediction = paste(paste(paste("Model",i,sep="_"), algo, sep="_"),"Predictions.csv",sep="_");
 path_outPrediction = file.path(path_outDir,file_outPrediction);
+
+features = list(featureNames[[i-11]]);
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -59,7 +82,7 @@ for(i in 1:nrow(labelFull))
 
 # get the data
 data_start = "201103";		# earliest data to use	
-data_end = "201411";	# latest data to use for testing
+data_end = "201412";	# latest data to use for testing
 
 # subset the data frames to get the right segments
 start_featureAR = which(featureARFull$Date==data_start)[1];
@@ -78,26 +101,13 @@ featureAR = featureARFull[start_featureAR:end_featureAR,];
 featureSocial = featureSocialFull[start_featureSocial:end_featureSocial,];
 featureIJC = IJCFull[start_featureIJC:end_featureIJC,];
 consensus = consensusFull[start_consensus:end_consensus,];		#consensus to be used for testing
-if(labelType=='unrevised')
-{
-	label = labelFull[start_label:end_label,]$Delta_Unrevised;
-}else
-{
-	label = labelFull[start_label:end_label,]$Delta_Revised;
-}
+label = labelFull[start_label:end_label,]$Delta_Unrevised;
 
 # merge AR, social, consensus, IJC features to get the full feature set
 featureFull = merge(featureAR, featureSocial, by="Date");
 featureFull = merge(featureFull, consensus, by="Date");
 featureFull = merge(featureFull, featureIJC, by="Date");
 
-# features = list(c('IJC','Consensus1','NumVerifiedTweets_Week2_opportunity_AbsoluteDelta',
-# 	'NumPopularTweets_Week2_all_AbsoluteDelta','NumVerifiedTweets_Week1_posting_AbsoluteDelta', 
-# 	'NumVerifiedTweets_Month1_all_AbsoluteDelta','NumPopularTweets_Week1_posting_AbsoluteDelta'));
-
-features = list(c('NumVerifiedTweets_Week2_opportunity_AbsoluteDelta',
-	'NumPopularTweets_Week2_all_AbsoluteDelta','NumVerifiedTweets_Week1_posting_AbsoluteDelta', 
-	'NumVerifiedTweets_Month1_all_AbsoluteDelta','NumPopularTweets_Week1_posting_AbsoluteDelta'));
 
 # merge to get all the feature combos
 featureFullCombos = list();
@@ -112,11 +122,13 @@ if(randomSample==FALSE)
 # options(warn=2)
 
 # training the model to get the full predictions
-predictionWindow = 15;
+predictionWindow = 24;
 predictionDates = consensus$Date[(nrow(consensus)-predictionWindow+1):nrow(consensus)];
 
-predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$Consensus1,predictionWindow,predictionDates,lambda,directionalConstraint=TRUE);
+predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$Consensus1,predictionWindow,predictionDates,lambda,directionalConstraint=TRUE, algo='svm');
 write.csv(predictionResult, file = path_outPrediction);
+}
+
 
 end = Sys.time();
 

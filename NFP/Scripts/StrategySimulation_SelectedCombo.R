@@ -5,20 +5,21 @@ rm(list=ls());
 source('../../Utility/utility.R');
 source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
+algo = 'lr';
 
-for(i in 1:12)
+for(i in 12:12)
 {
 #readin data & initialization
-path_prediction = paste(paste("../Prediction/201411/SingleCombo/Model",i,sep="_"),"unrevised_Predictions.csv",sep="_");
+path_prediction = paste(paste(paste("../Prediction/201412/SingleCombo/Model",i,sep="_"), algo, sep="_"),"Predictions.csv", sep="_");
 path_consensus = "../GroundTruth/Consensus.csv";
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
 
-path_outDir = "../Simulation/201411/SingleCombo";
+path_outDir = "../Simulation/201412/SingleCombo";
 if(!file.exists(path_outDir))
 {
 	dir.create(path_outDir);
 }
-file_outMetric = paste(paste("Model",i,sep="_"),"unrevised_Metrics.csv", sep="_");
+file_outMetric = paste(paste(paste("Model",i,sep="_"), algo, sep="_"), "Metric.csv", sep="_");
 path_outMetric = file.path(path_outDir,file_outMetric);
 
 # read in data
@@ -40,8 +41,8 @@ for(i in 1:nrow(consensus))
 
 labels = featureAR$Label;
 
-month_start = "201309";	# the first month to simulate
-month_end = "201411";	# the last month to simulate
+month_start = "201301";	# the first month to simulate
+month_end = "201412";	# the last month to simulate
 
 index_start = grep(month_start, colnames(predictionFull));
 index_end = grep(month_end, colnames(predictionFull));

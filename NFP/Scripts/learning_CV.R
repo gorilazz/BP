@@ -9,11 +9,11 @@ labelType = "unrevised"
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
-path_featureSocial = "../Features/201410/DaysBack_7_Features_All_candiate_seperated_AbsoluteFull.csv";
+path_featureSocial = "../Features/201412/UserNormalized/DaysBack_7_Features_Text_candidate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC_3_weeks.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv"
-path_outMetric = paste(paste("../Model/201410/CV/experiments_AR_Social_Model_14", labelType, sep="_"),".csv",sep="");
+path_outMetric = paste(paste("../Model/201412/CV/UserNormalized/experiments_Text_Model_1", labelType, sep="_"),".csv",sep="");
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -116,7 +116,7 @@ pos = 1;
 # options(warn=2)
 
 # training the model to get the full result
-metricList = CompileTrainingResults_CV(featureFull,featureFullCombos,label,consensus$Consensus1,lambda,directionalConstraint=TRUE,aggregationType);
+metricList = CompileTrainingResults_CV(featureFull,featureFullCombos,label,consensus$Consensus1,lambda,directionalConstraint=TRUE,aggregationType, 7);
 
 for(type in aggregationType)
 {

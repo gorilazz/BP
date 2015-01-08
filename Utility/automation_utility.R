@@ -1,7 +1,7 @@
 require(Matrix);
 
 # Computing the predictions on a rolling testing set
-ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,consensus,predictionWindow,predictionDates,lambda,directionalConstraint=FALSE)
+ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,consensus,predictionWindow,predictionDates,lambda,directionalConstraint=FALSE, algo='lr')
 {
 	predictionResult = data.frame(matrix(nrow=0,ncol=(predictionWindow+1)));
 
@@ -17,7 +17,7 @@ ComputePredictions_RollingTesting = function(featureFull,featureCombos,label,con
 		{
 			next;
 		}
-		currentModel = ModelTraining_RollingTesting(df, label, consensusTraining, predictionWindow, lambda, directionalConstraint);
+		currentModel = ModelTraining_RollingTesting(df, label, consensusTraining, predictionWindow, lambda, directionalConstraint, algo);
 		predictionResult[nrow(predictionResult)+1,] = c(paste(currentFeatureCombo,collapse="+"),currentModel$predictions);
 	}
 
@@ -84,7 +84,7 @@ CompileTrainingResults_RandomSampling = function(featureFull,featureCombos,label
 }
 
 # Compiling the model training results using cross-validation
-CompileTrainingResults_CV = function(featureFull,featureCombos,label,consensus,lambda,directionalConstraint=FALSE,aggregationType)
+CompileTrainingResults_CV = function(featureFull,featureCombos,label,consensus,lambda,directionalConstraint=FALSE,aggregationType, num_folds = 10)
 {
 	metricList = matrix(nrow=0,ncol=15);
 
@@ -103,7 +103,8 @@ CompileTrainingResults_CV = function(featureFull,featureCombos,label,consensus,l
 		print(i);
 		currentFeatureCombo = featureCombos[[i]];
 		df = featureFull[currentFeatureCombo];
-		metrics = ModelTraining_CV(df,label,consensus,5,lambda,directionalConstraint);
+		testing_sets = GenerateTesting_CV(nrow(df), num_folds);
+		metrics = ModelTraining_CV(df,label,consensus,testing_sets,lambda,directionalConstraint);
 		row.names(metrics)=NULL;
 
 		for(type in aggregationType)
