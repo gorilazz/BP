@@ -1,4 +1,5 @@
 require(quadprog);
+require(e1071);
 
 # The common linear regression using lm()
 LinearRegression = function(feature_training, feature_testing, label)
@@ -9,6 +10,21 @@ LinearRegression = function(feature_training, feature_testing, label)
 		prediction = predict(model, newdata=feature_testing);
 	} else{
 		model = lm(label ~ feature_training);
+		prediction = predict(model, newdata=data.frame(feature_training=feature_testing));
+	}
+
+	return(list(model=model,prediction=prediction));
+}
+
+# The support vector regression
+SVM = function(feature_training, feature_testing, label)
+{
+	
+	if(typeof(feature_training)=="list"&&ncol(feature_training)>1){
+		model = svm(label ~ ., data=feature_training);
+		prediction = predict(model, newdata=feature_testing);
+	} else{
+		model = svm(label ~ feature_training);
 		prediction = predict(model, newdata=data.frame(feature_training=feature_testing));
 	}
 
@@ -41,7 +57,7 @@ LinearRegression_QP = function(feature_training, feature_testing, label, consens
 }
 
 # Training model and get measurements using the rolling testing set
-ModelTraining_RollingTesting = function(df,label,consensus,rollingWindow=12,lambda=0.0,directionalConstraint=FALSE)
+ModelTraining_RollingTesting = function(df,label,consensus,rollingWindow=12,lambda=0.0,directionalConstraint=FALSE, algo='lr')
 {
 	
 	predictions = c();
@@ -56,11 +72,18 @@ ModelTraining_RollingTesting = function(df,label,consensus,rollingWindow=12,lamb
 		df_testing = df[num_rows+1,];
 		label_testing = label[num_rows+1];
 
-		if(directionalConstraint==FALSE)
+		if(algo=='lr')
 		{
-			result = LinearRegression(df_training, df_testing, label_training);
-		} else{
-			result = LinearRegression_QP(df_training, df_testing, label_training, consensus_training, lambda);
+			if(directionalConstraint==FALSE)
+			{
+				result = LinearRegression(df_training, df_testing, label_training);
+			} else{
+				result = LinearRegression_QP(df_training, df_testing, label_training, consensus_training, lambda);
+			}
+		}
+		else if(algo=='svm')
+		{
+			result = SVM(df_training, df_testing, label_training);
 		}
 
 		predictions = c(predictions,result[['prediction']]);
@@ -110,24 +133,16 @@ ModelTraining_RandomSampling = function(df,label,consensus,iteration=100,sampleS
 }
 
 # Training model and get measurements using cross-validation
-ModelTraining_CV = function(df,label,consensus,numFolder=10,lambda=0.0,directionalConstraint=FALSE)
+ModelTraining_CV = function(df,label,consensus,testing_sets,lambda=0.0,directionalConstraint=FALSE)
 {
 	
 	metricList = matrix(nrow=0,ncol=7);
 
 	num_rows = nrow(df);
 
-	samplesPerFolder = floor(num_rows/numFolder);
-
-	for(i in 1:numFolder)
+	for(i in 1:length(testing_sets))
 	{
-		if(i==numFolder)
-		{
-			sample_rows = ((i-1)*samplesPerFolder+1):num_rows;
-		} else
-		{
-			sample_rows = ((i-1)*samplesPerFolder+1):(i*samplesPerFolder);
-		}
+		sample_rows = testing_sets[[i]];
 		
 		df_training = df[-sample_rows,];
 		df_testing = df[sample_rows,];
