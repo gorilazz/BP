@@ -1,0 +1,312 @@
+#Field:candidate	Id	NumTweets	NumPositive	NumNegative	NumNeutral	NumDistinctTweets	NumDistinctUsers	NumPopularTweets	NumVerifiedTweets
+lonely boy-record of the year	w1	90	53	18	19	86	81	3	1
+lonely boy-record of the year	w5	21	7	9	5	20	20	1	0
+adorn-song of the year	w6	473	199	23	251	404	386	51	0
+adorn-song of the year	w1	176	120	9	47	163	157	11	1
+adorn-song of the year	w3	213	90	9	114	180	170	24	0
+lonely boy-record of the year	w4	30	11	10	9	30	29	0	0
+lonely boy-record of the year	w2	47	24	10	13	45	44	2	1
+adorn-song of the year	w5	334	131	14	189	284	271	38	0
+adorn-song of the year	w4	264	107	10	147	225	214	29	0
+adorn-song of the year	w2	92	48	9	35	85	82	7	1
+lonely boy-record of the year	w6	25	11	8	6	24	24	1	0
+lonely boy-record of the year	w3	39	18	8	13	38	37	1	0
+lotus flower bomb-best rap song	w1	71	71	0	0	40	40	8	21
+lotus flower bomb-best rap song	w5	18	15	0	3	14	14	1	0
+babel-album of the year	w6	265	147	16	102	224	217	22	1
+babel-album of the year	w1	370	220	31	119	346	339	19	0
+babel-album of the year	w3	144	81	12	51	125	121	9	0
+lotus flower bomb-best rap song	w4	21	19	0	2	15	15	2	0
+lotus flower bomb-best rap song	w2	23	22	0	1	16	16	3	1
+babel-album of the year	w5	252	144	13	95	210	204	17	0
+babel-album of the year	w4	225	127	13	85	185	179	15	0
+babel-album of the year	w2	194	78	19	97	167	163	13	0
+lotus flower bomb-best rap song	w6	20	16	2	2	16	15	1	0
+lotus flower bomb-best rap song	w3	24	22	0	2	14	14	3	0
+madness-best rock song	w1	84	78	1	5	43	42	8	1
+madness-best rock song	w5	16	15	1	0	15	15	1	0
+based on a t.r.u. story-best rap album	w6	420	393	22	5	331	321	47	1
+based on a t.r.u. story-best rap album	w1	189	152	32	5	148	146	26	2
+based on a t.r.u. story-best rap album	w3	95	87	2	6	86	83	8	1
+madness-best rock song	w4	13	13	0	0	12	12	1	0
+madness-best rock song	w2	56	51	1	4	31	30	5	1
+based on a t.r.u. story-best rap album	w5	329	311	15	3	254	247	36	1
+based on a t.r.u. story-best rap album	w4	91	80	6	5	88	84	3	1
+based on a t.r.u. story-best rap album	w2	100	86	9	5	89	87	10	2
+madness-best rock song	w6	28	27	1	0	25	25	2	0
+madness-best rock song	w3	41	39	1	1	18	18	4	0
+mercy-best rap song	w1	61	58	3	0	55	54	4	0
+mercy-best rap song	w5	44	42	2	0	37	37	6	0
+blown away-best country song	w6	9	9	0	0	9	9	0	0
+blown away-best country song	w1	29	26	0	3	26	26	2	1
+blown away-best country song	w3	5	5	0	0	5	5	0	0
+mercy-best rap song	w4	49	45	4	0	42	42	6	0
+mercy-best rap song	w2	32	29	3	0	29	29	3	0
+blown away-best country song	w5	7	7	0	0	7	7	0	0
+blown away-best country song	w4	6	6	0	0	6	6	0	0
+blown away-best country song	w2	7	7	0	0	7	7	0	1
+mercy-best rap song	w6	50	46	4	0	43	43	6	0
+mercy-best rap song	w3	34	31	3	0	29	29	4	0
+overexposed-best pop vocal album	w1	167	165	1	1	40	39	9	0
+overexposed-best pop vocal album	w5	52	52	0	0	11	11	3	0
+blunderbuss-album of the year	w6	138	77	5	56	127	126	8	4
+blunderbuss-album of the year	w1	411	138	10	263	186	185	15	175
+blunderbuss-album of the year	w3	182	96	2	84	128	128	7	6
+overexposed-best pop vocal album	w4	61	61	0	0	11	11	4	0
+overexposed-best pop vocal album	w2	91	91	0	0	15	15	5	0
+blunderbuss-album of the year	w5	96	51	6	39	93	93	3	0
+blunderbuss-album of the year	w4	157	82	1	74	122	122	5	0
+blunderbuss-album of the year	w2	174	91	3	80	120	120	7	6
+overexposed-best pop vocal album	w6	16	16	0	0	10	10	1	0
+overexposed-best pop vocal album	w3	54	54	0	0	10	10	3	0
+payphone-best  pop duo/group performance	w1	1	0	0	1	1	1	0	0
+set fire to the rain (live)-best pop solo performance	w5	127	123	2	2	17	17	3	0
+call me maybe-best pop solo performance	w6	7	4	0	3	7	7	0	0
+call me maybe-best pop solo performance	w1	38	30	3	5	27	26	4	1
+call me maybe-best pop solo performance	w3	16	14	1	1	10	10	1	0
+payphone-best  pop duo/group performance	w4	1	0	0	1	1	1	0	0
+payphone-best  pop duo/group performance	w2	1	0	0	1	1	1	0	0
+call me maybe-best pop solo performance	w5	3	2	1	0	3	3	0	0
+call me maybe-best pop solo performance	w4	15	13	1	1	9	9	1	0
+call me maybe-best pop solo performance	w2	18	15	1	2	12	12	1	1
+set fire to the rain (live)-best pop solo performance	w6	20	17	0	3	18	18	2	0
+payphone-best  pop duo/group performance	w3	1	0	0	1	1	1	0	0
+set fire to the rain (live)-best pop solo performance	w1	151	108	3	40	96	89	15	4
+some nights-album of the year	w5	165	152	5	8	138	135	4	0
+call me maybe-song of the year	w6	3968	3180	150	638	1111	1087	92	2616
+call me maybe-song of the year	w1	430	178	75	177	326	319	31	1
+call me maybe-song of the year	w3	507	198	55	254	421	411	33	35
+set fire to the rain (live)-best pop solo performance	w4	127	122	2	3	18	18	2	0
+set fire to the rain (live)-best pop solo performance	w2	215	178	4	33	58	52	13	2
+call me maybe-song of the year	w5	1917	1385	104	428	703	689	58	1131
+call me maybe-song of the year	w4	662	253	71	338	552	539	47	37
+call me maybe-song of the year	w2	182	95	22	65	158	154	10	1
+some nights-album of the year	w6	227	206	9	12	188	182	12	4
+set fire to the rain (live)-best pop solo performance	w3	153	144	3	6	32	30	4	0
+so you don't have to love me anymore-best country song	w1	6	6	0	0	6	6	0	1
+some nights-best pop vocal album	w5	9	9	0	0	9	9	0	0
+ceremonials-best pop vocal album	w6	3	3	0	0	3	3	0	0
+ceremonials-best pop vocal album	w1	11	10	1	0	11	10	0	0
+ceremonials-best pop vocal album	w3	4	4	0	0	4	4	0	0
+so you don't have to love me anymore-best country song	w4	2	2	0	0	2	2	0	0
+so you don't have to love me anymore-best country song	w2	5	5	0	0	5	5	0	1
+ceremonials-best pop vocal album	w5	5	5	0	0	5	5	0	0
+ceremonials-best pop vocal album	w4	5	5	0	0	5	5	0	0
+ceremonials-best pop vocal album	w2	3	3	0	0	3	3	0	0
+some nights-best pop vocal album	w6	10	10	0	0	10	10	0	0
+so you don't have to love me anymore-best country song	w3	3	3	0	0	3	3	0	0
+some nights-album of the year	w1	351	319	2	30	317	311	19	5
+somebody that i used to know-record of the year	w5	47	16	7	24	39	38	3	0
+channel orange-album of the year	w6	1704	1069	131	504	1446	1412	119	52
+channel orange-album of the year	w1	752	497	49	206	650	638	57	30
+channel orange-album of the year	w3	606	321	68	217	498	488	48	42
+some nights-album of the year	w4	106	93	3	10	104	102	2	0
+some nights-album of the year	w2	80	68	2	10	78	77	2	0
+channel orange-album of the year	w5	1399	875	106	418	1188	1156	101	51
+channel orange-album of the year	w4	885	499	82	304	754	733	69	18
+channel orange-album of the year	w2	460	222	54	184	390	383	32	30
+somebody that i used to know-record of the year	w6	72	36	6	30	68	65	3	0
+some nights-album of the year	w3	90	80	1	9	88	86	2	0
+some nights-best pop vocal album	w1	30	29	0	1	23	23	2	0
+springsteen-best country song	w5	29	28	1	0	20	20	6	0
+daughters-best rap song	w6	24	23	1	0	21	21	2	0
+daughters-best rap song	w1	55	54	1	0	52	49	3	2
+daughters-best rap song	w3	25	24	0	1	24	24	1	0
+some nights-best pop vocal album	w4	10	10	0	0	10	10	0	0
+some nights-best pop vocal album	w2	15	15	0	0	15	15	0	0
+daughters-best rap song	w5	22	21	0	1	21	21	1	0
+daughters-best rap song	w4	24	23	0	1	23	23	1	0
+daughters-best rap song	w2	34	32	1	1	33	31	1	0
+springsteen-best country song	w6	33	32	1	0	25	25	6	0
+some nights-best pop vocal album	w3	10	10	0	0	10	10	0	0
+somebody that i used to know-record of the year	w1	149	64	25	60	127	121	12	6
+stronger (what doesn't kill you)-best pop solo performance	w5	7	6	1	0	7	7	0	0
+el camino-album of the year	w6	83	51	2	30	74	72	7	0
+el camino-album of the year	w1	307	92	9	206	120	118	11	166
+el camino-album of the year	w3	119	44	4	71	97	95	8	0
+somebody that i used to know-record of the year	w4	42	16	7	19	34	34	3	0
+somebody that i used to know-record of the year	w2	49	17	7	25	40	37	4	3
+el camino-album of the year	w5	104	30	5	69	95	93	8	0
+el camino-album of the year	w4	105	31	4	70	97	95	7	0
+el camino-album of the year	w2	122	49	5	68	101	99	7	0
+stronger (what doesn't kill you)-best pop solo performance	w6	7	7	0	0	7	7	0	0
+somebody that i used to know-record of the year	w3	45	16	7	22	37	35	3	0
+springsteen-best country song	w1	25	22	2	1	19	18	4	1
+stronger (what doesn't kill you)-song of the year	w5	41	32	3	6	37	37	4	2
+even if it breaks your heart-best country song	w6	8	7	1	0	7	7	1	0
+even if it breaks your heart-best country song	w1	10	8	1	1	10	10	0	0
+even if it breaks your heart-best country song	w3	8	6	2	0	7	7	1	0
+springsteen-best country song	w4	29	26	2	1	20	20	6	0
+springsteen-best country song	w2	20	17	2	1	15	14	3	1
+even if it breaks your heart-best country song	w5	6	5	1	0	5	5	1	0
+even if it breaks your heart-best country song	w4	5	3	2	0	4	4	1	0
+even if it breaks your heart-best country song	w2	5	4	1	0	5	5	0	0
+stronger (what doesn't kill you)-song of the year	w6	53	39	4	10	49	49	4	2
+springsteen-best country song	w3	27	24	2	1	22	21	4	0
+stronger (what doesn't kill you)-best pop solo performance	w1	26	23	2	1	25	24	1	1
+stronger-best pop vocal album	w5	5	5	0	0	5	5	0	0
+four the record-best country album	w6	5	5	0	0	5	5	0	0
+four the record-best country album	w1	6	6	0	0	5	5	1	0
+frank ocean-best new artist	w3	79	77	1	1	74	73	5	0
+stronger (what doesn't kill you)-best pop solo performance	w4	6	5	1	0	6	6	0	0
+stronger (what doesn't kill you)-best pop solo performance	w2	9	7	2	0	9	9	0	1
+four the record-best country album	w5	1	1	0	0	1	1	0	0
+frank ocean-best new artist	w4	72	71	0	1	69	68	3	0
+frank ocean-best new artist	w2	89	87	1	1	80	80	6	5
+stronger-best pop vocal album	w6	5	5	0	0	5	5	0	0
+stronger (what doesn't kill you)-best pop solo performance	w3	8	6	2	0	8	8	0	0
+stronger (what doesn't kill you)-song of the year	w1	101	85	1	15	64	63	4	33
+stronger-record of the year	w5	10	8	2	0	10	10	0	0
+frank ocean-best new artist	w6	88	86	1	1	81	80	5	0
+frank ocean-best new artist	w1	324	317	7	0	295	289	15	5
+freedom at 21-best rock song	w3	5	5	0	0	4	4	1	0
+stronger (what doesn't kill you)-song of the year	w4	36	27	3	6	32	32	4	2
+stronger (what doesn't kill you)-song of the year	w2	15	9	1	5	15	15	0	0
+frank ocean-best new artist	w5	79	77	1	1	75	74	4	0
+freedom at 21-best rock song	w4	5	5	0	0	4	4	1	0
+freedom at 21-best rock song	w2	7	4	0	3	4	4	2	1
+stronger-record of the year	w6	23	17	2	4	23	23	0	0
+stronger (what doesn't kill you)-song of the year	w3	27	19	2	6	25	25	2	2
+stronger-best pop vocal album	w1	222	222	0	0	216	205	3	4
+take care-best rap album	w5	119	111	6	2	110	110	7	0
+freedom at 21-best rock song	w6	7	7	0	0	7	6	0	0
+freedom at 21-best rock song	w1	11	7	1	3	7	7	3	1
+hunter hayes-best country album	w3	2	2	0	0	2	2	0	0
+stronger-best pop vocal album	w4	4	4	0	0	4	4	0	0
+stronger-best pop vocal album	w2	196	196	0	0	196	187	0	0
+freedom at 21-best rock song	w5	8	8	0	0	7	6	1	0
+hunter hayes-best country album	w4	2	2	0	0	2	2	0	0
+hunter hayes-best country album	w2	1	1	0	0	1	1	0	0
+take care-best rap album	w6	176	161	11	4	154	151	12	0
+stronger-best pop vocal album	w3	7	7	0	0	7	7	0	0
+stronger-record of the year	w1	101	72	15	14	75	73	6	2
+the a team-song of the year	w5	141	86	11	44	100	98	16	2
+hunter hayes-best country album	w6	3	3	0	0	3	3	0	0
+hunter hayes-best country album	w1	7	6	1	0	5	5	1	0
+hunter hayes-best new artist	w3	50	49	1	0	42	40	4	0
+stronger-record of the year	w4	12	6	4	2	12	12	0	0
+stronger-record of the year	w2	20	12	5	3	20	20	0	1
+hunter hayes-best country album	w5	3	3	0	0	3	3	0	0
+hunter hayes-best new artist	w4	56	55	1	0	40	39	7	0
+hunter hayes-best new artist	w2	71	68	1	2	63	60	6	2
+the a team-song of the year	w6	234	173	8	53	182	176	16	0
+stronger-record of the year	w3	15	9	4	2	15	15	0	0
+take care-best rap album	w1	441	351	79	11	305	298	39	0
+the alabama shakes-best new artist	w5	1	1	0	0	1	1	0	0
+hunter hayes-best new artist	w6	120	113	6	1	95	95	14	0
+hunter hayes-best new artist	w1	143	139	2	2	127	124	11	2
+i will wait-best rock song	w3	13	12	1	0	11	11	2	0
+take care-best rap album	w4	112	104	5	3	103	102	7	0
+take care-best rap album	w2	183	131	49	3	130	129	13	0
+hunter hayes-best new artist	w5	58	58	0	0	42	41	7	0
+i will wait-best rock song	w4	14	13	1	0	12	12	2	0
+i will wait-best rock song	w2	11	10	1	0	9	9	2	0
+the alabama shakes-best new artist	w6	1	1	0	0	1	1	0	0
+take care-best rap album	w3	158	109	46	3	107	106	11	0
+the a team-song of the year	w1	437	305	58	74	244	237	30	86
+the lumineers-best new artist	w5	40	38	2	0	38	38	2	0
+i will wait-best rock song	w6	11	11	0	0	11	11	0	0
+i will wait-best rock song	w1	7	7	0	0	7	7	0	0
+life is good-best rap album	w3	177	161	13	3	155	154	12	1
+the a team-song of the year	w4	116	81	11	24	94	92	14	2
+the a team-song of the year	w2	136	96	11	29	110	108	16	3
+i will wait-best rock song	w5	15	14	1	0	13	13	2	0
+life is good-best rap album	w4	192	174	14	4	175	174	11	1
+life is good-best rap album	w2	178	159	15	4	158	157	11	1
+the lumineers-best new artist	w6	55	52	3	0	50	50	3	0
+the a team-song of the year	w3	125	87	10	28	104	103	13	2
+the alabama shakes-best new artist	w1	20	20	0	0	11	11	4	5
+the motto-best rap song	w5	42	41	0	1	37	34	5	0
+life is good-best rap album	w6	321	300	17	4	251	244	17	53
+life is good-best rap album	w1	370	327	32	11	318	308	26	0
+living for a song: a tribute to hank cochran-best country album	w3	1	1	0	0	1	1	0	0
+the alabama shakes-best new artist	w4	1	1	0	0	1	1	0	0
+the alabama shakes-best new artist	w2	10	10	0	0	6	6	1	5
+life is good-best rap album	w5	267	248	15	4	212	209	14	41
+lonely boy-best rock song	w4	4	4	0	0	3	3	1	0
+living for a song: a tribute to hank cochran-best country album	w2	1	1	0	0	1	1	0	0
+the motto-best rap song	w6	46	45	0	1	42	39	4	0
+the alabama shakes-best new artist	w3	5	5	0	0	5	5	0	0
+the lumineers-best new artist	w1	351	340	3	8	340	331	8	3
+the truth about love-best pop vocal album	w5	12	12	0	0	9	9	1	0
+living for a song: a tribute to hank cochran-best country album	w6	2	2	0	0	2	2	0	0
+living for a song: a tribute to hank cochran-best country album	w1	3	2	0	1	3	3	0	0
+lonely boy-best rock song	w3	5	5	0	0	4	4	1	0
+the lumineers-best new artist	w4	42	40	2	0	40	40	2	0
+the lumineers-best new artist	w2	68	66	0	2	64	64	3	3
+living for a song: a tribute to hank cochran-best country album	w5	1	1	0	0	1	1	0	0
+lonely boy-best rock song	w2	9	6	0	3	6	6	2	1
+the truth about love-best pop vocal album	w6	16	16	0	0	13	12	1	0
+the lumineers-best new artist	w3	57	53	2	2	55	55	2	0
+the motto-best rap song	w1	85	76	8	1	66	64	9	0
+thinkin bout you-record of the year	w5	41	27	8	6	41	41	0	0
+lonely boy-best rock song	w6	7	6	1	0	6	5	1	0
+lonely boy-best rock song	w1	15	12	0	3	12	12	2	1
+the motto-best rap song	w4	32	30	1	1	26	26	6	0
+the motto-best rap song	w2	44	37	7	0	37	35	7	0
+lonely boy-best rock song	w5	7	7	0	0	5	4	2	0
+thinkin bout you-record of the year	w6	64	47	9	8	61	61	2	0
+the motto-best rap song	w3	28	26	1	1	23	23	5	0
+the time jumpers-best country album	w1	2	2	0	0	2	2	0	0
+uncaged-best country album	w5	3	3	0	0	3	3	0	0
+the truth about love-best pop vocal album	w4	6	6	0	0	6	6	0	0
+the time jumpers-best country album	w2	1	1	0	0	1	1	0	0
+uncaged-best country album	w6	5	5	0	0	5	5	0	0
+the time jumpers-best country album	w3	1	1	0	0	1	1	0	0
+the truth about love-best pop vocal album	w1	81	75	0	6	59	57	4	1
+undun-best rap album	w5	32	27	5	0	32	32	0	0
+thinkin bout you-record of the year	w4	41	29	8	4	41	41	0	0
+the truth about love-best pop vocal album	w2	21	19	0	2	19	18	1	0
+undun-best rap album	w6	52	45	7	0	52	49	0	0
+the truth about love-best pop vocal album	w3	8	8	0	0	8	8	0	0
+thinkin bout you-record of the year	w1	98	69	12	17	91	90	6	1
+we are never ever getting back together-record of the year	w5	43	23	18	2	38	38	3	0
+uncaged-best country album	w4	1	1	0	0	1	1	0	0
+thinkin bout you-record of the year	w2	53	33	13	7	49	49	3	1
+we are never ever getting back together-record of the year	w6	76	45	24	7	70	70	4	0
+thinkin bout you-record of the year	w3	48	36	9	3	45	45	2	0
+uncaged-best country album	w1	7	7	0	0	6	6	1	2
+we are young-record of the year	w5	48	35	6	7	47	47	1	0
+undun-best rap album	w4	27	23	4	0	27	27	0	0
+uncaged-best country album	w2	1	1	0	0	1	1	0	0
+we are young-record of the year	w6	56	45	3	8	54	54	2	0
+undun-best rap album	w3	29	26	3	0	29	29	0	0
+undun-best rap album	w1	50	39	8	3	47	47	3	0
+we are young-song of the year	w5	198	167	5	26	178	176	17	1
+we are never ever getting back together-record of the year	w4	48	24	20	4	45	44	3	0
+undun-best rap album	w2	20	19	1	0	20	20	0	0
+we are young-song of the year	w6	307	271	8	28	284	281	19	0
+we are never ever getting back together-record of the year	w3	62	29	25	8	52	49	8	0
+we are never ever getting back together-record of the year	w1	161	92	37	32	135	129	16	4
+we take care of our own-best rock song	w5	2	2	0	0	1	1	1	0
+we are young-record of the year	w4	43	30	7	6	42	42	1	0
+we are never ever getting back together-record of the year	w2	72	40	22	10	62	59	8	1
+where have you been-best pop solo performance	w6	22	21	0	1	12	12	2	0
+we are young-record of the year	w3	45	35	7	3	43	43	2	0
+we are young-record of the year	w1	115	92	4	19	108	106	5	1
+where have you been-best pop solo performance	w5	31	28	2	1	16	16	3	0
+we are young-song of the year	w4	176	142	4	30	164	161	11	1
+we are young-record of the year	w2	51	36	8	7	49	49	2	1
+wide awake-best pop solo performance	w6	10	9	0	1	10	10	0	0
+we are young-song of the year	w3	142	116	2	24	131	128	10	1
+we are young-song of the year	w1	182	139	9	34	163	159	11	1
+wide awake-best pop solo performance	w5	11	9	1	1	11	11	0	0
+we take care of our own-best rock song	w4	2	2	0	0	1	1	1	0
+we are young-song of the year	w2	73	46	5	22	66	64	5	2
+z & kanye west-best rap song	w6	13	12	1	0	13	13	0	0
+we take care of our own-best rock song	w3	2	2	0	0	1	1	1	0
+we take care of our own-best rock song	w1	7	7	0	0	7	7	0	1
+z & kanye west-best rap song	w5	10	9	1	0	10	10	0	0
+where have you been-best pop solo performance	w4	31	28	2	1	16	16	3	0
+we take care of our own-best rock song	w2	6	6	0	0	5	5	1	1
+where have you been-best pop solo performance	w3	83	74	2	7	47	44	14	0
+where have you been-best pop solo performance	w1	276	214	0	62	196	117	29	6
+wide awake-best pop solo performance	w4	9	6	1	2	9	9	0	0
+where have you been-best pop solo performance	w2	239	181	2	56	165	89	25	4
+wide awake-best pop solo performance	w3	12	7	2	3	12	12	0	0
+wide awake-best pop solo performance	w1	465	439	2	24	434	84	5	2
+z & kanye west-best rap song	w4	13	12	1	0	13	13	0	0
+wide awake-best pop solo performance	w2	63	39	3	21	33	32	4	2
+z & kanye west-best rap song	w3	12	11	1	0	12	12	0	0
+z & kanye west-best rap song	w1	21	21	0	0	19	19	1	0
+z & kanye west-best rap song	w2	12	12	0	0	12	12	0	0

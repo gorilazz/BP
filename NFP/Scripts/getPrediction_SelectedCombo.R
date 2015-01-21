@@ -17,6 +17,7 @@ path_featureAR = "../Features/AR/ARDelta_Full.csv";
 path_featureSocial = "../Features/201412/DaysBack_7_Features_All_candidate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC_3_weeks.csv";
+path_sentiment = "../Features/Sentiment/Sentiment.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv";
 path_outDir = "../Prediction/201412/SingleCombo";
 if(!file.exists(path_outDir))
@@ -25,29 +26,28 @@ if(!file.exists(path_outDir))
 }
 
 # featureNames = list(
-# 	c('IJC', 'NumDistinctUsers_Week2_hiring_Absolute','NumTweets_Month1_hashtags_AbsoluteDelta','NumPopularTweets_Week1_all_AbsoluteDelta', 'NumDistinctTweets_Month2_hiring_AbsoluteDelta',
-# 		'NumTweets_Week1_opening_Absolute', 'NumPopularTweets_Week1_allold_AbsoluteDelta', 'NumVerifiedTweets_Month1_allold_Absolute', 'NumPopularTweets_Week2_hiring_Absolute', 'NumTweets_Week2_hiring_AbsoluteDelta'));
-
-# featureNames = list(
-# 	c('NumDistinctTweets_Month1_posting_Absolute', 'NumDistinctTweets_Month1_posting_AbsoluteDelta','NumTweets_Month1_opportunity_AbsoluteDelta','NumTweets_Month2_hashtags_Absolute', 'NumTweets_Month1_opportunity_Absolute',
-# 		'NumPopularTweets_Week2_posting_AbsoluteDelta', 'NumTweets_Week1_hashtags_Absolute', 'NumVerifiedTweets_Week1_allold_AbsoluteDelta', 'NumTweets_Week2_hashtags_AbsoluteDelta', 'NumVerifiedTweets_Month2_opening_AbsoluteDelta'));
-
-# featureNames = list(
 # 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute','NumVerifiedTweets_Month1_posting_AbsoluteDelta', 'NumVerifiedTweets_Month1_posting_Absolute'),
 # 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute','NumVerifiedTweets_Month1_posting_AbsoluteDelta'),
 # 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute'),
 # 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta'),
 # 	c('Consensus2'));
 
-featureNames = list(
-	c('IJC', 'Consensus1', 'Consensus2'));#, 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute','NumVerifiedTweets_Month1_posting_AbsoluteDelta', 'NumVerifiedTweets_Month1_posting_Absolute'));
+# featureNames = list(
+# 	c('IJC', 'Consensus1', 'Consensus2', 'pos_sector', 'neg_sector', 'NumVerifiedTweets_Month2_opening_Absolute','NumVerifiedTweets_Month2_opportunity_Absolute','NumDistinctUsers_Month1_posting_AbsoluteDelta'));
 
-for(i in 12:12)
+# featureNames = list(
+# 	c('IJC', 'Consensus1', 'Consensus2', 'pos_sector', 'neg_sector', 'NumDistinctTweets_Week2_opening_Absolute','NumPopularTweets_Week1_hiring_AbsoluteDelta','NumPopularTweets_Week1_allold_AbsoluteDelta', 'NumVerifiedTweets_Week2_opening_Absolute'));
+
+featureNames = list(
+	c('IJC', 'Consensus1', 'Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumVerifiedTweets_Month1_posting_AbsoluteDelta'));
+
+
+for(i in 6:6)
 {
 file_outPrediction = paste(paste(paste("Model",i,sep="_"), algo, sep="_"),"Predictions.csv",sep="_");
 path_outPrediction = file.path(path_outDir,file_outPrediction);
 
-features = list(featureNames[[i-11]]);
+features = list(featureNames[[i-5]]);
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -73,6 +73,13 @@ for(i in 1:nrow(IJCFull))
 	IJCFull[i,'Date'] = DateToMonthTag(IJCFull[i,'Date']);
 }
 
+sentimentFull = read.csv(file=path_sentiment, head=TRUE, sep=",");
+sentimentFull$Date = as.character(sentimentFull$Date);
+for(i in 1:nrow(sentimentFull))
+{
+	sentimentFull[i,'Date'] = DateToMonthTag(sentimentFull[i,'Date']);
+}
+
 labelFull = read.csv(file=path_label, head=TRUE, sep=",");
 labelFull$Date = as.character(labelFull$Date);
 for(i in 1:nrow(labelFull))
@@ -91,6 +98,8 @@ start_featureSocial = which(featureSocialFull$Date==data_start)[1];
 end_featureSocial = which(featureSocialFull$Date==data_end)[1];
 start_featureIJC = which(IJCFull$Date==data_start)[1];
 end_featureIJC = which(IJCFull$Date==data_end)[1];
+start_sentiment = which(sentimentFull$Date==data_start)[1];
+end_sentiment = which(sentimentFull$Date==data_end)[1];
 start_consensus = which(consensusFull$Date==data_start)[1];
 end_consensus = which(consensusFull$Date==data_end)[1];
 start_label = which(labelFull$Date==data_start)[1];
@@ -100,6 +109,7 @@ end_label = which(labelFull$Date==data_end)[1];
 featureAR = featureARFull[start_featureAR:end_featureAR,];
 featureSocial = featureSocialFull[start_featureSocial:end_featureSocial,];
 featureIJC = IJCFull[start_featureIJC:end_featureIJC,];
+sentiment = sentimentFull[start_sentiment:end_sentiment,];
 consensus = consensusFull[start_consensus:end_consensus,];		#consensus to be used for testing
 label = labelFull[start_label:end_label,]$Delta_Unrevised;
 
@@ -107,6 +117,7 @@ label = labelFull[start_label:end_label,]$Delta_Unrevised;
 featureFull = merge(featureAR, featureSocial, by="Date");
 featureFull = merge(featureFull, consensus, by="Date");
 featureFull = merge(featureFull, featureIJC, by="Date");
+featureFull = merge(featureFull, sentiment, by="Date");
 
 
 # merge to get all the feature combos
@@ -125,7 +136,7 @@ if(randomSample==FALSE)
 predictionWindow = 24;
 predictionDates = consensus$Date[(nrow(consensus)-predictionWindow+1):nrow(consensus)];
 
-predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$Consensus1,predictionWindow,predictionDates,lambda,directionalConstraint=TRUE, algo='svm');
+predictionResult = ComputePredictions_RollingTesting(featureFull,featureFullCombos,label,consensus$Consensus1,predictionWindow,predictionDates,lambda,directionalConstraint=TRUE, algo=algo);
 write.csv(predictionResult, file = path_outPrediction);
 }
 

@@ -1,13 +1,15 @@
 import csv
 import string
 
-category_dict = {"business":["business", "marketing", "sales", 'brand', 'administrative', 'human resource', 'hr manager', 'hiring'], \
-"finance":["finance","financial","account",'insurance','real estate', 'accounting', 'audit', 'branch', 'analyst ii' ,'tax', 'mortgage', 'loan', 'front office', 'front desk'], \
-"health":["nurse","medical","therapy","therapist","health", 'care', 'nursing', 'hospital', 'clinic', 'clinical', 'physicial', 'pharmacy', 'medicine', 'pathology', 'pathologist', 'dental'], \
-"engineering":["engineer","developer","software", 'system', 'test', 'database', 'big data', 'technical', 'ux designer', 'web designer', 'user experience', 'sql server', 'architect', 'quality', 'programming', 'programmer', 'product', \
+category_dict = {"business":["business", "marketing", "sales", 'brand', 'administrative', 'human resource', 'hr manager','data entry','assistant','operations','recruiter','associate'], \
+"finance":["finance","financial","account",'insurance','real estate', 'accounting', 'audit', 'branch','tax', 'mortgage', 'loan', 'front office', 'front desk','advisor','fund'], \
+"health":["nurse","medical","therapy","therapist","health", 'care', 'nursing', 'hospital', 'clinic', 'clinical', 'physicial', 'pharmacy', 'medicine', 'pathology', 'pathologist', 'dental', 'dietary','radiology','psychology',\
+'psychologist','massage','biology','biologist','practitioner'], \
+"engineering":["developer","software", 'system', 'test', 'database', 'big data', 'technical', 'ux designer', 'web designer', 'user experience', 'sql server', 'architect', 'quality', 'programming', 'programmer', 'product', \
 'maintenance', 'information', 'graphic', 'front end','data analyst'], \
-"social service":["social worker",'food'],\
-"customer service":["support","call center", 'customer', 'service','services', 'relationship', 'relation','delivery']}
+"customer service":["support","call center", 'customer', 'service', 'relationship', 'relation','delivery']
+"misc":["manager","director","assistant",'specialist','management','managing','analyst','project','engineering','engineer','driver','agent','estimator','electrician','coordinator']
+"construction":["civil","construction",'painter','carpenter','plumber','observer','estimator']}
 
 with open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Pulse\\201410\\All_True_CommonTopJobs_1k_2014.csv', 'rt', encoding='UTF-8') as Jobs, \
 open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Pulse\\201410\\All_True_CommonTopCategories_1k_2014.txt', 'wt', encoding='UTF-8') as Categories:
