@@ -1,0 +1,324 @@
+#Field:candidate	Id	NumTweets	NumPositive	NumNegative	NumNeutral	NumDistinctTweets	NumDistinctUsers	NumPopularTweets	NumVerifiedTweets
+21-album of the year	w5	118	65	21	32	91	90	13	0
+21-album of the year	w2	188	88	28	72	162	157	13	0
+j. cole-best new artist	w4	35	30	0	5	32	31	3	0
+j. cole-best new artist	w1	447	404	35	8	336	323	33	1
+j. cole-best new artist	w6	226	218	2	6	189	184	12	0
+21-album of the year	w4	155	83	31	41	120	119	15	0
+21-album of the year	w6	108	55	15	38	83	81	12	0
+j. cole-best new artist	w5	47	41	2	4	42	41	4	0
+j. cole-best new artist	w3	37	34	0	3	32	32	3	0
+j. cole-best new artist	w2	121	118	2	1	102	98	11	0
+21-album of the year	w1	622	299	47	276	526	511	48	0
+21-album of the year	w3	162	83	28	51	130	127	13	0
+21-best pop vocal album	w5	22	22	0	0	19	19	1	0
+21-best pop vocal album	w2	13	12	0	1	9	9	2	0
+lasers-best rap album	w4	5	4	0	1	5	5	0	0
+just fishin-best country song	w1	2	2	0	0	2	2	0	0
+lasers-best rap album	w6	2	2	0	0	2	2	0	0
+21-best pop vocal album	w4	23	22	0	1	20	20	1	0
+21-best pop vocal album	w6	18	18	0	0	18	18	0	0
+lasers-best rap album	w5	2	2	0	0	2	2	0	0
+lasers-best rap album	w3	5	4	0	1	5	5	0	0
+lasers-best rap album	w2	8	7	0	1	7	7	1	0
+21-best pop vocal album	w1	15	14	0	1	14	14	1	0
+21-best pop vocal album	w3	13	12	0	1	10	10	1	0
+all of the lights-best rap song	w5	9	9	0	0	4	4	2	0
+all of the lights-best rap song	w2	11	11	0	0	5	5	3	0
+look at me now-best rap song	w4	10	10	0	0	8	8	2	0
+lasers-best rap album	w1	23	20	1	2	20	20	2	0
+look at me now-best rap song	w6	8	8	0	0	6	6	2	0
+all of the lights-best rap song	w4	9	9	0	0	4	4	2	0
+all of the lights-best rap song	w6	5	5	0	0	5	4	0	0
+look at me now-best rap song	w5	11	11	0	0	9	9	2	0
+look at me now-best rap song	w3	16	16	0	0	12	12	3	0
+look at me now-best rap song	w2	23	22	1	0	12	12	3	0
+all of the lights-best rap song	w1	18	16	0	2	14	14	3	0
+all of the lights-best rap song	w3	10	10	0	0	5	5	2	0
+all of the lights-song of the year	w5	13	6	1	6	11	11	2	0
+all of the lights-song of the year	w2	12	7	0	5	12	12	0	0
+loud-album of the year	w4	118	57	11	50	90	88	11	0
+look at me now-best rap song	w1	41	40	1	0	23	23	5	0
+lotus flower-best rock song	w6	1	1	0	0	1	1	0	0
+all of the lights-song of the year	w4	18	9	1	8	16	16	2	0
+all of the lights-song of the year	w6	12	6	1	5	10	10	2	0
+loud-album of the year	w5	83	40	9	34	64	62	7	0
+loud-album of the year	w3	156	67	19	70	118	114	15	0
+loud-album of the year	w2	209	108	21	80	145	134	19	0
+all of the lights-song of the year	w1	43	25	1	17	42	41	1	2
+all of the lights-song of the year	w3	17	7	0	10	15	15	2	0
+black and yellow-best rap song	w5	1	1	0	0	1	1	0	0
+black and yellow-best rap song	w2	2	2	0	0	2	2	0	0
+loud-best pop vocal album	w4	10	9	1	0	10	10	0	0
+lotus flower-best rock song	w1	7	7	0	0	7	7	0	0
+loud-album of the year	w6	50	25	2	23	44	44	4	0
+bon iver-best new artist	w4	31	28	1	2	27	26	3	0
+black and yellow-best rap song	w6	1	1	0	0	1	1	0	0
+loud-best pop vocal album	w5	8	7	1	0	8	8	0	0
+loud-best pop vocal album	w3	9	8	1	0	9	9	0	0
+loud-best pop vocal album	w2	8	7	1	0	8	7	0	0
+black and yellow-best rap song	w1	7	7	0	0	7	7	0	0
+bon iver-best new artist	w3	32	29	1	2	28	27	3	0
+bon iver-best new artist	w5	34	32	1	1	28	27	5	0
+bon iver-best new artist	w2	53	48	4	1	46	43	3	5
+mean-best country song	w4	29	29	0	0	23	23	5	0
+loud-album of the year	w1	377	163	19	195	295	277	30	0
+loud-best pop vocal album	w6	11	11	0	0	10	10	1	0
+born this way-album of the year	w4	224	124	12	88	118	116	28	0
+bon iver-best new artist	w6	35	33	1	1	28	28	6	0
+mean-best country song	w5	21	21	0	0	17	17	4	0
+mean-best country song	w3	33	33	0	0	18	17	6	0
+mean-best country song	w2	33	33	0	0	19	18	5	0
+bon iver-best new artist	w1	136	126	8	2	128	125	4	5
+born this way-album of the year	w3	246	149	25	72	125	124	34	0
+born this way-album of the year	w5	175	84	11	80	97	95	24	0
+born this way-album of the year	w2	304	177	28	99	179	171	40	0
+moves like jagger-best  pop duo/group performance	w4	1	0	0	1	1	1	0	0
+loud-best pop vocal album	w1	24	23	0	1	21	20	1	0
+mean-best country song	w6	20	19	0	1	17	17	3	0
+born this way-best pop vocal album	w4	34	33	0	1	33	33	1	0
+born this way-album of the year	w6	118	45	6	67	69	68	11	0
+my beautiful dark twisted fantasy-best rap album	w5	10	10	0	0	7	7	3	0
+moves like jagger-best  pop duo/group performance	w3	1	0	0	1	1	1	0	0
+moves like jagger-best  pop duo/group performance	w2	2	0	1	1	2	2	0	0
+born this way-album of the year	w1	885	457	42	386	510	482	75	0
+born this way-best pop vocal album	w3	25	24	0	1	20	20	2	0
+born this way-best pop vocal album	w5	32	32	0	0	31	31	1	0
+born this way-best pop vocal album	w2	30	29	0	1	25	23	2	0
+my beautiful dark twisted fantasy-best rap album	w4	21	20	1	0	15	15	5	0
+mean-best country song	w1	43	43	0	0	27	26	5	0
+my beautiful dark twisted fantasy-best rap album	w6	6	6	0	0	5	5	1	0
+chief-best country album	w4	2	2	0	0	2	2	0	0
+born this way-best pop vocal album	w6	26	26	0	0	26	26	0	0
+my kinda party-best country album	w5	3	3	0	0	2	2	1	0
+my beautiful dark twisted fantasy-best rap album	w3	22	20	2	0	16	16	5	0
+my beautiful dark twisted fantasy-best rap album	w2	26	23	3	0	20	20	5	0
+born this way-best pop vocal album	w1	47	46	0	1	37	32	4	0
+chief-best country album	w3	1	1	0	0	1	1	0	0
+chief-best country album	w5	3	3	0	0	2	2	1	0
+chief-best country album	w2	1	1	0	0	1	1	0	0
+my kinda party-best country album	w4	1	1	0	0	1	1	0	0
+moves like jagger-best  pop duo/group performance	w1	2	0	1	1	2	2	0	0
+my kinda party-best country album	w6	3	3	0	0	2	2	1	0
+doo-album of the year	w4	128	127	1	0	17	13	4	0
+chief-best country album	w6	3	3	0	0	2	2	1	0
+nicki minaj-best new artist	w5	269	258	10	1	215	86	24	0
+nicki minaj-best new artist	w3	311	299	11	1	245	114	33	3
+nicki minaj-best new artist	w2	330	308	19	3	287	152	28	3
+chief-best country album	w1	2	2	0	0	2	2	0	0
+doo-album of the year	w3	126	126	0	0	15	11	4	0
+doo-album of the year	w5	125	124	1	0	14	11	4	0
+doo-album of the year	w2	129	128	0	1	18	14	4	0
+nicki minaj-best new artist	w4	287	276	9	2	230	99	27	0
+my beautiful dark twisted fantasy-best rap album	w1	56	51	4	1	46	45	5	0
+nicki minaj-best new artist	w6	84	78	4	2	53	53	9	0
+doo-best pop vocal album	w4	1	1	0	0	1	1	0	0
+doo-album of the year	w6	3	2	1	0	3	3	0	0
+not my daddy-best r&b song	w5	1	1	0	0	1	1	0	0
+not my daddy-best r&b song	w3	2	2	0	0	2	2	0	0
+not my daddy-best r&b song	w2	2	2	0	0	2	2	0	0
+doo-album of the year	w1	83	19	3	61	66	63	9	0
+doo-best pop vocal album	w3	1	1	0	0	1	1	0	0
+f***in perfect-best pop solo performance	w5	1	1	0	0	1	1	0	0
+doo-best pop vocal album	w2	1	1	0	0	1	1	0	0
+not my daddy-best r&b song	w4	2	2	0	0	2	2	0	0
+my kinda party-best country album	w1	2	2	0	0	2	1	0	0
+otis-best rap song	w6	3	3	0	0	3	3	0	0
+every teardrop is a waterfall-best rock song	w4	1	1	0	0	1	1	0	0
+every teardrop is a waterfall-best rock song	w6	2	2	0	0	1	1	1	0
+otis-best rap song	w5	5	5	0	0	2	2	1	0
+otis-best rap song	w3	5	5	0	0	2	2	1	0
+otis-best rap song	w2	5	5	0	0	2	2	1	0
+doo-best pop vocal album	w1	4	4	0	0	3	3	1	0
+every teardrop is a waterfall-best rock song	w3	1	1	0	0	1	1	0	0
+far away-best r&b song	w5	3	3	0	0	3	3	0	0
+every teardrop is a waterfall-best rock song	w2	2	1	0	1	2	2	0	0
+otis-best rap song	w4	5	5	0	0	2	2	1	0
+nicki minaj-best new artist	w1	467	402	62	3	404	393	28	4
+own the night-best country album	w6	1	1	0	0	1	1	0	0
+f***in perfect-best pop solo performance	w4	2	2	0	0	2	2	0	0
+f***in perfect-best pop solo performance	w6	1	1	0	0	1	1	0	1
+own the night-best country album	w5	1	1	0	0	1	1	0	0
+paradise-best  pop duo/group performance	w3	1	0	0	1	1	1	0	0
+own the night-best country album	w2	1	1	0	0	1	1	0	0
+down by the water-best rock song	w1	1	1	0	0	1	1	0	0
+f***in perfect-best pop solo performance	w3	4	4	0	0	4	4	0	0
+firework-best pop solo performance	w5	5	5	0	0	4	3	1	0
+f***in perfect-best pop solo performance	w2	4	4	0	0	4	4	0	0
+own the night-best country album	w4	1	1	0	0	1	1	0	0
+not my daddy-best r&b song	w1	1	1	0	0	1	1	0	0
+pink friday-best rap album	w6	35	35	0	0	10	10	6	0
+far away-best r&b song	w4	3	3	0	0	3	3	0	0
+far away-best r&b song	w6	8	8	0	0	8	8	0	0
+pink friday-best rap album	w5	67	67	0	0	30	30	13	0
+pink friday-best rap album	w3	121	119	1	1	75	73	18	0
+paradise-best  pop duo/group performance	w2	2	0	1	1	2	2	0	0
+every teardrop is a waterfall-best rock song	w1	6	5	0	1	6	6	0	0
+far away-best r&b song	w3	5	5	0	0	3	3	1	0
+firework-record of the year	w5	16	9	2	5	14	13	2	0
+far away-best r&b song	w2	4	4	0	0	2	2	1	0
+paradise-best  pop duo/group performance	w4	1	0	0	1	1	1	0	0
+otis-best rap song	w1	8	6	0	2	5	5	2	0
+rolling in the deep-record of the year	w6	36	13	1	22	30	30	3	0
+firework-best pop solo performance	w4	6	6	0	0	5	4	1	0
+firework-best pop solo performance	w6	2	2	0	0	2	1	0	0
+rolling in the deep-record of the year	w5	25	7	1	17	20	20	2	0
+rolling in the deep-record of the year	w3	32	17	0	15	29	29	1	0
+pink friday-best rap album	w2	104	102	1	1	78	76	16	0
+f***in perfect-best pop solo performance	w1	9	8	0	1	9	9	0	1
+firework-best pop solo performance	w3	12	12	0	0	9	8	2	0
+grenade-best pop solo performance	w5	1	1	0	0	1	1	0	0
+firework-best pop solo performance	w2	13	13	0	0	10	10	2	0
+pink friday-best rap album	w4	95	93	1	1	52	51	16	0
+own the night-best country album	w1	5	5	0	0	5	5	0	0
+rolling in the deep-song of the year	w6	23	9	0	14	20	20	3	0
+firework-record of the year	w4	20	11	1	8	18	17	2	0
+firework-record of the year	w6	14	7	1	6	13	12	1	0
+rolling in the deep-song of the year	w5	28	15	0	13	21	21	3	0
+rolling in the deep-song of the year	w3	52	26	0	26	37	37	5	0
+rolling in the deep-record of the year	w2	46	25	1	20	42	42	2	0
+far away-best r&b song	w1	5	5	0	0	3	3	1	0
+firework-record of the year	w3	22	16	1	5	21	20	1	0
+grenade-record of the year	w5	9	3	0	6	8	8	1	0
+firework-record of the year	w2	107	93	2	12	105	97	2	0
+rolling in the deep-record of the year	w4	25	13	0	12	21	21	2	0
+paradise-best  pop duo/group performance	w1	2	0	1	1	2	2	0	0
+skrillex-best new artist	w6	74	72	2	0	58	58	9	0
+god gave me you-best country song	w4	1	1	0	0	1	1	0	0
+fool for you-best r&b song	w6	1	1	0	0	1	1	0	0
+skrillex-best new artist	w5	67	65	2	0	50	50	7	0
+skrillex-best new artist	w3	99	96	2	1	83	83	7	0
+rolling in the deep-song of the year	w2	50	29	1	20	36	36	4	0
+firework-best pop solo performance	w1	22	21	0	1	19	19	2	0
+god gave me you-best country song	w3	1	1	0	0	1	1	0	0
+grenade-song of the year	w5	13	8	0	5	8	8	1	0
+god gave me you-best country song	w2	1	1	0	0	1	1	0	0
+rolling in the deep-song of the year	w4	47	24	0	23	32	32	5	0
+pieces of me-best r&b song	w1	2	2	0	0	2	2	0	0
+someone like you-best pop solo performance	w6	2	2	0	0	2	2	0	0
+grenade-best pop solo performance	w4	1	1	0	0	1	1	0	0
+grenade-record of the year	w6	10	3	0	7	9	9	1	0
+someone like you-best pop solo performance	w5	2	2	0	0	2	2	0	0
+someone like you-best pop solo performance	w3	1	1	0	0	1	1	0	0
+skrillex-best new artist	w2	141	135	5	1	114	114	9	0
+firework-record of the year	w1	529	129	1	399	519	502	10	0
+grenade-best pop solo performance	w3	1	1	0	0	1	1	0	0
+here for a good time-best country album	w5	2	2	0	0	2	2	0	0
+grenade-best pop solo performance	w2	1	1	0	0	1	1	0	0
+skrillex-best new artist	w4	81	78	2	1	60	60	8	0
+pink friday-best rap album	w1	136	128	5	3	112	108	15	0
+speak now-best country album	w6	9	8	0	1	9	9	0	0
+grenade-record of the year	w4	15	8	0	7	14	13	1	0
+grenade-song of the year	w6	6	2	0	4	6	6	0	0
+speak now-best country album	w5	9	8	1	0	7	7	2	0
+speak now-best country album	w3	28	27	1	0	15	14	5	0
+someone like you-best pop solo performance	w2	5	5	0	0	4	4	1	0
+fool for you-best r&b song	w1	1	1	0	0	1	1	0	0
+grenade-record of the year	w3	13	9	0	4	13	12	0	0
+holocene-record of the year	w5	11	4	1	6	9	9	2	0
+grenade-record of the year	w2	13	10	0	3	13	12	0	0
+someone like you-best pop solo performance	w4	2	2	0	0	2	2	0	0
+red river blue-best country album	w1	1	1	0	0	1	1	0	0
+tha carter iv-best rap album	w6	14	14	0	0	12	8	2	0
+grenade-song of the year	w4	27	11	0	16	17	17	2	0
+here for a good time-best country album	w6	2	2	0	0	2	2	0	0
+tha carter iv-best rap album	w5	15	15	0	0	13	9	2	0
+tha carter iv-best rap album	w3	17	17	0	0	15	11	2	0
+speak now-best country album	w2	30	29	1	0	17	16	5	0
+god gave me you-best country song	w1	2	2	0	0	2	2	0	0
+grenade-song of the year	w3	30	12	0	18	20	19	2	0
+holocene-song of the year	w5	6	4	0	2	6	6	0	0
+grenade-song of the year	w2	30	14	0	16	20	19	2	0
+speak now-best country album	w4	13	12	1	0	11	11	2	0
+rolling in the deep-record of the year	w1	578	135	5	438	514	502	14	0
+the band perry-best new artist	w6	8	8	0	0	8	8	0	0
+here for a good time-best country album	w4	2	2	0	0	2	2	0	0
+holocene-record of the year	w6	13	5	1	7	11	11	2	0
+the band perry-best new artist	w5	10	10	0	0	10	10	0	0
+the band perry-best new artist	w3	10	10	0	0	10	10	0	0
+tha carter iv-best rap album	w2	14	13	1	0	12	10	2	0
+grenade-best pop solo performance	w1	5	3	0	2	5	5	0	0
+here for a good time-best country album	w3	1	1	0	0	1	1	0	0
+i need a doctor-best rap song	w5	4	4	0	0	3	3	1	0
+holocene-record of the year	w2	14	7	0	7	13	13	1	0
+tha carter iv-best rap album	w4	17	17	0	0	15	11	2	0
+rolling in the deep-song of the year	w1	108	51	4	53	91	90	6	0
+the cave-best rock song	w6	2	2	0	0	2	2	0	0
+holocene-record of the year	w4	15	3	1	11	13	13	2	0
+holocene-song of the year	w6	9	7	0	2	9	9	0	0
+the cave-best rock song	w5	3	3	0	0	2	2	1	0
+the cave-best rock song	w3	2	2	0	0	1	1	1	0
+the band perry-best new artist	w2	14	14	0	0	14	14	0	0
+grenade-record of the year	w1	46	15	0	31	43	42	2	0
+holocene-record of the year	w3	10	3	0	7	9	9	1	0
+holocene-song of the year	w2	9	6	0	3	9	9	0	0
+the band perry-best new artist	w4	11	11	0	0	11	11	0	0
+skrillex-best new artist	w1	389	363	12	14	350	344	23	0
+the cave-record of the year	w6	11	3	0	8	10	10	1	0
+holocene-song of the year	w4	6	4	0	2	6	6	0	0
+the cave-record of the year	w5	11	4	0	7	9	9	2	0
+the cave-record of the year	w3	10	5	0	5	8	8	2	0
+the cave-best rock song	w2	2	2	0	0	1	1	1	0
+grenade-song of the year	w1	48	14	2	32	43	42	1	0
+holocene-song of the year	w3	7	4	0	3	7	7	0	0
+i need a doctor-best rap song	w2	13	13	0	0	11	10	2	0
+the cave-best rock song	w4	3	3	0	0	2	2	1	0
+someone like you-best pop solo performance	w1	17	13	1	3	16	15	1	0
+the cave-song of the year	w6	11	8	0	3	10	10	1	0
+i need a doctor-best rap song	w4	8	8	0	0	6	6	2	0
+the cave-song of the year	w5	14	10	0	4	9	9	1	0
+the cave-song of the year	w3	17	11	0	6	12	12	1	0
+the cave-record of the year	w2	8	4	0	4	6	6	2	0
+here for a good time-best country album	w1	1	1	0	0	1	1	0	0
+i need a doctor-best rap song	w3	10	10	0	0	8	8	2	0
+the cave-record of the year	w4	15	5	0	10	12	12	3	0
+speak now-best country album	w1	37	37	0	0	23	21	4	0
+the lady killer-best pop vocal album	w6	4	4	0	0	4	4	0	0
+the lady killer-best pop vocal album	w5	4	4	0	0	4	4	0	0
+the lady killer-best pop vocal album	w3	4	4	0	0	4	4	0	0
+the cave-song of the year	w2	14	9	0	5	9	9	1	0
+holocene-record of the year	w1	45	19	3	23	44	43	1	0
+the cave-song of the year	w4	16	11	0	5	11	11	1	0
+tha carter iv-best rap album	w1	83	80	1	2	53	47	6	0
+the show goes on-best rap song	w6	1	1	0	0	1	1	0	0
+the show goes on-best rap song	w5	1	1	0	0	1	1	0	0
+threaten me with heaven-best country song	w3	2	2	0	0	2	2	0	0
+threaten me with heaven-best country song	w2	2	2	0	0	2	2	0	0
+holocene-song of the year	w1	33	15	2	16	33	33	0	0
+the lady killer-best pop vocal album	w4	4	4	0	0	4	4	0	0
+the band perry-best new artist	w1	74	73	0	1	72	72	2	0
+threaten me with heaven-best country song	w6	12	12	0	0	11	11	1	0
+threaten me with heaven-best country song	w5	12	12	0	0	11	11	1	0
+wasting light-album of the year	w3	24	9	1	14	22	20	2	0
+wasting light-album of the year	w2	23	8	2	13	21	19	2	0
+i need a doctor-best rap song	w1	17	17	0	0	14	13	3	0
+the show goes on-best rap song	w4	1	1	0	0	1	1	0	0
+the cave-best rock song	w1	3	3	0	0	3	3	0	0
+walk-best rock song	w6	2	2	0	0	2	2	0	0
+walk-best rock song	w5	2	2	0	0	2	2	0	0
+watch the throne-best rap album	w3	24	20	3	1	20	20	3	0
+watch the throne-best rap album	w2	27	21	5	1	23	23	3	0
+threaten me with heaven-best country song	w4	14	14	0	0	13	13	1	0
+the cave-record of the year	w1	21	7	3	11	20	20	1	0
+wasting light-album of the year	w6	24	12	2	10	23	23	1	0
+wasting light-album of the year	w5	16	8	1	7	16	16	0	0
+yo and i-best pop solo performance	w3	5	5	0	0	5	5	0	0
+yo and i-best pop solo performance	w2	11	11	0	0	11	9	0	0
+walk-best rock song	w4	2	2	0	0	2	2	0	0
+the cave-song of the year	w1	16	7	1	8	16	16	0	0
+watch the throne-best rap album	w6	11	10	1	0	9	9	2	0
+watch the throne-best rap album	w5	12	10	2	0	8	8	3	0
+you are-best r&b song	w3	1	1	0	0	1	1	0	0
+you are-best r&b song	w2	1	1	0	0	1	1	0	0
+wasting light-album of the year	w4	17	7	2	8	17	17	0	0
+the lady killer-best pop vocal album	w1	2	2	0	0	2	2	0	0
+yo and i-best pop solo performance	w6	1	1	0	0	1	1	0	0
+yo and i-best pop solo performance	w5	2	2	0	0	2	2	0	0
+watch the throne-best rap album	w4	18	14	3	1	14	14	3	0
+threaten me with heaven-best country song	w1	3	3	0	0	3	3	0	0
+yo and i-best pop solo performance	w4	4	4	0	0	4	4	0	0
+walk-best rock song	w1	6	6	0	0	5	5	1	0
+wasting light-album of the year	w1	76	32	8	36	71	68	5	0
+watch the throne-best rap album	w1	231	170	10	51	177	171	11	39
+yo and i-best pop solo performance	w1	32	29	0	3	27	22	2	0
+you are-best r&b song	w1	1	1	0	0	1	1	0	0

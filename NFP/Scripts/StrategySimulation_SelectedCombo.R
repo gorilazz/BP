@@ -7,7 +7,7 @@ source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
 algo = 'lr';
 
-for(i in 12:12)
+for(i in 1:7)
 {
 #readin data & initialization
 path_prediction = paste(paste(paste("../Prediction/201412/SingleCombo/Model",i,sep="_"), algo, sep="_"),"Predictions.csv", sep="_");

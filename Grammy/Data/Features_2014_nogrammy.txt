@@ -1,0 +1,328 @@
+#Field:candidate	Id	NumTweets	NumPositive	NumNegative	NumNeutral	NumDistinctTweets	NumDistinctUsers	NumPopularTweets	NumVerifiedTweets
+roar-song of the year	w3	773	231	50	492	312	291	73	0
+roar-song of the year	w1	1082	614	42	426	426	411	83	221
+ain't messin 'round-best rock song	w1	7	6	0	1	5	5	1	0
+ain't messin 'round-best rock song	w3	4	4	0	0	2	2	1	0
+ain't messin 'round-best rock song	w2	5	4	0	1	3	3	1	0
+roar-song of the year	w5	14415	8040	220	6155	1811	1688	444	10834
+roar-song of the year	w4	1071	578	62	431	423	398	97	71
+ain't messin 'round-best rock song	w5	33	31	2	0	16	16	4	0
+ain't messin 'round-best rock song	w6	33	31	2	0	16	16	4	0
+ain't messin 'round-best rock song	w4	21	21	0	0	6	6	2	0
+roar-song of the year	w6	14230	7988	201	6041	1736	1622	425	10834
+roar-song of the year	w2	688	197	41	450	248	230	57	0
+robin thicke-best pop vocal album	w3	3	3	0	0	3	3	0	0
+robin thicke-best pop vocal album	w1	342	338	3	1	25	24	9	308
+based on a true story-best country album	w1	8	8	0	0	8	8	0	0
+based on a true story-best country album	w3	2	2	0	0	2	2	0	0
+based on a true story-best country album	w2	2	2	0	0	2	2	0	0
+robin thicke-best pop vocal album	w5	673	665	4	4	83	82	17	474
+robin thicke-best pop vocal album	w4	5	5	0	0	5	5	0	0
+based on a true story-best country album	w5	15564	15559	1	4	96	92	41	15400
+based on a true story-best country album	w6	15564	15559	1	4	96	92	41	15400
+based on a true story-best country album	w4	8	8	0	0	8	8	0	0
+robin thicke-best pop vocal album	w6	673	665	4	4	83	82	17	474
+robin thicke-best pop vocal album	w2	5	4	0	1	5	5	0	0
+royals-best pop solo performance	w3	15	15	0	0	12	11	3	0
+royals-best pop solo performance	w1	261	170	1	90	155	145	11	10
+begin again-best country song	w1	284	270	12	2	94	88	30	0
+begin again-best country song	w3	184	175	9	0	34	32	14	0
+begin again-best country song	w2	204	195	9	0	41	39	17	0
+royals-best pop solo performance	w5	382	372	5	5	129	126	27	3
+royals-best pop solo performance	w4	23	21	1	1	20	20	3	0
+begin again-best country song	w5	2052	2035	4	13	502	475	165	0
+begin again-best country song	w6	2047	2030	4	13	499	472	164	0
+begin again-best country song	w4	204	192	11	1	50	45	14	0
+royals-best pop solo performance	w6	381	371	5	5	128	125	27	3
+royals-best pop solo performance	w2	14	14	0	0	11	10	3	0
+royals-record of the year	w3	98	67	5	26	64	61	8	0
+royals-record of the year	w1	1620	1447	28	145	300	295	69	735
+blurred lines-record of the year	w1	1228	965	44	219	272	264	68	866
+blurred lines-record of the year	w3	521	59	27	435	109	107	18	398
+blurred lines-record of the year	w2	608	134	35	439	115	113	24	473
+royals-record of the year	w5	6350	5074	99	1177	881	855	224	4483
+royals-record of the year	w4	177	103	16	58	121	119	16	0
+blurred lines-best  pop duo/group performance	w5	2	1	0	1	2	2	0	0
+blurred lines-best  pop duo/group performance	w6	2	1	0	1	2	2	0	0
+blurred lines-record of the year	w4	675	135	58	482	214	209	37	398
+royals-record of the year	w6	6339	5066	99	1174	870	845	224	4483
+royals-record of the year	w2	177	126	18	33	84	81	14	82
+royals-song of the year	w3	1050	196	49	805	795	777	56	4
+royals-song of the year	w1	2051	1057	366	628	725	712	75	212
+brave-best pop solo performance	w1	34	34	0	0	25	24	4	0
+brave-best pop solo performance	w3	21	21	0	0	17	16	2	0
+brave-best pop solo performance	w2	13	13	0	0	9	8	2	0
+royals-song of the year	w5	10629	3704	140	6785	2163	2063	362	7217
+royals-song of the year	w4	1542	315	62	1165	1093	1059	78	114
+blurred lines-record of the year	w5	9713	6053	243	3417	1165	1110	272	7681
+blurred lines-record of the year	w6	9383	6042	230	3111	1129	1074	265	7390
+brave-best pop solo performance	w4	23	23	0	0	20	20	1	0
+royals-song of the year	w6	10266	3630	125	6511	1843	1754	347	7217
+royals-song of the year	w2	1053	184	45	824	754	736	50	7
+same love-song of the year	w3	362	144	31	187	173	169	26	6
+same love-song of the year	w1	883	462	141	280	296	290	58	224
+cut me some slack-best rock song	w1	25	24	1	0	21	21	2	0
+cut me some slack-best rock song	w3	1	1	0	0	1	1	0	0
+cut me some slack-best rock song	w2	5	5	0	0	5	5	0	0
+same love-song of the year	w5	8931	3361	74	5496	1302	1248	262	7047
+same love-song of the year	w4	418	261	41	116	341	335	47	22
+brave-best pop solo performance	w5	285	264	12	9	143	137	29	23
+brave-best pop solo performance	w6	285	264	12	9	143	137	29	23
+cut me some slack-best rock song	w4	13	13	0	0	10	9	3	0
+same love-song of the year	w6	8887	3334	62	5491	1267	1215	259	7047
+same love-song of the year	w2	383	126	26	231	156	153	21	0
+same trailer different park-best country album	w3	8	8	0	0	7	7	1	0
+same trailer different park-best country album	w1	14	14	0	0	10	10	2	0
+doom and gloom-best rock song	w1	10	10	0	0	8	8	1	0
+doom and gloom-best rock song	w3	1	1	0	0	1	1	0	0
+doom and gloom-best rock song	w2	1	1	0	0	1	1	0	0
+same trailer different park-best country album	w5	15552	15546	2	4	105	103	32	15384
+same trailer different park-best country album	w4	11	11	0	0	10	10	1	0
+cut me some slack-best rock song	w5	72	66	6	0	52	51	12	0
+cut me some slack-best rock song	w6	72	66	6	0	52	51	12	0
+doom and gloom-best rock song	w4	2	2	0	0	2	2	0	0
+same trailer different park-best country album	w6	15551	15545	2	4	104	102	32	15384
+same trailer different park-best country album	w2	7	7	0	0	6	6	1	0
+started from the bottom-best rap song	w3	95	40	52	3	46	46	14	20
+started from the bottom-best rap song	w1	77	63	8	6	54	53	13	18
+ed sheeran-best new artist	w1	1769	1728	11	30	657	633	93	376
+ed sheeran-best new artist	w3	117	115	2	0	53	53	10	0
+ed sheeran-best new artist	w2	384	364	7	13	227	219	29	0
+started from the bottom-best rap song	w5	1107	1001	88	18	323	313	83	188
+started from the bottom-best rap song	w4	229	167	58	4	92	91	22	20
+doom and gloom-best rock song	w5	36	33	3	0	23	22	6	4
+doom and gloom-best rock song	w6	36	33	3	0	23	22	6	4
+ed sheeran-best new artist	w4	274	210	61	3	152	150	21	1
+started from the bottom-best rap song	w6	1089	987	87	15	312	302	82	188
+started from the bottom-best rap song	w2	59	43	7	9	42	41	10	6
+the blessed unrest-album of the year	w3	183	106	9	68	122	121	20	0
+the blessed unrest-album of the year	w1	1179	397	43	739	578	557	66	374
+fin' problems-best rap song	w1	66	59	3	4	47	45	9	16
+fin' problems-best rap song	w3	79	43	33	3	41	41	11	20
+fin' problems-best rap song	w2	58	48	3	7	43	42	8	4
+stay-best  pop duo/group performance	w5	1	1	0	0	1	1	0	0
+the blessed unrest-album of the year	w4	515	253	25	237	253	248	39	80
+ed sheeran-best new artist	w5	3119	2985	129	5	1183	1143	261	731
+ed sheeran-best new artist	w6	3116	2982	129	5	1180	1140	261	731
+fin' problems-best rap song	w4	209	166	39	4	82	81	20	20
+stay-best  pop duo/group performance	w6	1	1	0	0	1	1	0	0
+the blessed unrest-album of the year	w2	249	128	14	107	170	167	23	0
+the heist-album of the year	w3	1679	1252	95	332	522	501	92	924
+the heist-album of the year	w1	1675	817	183	675	891	853	188	338
+get lucky-record of the year	w1	1527	926	505	96	223	217	49	753
+get lucky-record of the year	w3	65	46	9	10	58	57	5	2
+get lucky-record of the year	w2	137	119	9	9	56	54	10	77
+the blessed unrest-album of the year	w5	21890	19470	92	2328	1175	1120	195	20238
+the heist-album of the year	w4	1935	1345	124	466	680	659	149	871
+fin' problems-best rap song	w5	969	911	46	12	242	232	62	188
+fin' problems-best rap song	w6	948	894	45	9	229	219	60	188
+get lucky-record of the year	w4	153	104	18	31	118	116	10	12
+the blessed unrest-album of the year	w6	21851	19445	92	2314	1146	1091	190	20238
+the heist-album of the year	w2	802	427	84	291	422	406	72	139
+the heist-best rap album	w3	1212	1163	36	13	596	580	111	315
+the heist-best rap album	w1	2966	2804	118	44	1237	1200	282	494
+god is dead-best rock song	w1	7	4	2	1	4	4	2	3
+god is dead-best rock song	w3	98	97	0	1	9	9	4	87
+god is dead-best rock song	w2	3	0	2	1	2	2	1	3
+the heist-album of the year	w5	25758	21044	678	4036	2431	2320	495	21946
+the heist-best rap album	w4	669	576	60	33	399	383	100	63
+get lucky-best  pop duo/group performance	w5	1	1	0	0	1	1	0	0
+get lucky-best  pop duo/group performance	w6	1	1	0	0	1	1	0	0
+god is dead-best rock song	w4	333	331	1	1	19	19	7	309
+the heist-album of the year	w6	25687	21006	661	4020	2382	2272	487	21946
+the heist-best rap album	w2	1737	1675	43	19	683	663	142	418
+thrift shop-best rap song	w3	50	30	20	0	33	32	8	0
+thrift shop-best rap song	w1	66	61	5	0	50	47	10	0
+holy grail-best rap song	w1	71	65	6	0	42	38	11	0
+holy grail-best rap song	w3	75	52	23	0	40	37	15	0
+holy grail-best rap song	w2	57	51	6	0	33	30	13	0
+the heist-best rap album	w5	4463	4220	192	51	1356	1294	366	2165
+thrift shop-best rap song	w4	80	56	23	1	54	53	14	0
+get lucky-record of the year	w5	7420	6446	73	901	775	749	165	5890
+get lucky-record of the year	w6	7406	6441	68	897	762	736	165	5888
+holy grail-best rap song	w4	103	80	23	0	64	61	17	0
+the heist-best rap album	w6	4430	4190	189	51	1339	1279	364	2141
+thrift shop-best rap song	w2	32	28	4	0	26	24	5	0
+two lanes of freedom-best country album	w3	24	24	0	0	5	5	1	0
+two lanes of freedom-best country album	w1	26	26	0	0	7	7	1	0
+i drive your truck-best country song	w1	15	15	0	0	9	9	1	0
+i drive your truck-best country song	w3	5	5	0	0	5	5	0	0
+i drive your truck-best country song	w2	5	5	0	0	5	5	0	0
+thrift shop-best rap song	w5	394	346	46	2	177	172	50	0
+two lanes of freedom-best country album	w4	6	6	0	0	6	6	0	0
+god is dead-best rock song	w5	377	370	6	1	46	45	13	309
+god is dead-best rock song	w6	377	370	6	1	46	45	13	309
+i drive your truck-best country song	w4	8	8	0	0	7	7	1	0
+thrift shop-best rap song	w6	392	344	46	2	175	170	50	0
+two lanes of freedom-best country album	w2	23	23	0	0	4	4	1	0
+unorthodox jukebox-best pop vocal album	w3	8	7	0	1	7	7	1	0
+unorthodox jukebox-best pop vocal album	w1	484	480	3	1	60	59	17	308
+james blake-best new artist	w1	560	536	9	15	205	202	23	343
+james blake-best new artist	w3	44	39	5	0	39	38	3	0
+james blake-best new artist	w2	100	97	3	0	96	95	4	0
+two lanes of freedom-best country album	w5	1128	1125	0	3	96	95	34	972
+unorthodox jukebox-best pop vocal album	w4	11	11	0	0	10	10	1	0
+holy grail-best rap song	w5	444	396	45	3	207	203	54	20
+holy grail-best rap song	w6	417	370	44	3	196	194	49	20
+james blake-best new artist	w4	228	199	23	6	208	203	13	0
+two lanes of freedom-best country album	w6	1128	1125	0	3	96	95	34	972
+unorthodox jukebox-best pop vocal album	w2	24	23	0	1	18	18	1	0
+when i was your man-best pop solo performance	w3	14	14	0	0	8	8	2	0
+when i was your man-best pop solo performance	w1	27	23	0	4	22	21	1	0
+just give me a reason-song of the year	w1	773	417	8	348	226	218	47	223
+just give me a reason-song of the year	w3	469	154	12	303	157	153	34	0
+just give me a reason-song of the year	w2	506	159	13	334	144	140	31	0
+unorthodox jukebox-best pop vocal album	w5	5734	5721	1	12	173	162	50	5238
+when i was your man-best pop solo performance	w4	21	18	2	1	15	15	4	0
+i drive your truck-best country song	w5	27	26	0	1	19	19	5	0
+i drive your truck-best country song	w6	26	25	0	1	18	18	5	0
+just give me a reason-best  pop duo/group performance	w4	2	0	0	2	1	1	1	0
+unorthodox jukebox-best pop vocal album	w6	5734	5721	1	12	173	162	50	5238
+when i was your man-best pop solo performance	w2	12	11	0	1	7	7	1	0
+yeezus-best rap album	w3	340	302	27	11	250	243	47	0
+yeezus-best rap album	w1	518	492	12	14	289	274	53	78
+kacey musgraves-best new artist	w1	440	423	1	16	90	85	16	344
+kacey musgraves-best new artist	w3	11	11	0	0	11	11	0	0
+kacey musgraves-best new artist	w2	46	46	0	0	40	37	2	0
+when i was your man-best pop solo performance	w5	408	382	9	17	158	153	36	0
+yeezus-best rap album	w4	742	637	77	28	481	469	102	28
+james blake-best new artist	w5	2129	2045	71	13	847	831	138	1003
+james blake-best new artist	w6	2126	2042	71	13	844	828	138	1003
+just give me a reason-song of the year	w4	484	188	13	283	199	193	43	1
+when i was your man-best pop solo performance	w6	407	381	9	17	157	152	36	0
+yeezus-best rap album	w2	266	244	11	11	202	193	38	0
+kendrick lamar-best new artist	w1	993	925	13	55	542	526	66	385
+kendrick lamar-best new artist	w3	90	66	4	20	73	72	13	0
+kendrick lamar-best new artist	w2	443	400	6	37	375	363	37	24
+without me-best r&b song	w5	2	0	1	1	2	2	0	0
+just give me a reason-best  pop duo/group performance	w5	3	1	0	2	2	2	1	0
+just give me a reason-best  pop duo/group performance	w6	3	1	0	2	2	2	1	0
+kacey musgraves-best new artist	w4	97	97	0	0	23	23	1	75
+without me-best r&b song	w6	2	0	1	1	2	2	0	0
+locked out of heaven-record of the year	w1	950	872	7	71	140	130	44	764
+locked out of heaven-record of the year	w3	44	23	2	19	33	30	4	0
+locked out of heaven-record of the year	w2	121	100	2	19	35	32	10	75
+yeezus-best rap album	w5	4875	4599	232	44	1350	1293	304	2517
+just give me a reason-song of the year	w5	11914	6092	33	5789	910	861	219	10324
+just give me a reason-song of the year	w6	11782	6037	26	5719	870	822	209	10324
+kendrick lamar-best new artist	w4	279	230	21	28	240	236	24	0
+yeezus-best rap album	w6	4822	4548	230	44	1311	1256	295	2517
+locked out of heaven-song of the year	w1	624	329	7	288	165	161	30	219
+locked out of heaven-song of the year	w3	275	42	5	228	103	100	17	0
+locked out of heaven-song of the year	w2	302	43	7	252	87	85	15	0
+kacey musgraves-best new artist	w5	760	746	10	4	209	198	65	406
+kacey musgraves-best new artist	w6	759	745	10	4	208	197	65	406
+locked out of heaven-record of the year	w4	59	33	5	21	54	53	5	0
+macklemore & ryan lewis-best new artist	w1	1020	825	33	162	340	329	69	531
+macklemore & ryan lewis-best new artist	w3	96	88	5	3	74	70	11	0
+macklemore & ryan lewis-best new artist	w2	273	130	18	125	122	118	17	116
+kendrick lamar-best new artist	w5	2840	2719	74	47	899	871	194	1615
+kendrick lamar-best new artist	w6	2807	2698	74	35	872	845	188	1615
+locked out of heaven-song of the year	w4	152	67	3	82	108	106	23	0
+magna carta...holy grail-best rap album	w1	103	103	0	0	85	84	14	0
+magna carta...holy grail-best rap album	w3	129	124	1	4	95	95	11	24
+magna carta...holy grail-best rap album	w2	110	109	1	0	80	80	7	24
+locked out of heaven-record of the year	w5	4089	1663	33	2393	556	537	156	2719
+locked out of heaven-record of the year	w6	4084	1661	33	2390	552	533	155	2719
+macklemore & ryan lewis-best new artist	w4	248	189	14	45	177	172	28	0
+mama's broken heart-best country song	w1	1	1	0	0	1	1	0	0
+mama's broken heart-best country song	w3	3	3	0	0	3	3	0	0
+mama's broken heart-best country song	w2	2	2	0	0	2	2	0	0
+locked out of heaven-song of the year	w5	11556	6166	23	5367	798	753	219	10012
+locked out of heaven-song of the year	w6	11540	6160	22	5358	783	738	218	10012
+magna carta...holy grail-best rap album	w4	233	198	4	31	151	151	29	53
+merry go 'round-best country song	w1	14	14	0	0	14	13	0	0
+merry go 'round-best country song	w3	81	81	0	0	13	13	1	0
+merry go 'round-best country song	w2	9	9	0	0	9	9	0	0
+love and war-best r&b song	w5	1	1	0	0	1	1	0	0
+love and war-best r&b song	w6	1	1	0	0	1	1	0	0
+mama's broken heart-best country song	w4	3	3	0	0	3	3	0	0
+mine would be you-best country song	w1	5	5	0	0	5	5	0	0
+mine would be you-best country song	w3	5	5	0	0	4	4	1	0
+mine would be you-best country song	w2	5	5	0	0	4	4	1	0
+macklemore & ryan lewis-best new artist	w5	5209	5034	70	105	1033	994	204	3596
+macklemore & ryan lewis-best new artist	w6	5195	5021	69	105	1021	983	202	3596
+merry go 'round-best country song	w4	88	88	0	0	20	20	1	0
+mirrors-best pop solo performance	w1	30	26	1	3	25	25	2	0
+mirrors-best pop solo performance	w3	5	5	0	0	5	5	0	0
+mirrors-best pop solo performance	w2	14	13	0	1	9	9	2	0
+magna carta...holy grail-best rap album	w5	1594	1537	23	34	390	385	87	1061
+magna carta...holy grail-best rap album	w6	1541	1485	22	34	360	355	84	1037
+mine would be you-best country song	w4	21	21	0	0	12	11	4	0
+new slaves-best rap song	w1	104	87	15	2	82	81	14	0
+new slaves-best rap song	w3	101	70	31	0	76	76	12	0
+new slaves-best rap song	w2	71	58	12	1	59	59	8	0
+mama's broken heart-best country song	w5	24	23	0	1	20	20	2	0
+mama's broken heart-best country song	w6	23	22	0	1	19	19	2	0
+mirrors-best pop solo performance	w4	10	9	0	1	9	9	1	0
+night train-best country album	w1	17	17	0	0	14	14	2	0
+night train-best country album	w3	7	7	0	0	5	5	2	0
+night train-best country album	w2	3	3	0	0	2	2	1	0
+merry go 'round-best country song	w5	3121	3120	0	1	44	44	8	3002
+merry go 'round-best country song	w6	3117	3116	0	1	40	40	8	3002
+new slaves-best rap song	w4	153	117	36	0	112	108	20	8
+nothing was the same-best rap album	w1	815	725	71	19	496	479	77	9
+nothing was the same-best rap album	w3	307	283	12	12	232	229	39	27
+nothing was the same-best rap album	w2	489	450	20	19	240	237	43	32
+mine would be you-best country song	w5	43	42	0	1	29	27	8	0
+mine would be you-best country song	w6	41	40	0	1	28	26	7	0
+night train-best country album	w4	9	9	0	0	8	8	1	0
+only one-best r&b song	w1	6	6	0	0	1	1	1	6
+panic station-best rock song	w3	16	15	1	0	14	14	2	0
+only one-best r&b song	w2	6	6	0	0	1	1	1	6
+mirrors-best pop solo performance	w5	288	273	6	9	135	132	30	0
+mirrors-best pop solo performance	w6	287	272	6	9	134	131	30	0
+nothing was the same-best rap album	w4	581	519	21	41	396	386	71	63
+panic station-best rock song	w1	97	95	1	1	37	36	10	30
+paradise-best pop vocal album	w3	156	153	3	0	36	34	9	0
+panic station-best rock song	w2	20	18	1	1	19	19	1	0
+new slaves-best rap song	w5	823	746	70	7	355	342	69	28
+new slaves-best rap song	w6	799	724	68	7	337	324	67	28
+panic station-best rock song	w4	3177	3175	2	0	181	177	37	2898
+paradise-best pop vocal album	w1	627	616	11	0	115	113	38	308
+pure heroine-best pop vocal album	w3	48	47	0	1	18	18	6	0
+paradise-best pop vocal album	w2	197	194	3	0	61	59	16	0
+night train-best country album	w5	1286	1281	1	4	117	115	45	1029
+night train-best country album	w6	1286	1281	1	4	117	115	45	1029
+paradise-best pop vocal album	w4	67	67	0	0	49	48	8	0
+pure heroine-best pop vocal album	w1	627	620	5	2	88	84	26	308
+radioactive-record of the year	w3	55	30	5	20	40	37	6	9
+pure heroine-best pop vocal album	w2	57	56	0	1	26	25	7	0
+nothing was the same-best rap album	w5	4867	4722	92	53	1364	1307	280	2278
+nothing was the same-best rap album	w6	4764	4624	90	50	1301	1245	271	2254
+pure heroine-best pop vocal album	w4	63	63	0	0	30	30	9	0
+radioactive-record of the year	w1	972	862	19	91	162	160	49	757
+random access memories-album of the year	w3	560	148	70	342	331	316	44	39
+radioactive-record of the year	w2	137	103	9	25	49	46	14	77
+panic station-best rock song	w5	3621	3611	7	3	324	313	65	2898
+panic station-best rock song	w6	3619	3609	7	3	322	311	65	2898
+radioactive-record of the year	w4	151	87	10	54	113	105	13	9
+random access memories-album of the year	w1	1140	174	81	885	358	344	59	584
+red-album of the year	w3	1580	502	111	967	561	544	141	2
+random access memories-album of the year	w2	420	104	51	265	238	225	30	0
+paradise-best pop vocal album	w5	7065	7060	2	3	501	480	104	5252
+paradise-best pop vocal album	w6	7059	7054	2	3	498	477	103	5252
+random access memories-album of the year	w4	740	224	112	404	463	449	60	39
+red-album of the year	w1	6577	3861	372	2344	1693	1613	440	903
+red-best country album	w3	78	74	4	0	58	54	7	1
+red-album of the year	w2	1940	569	145	1226	622	601	160	20
+pure heroine-best pop vocal album	w5	5806	5792	10	4	231	227	55	5244
+pure heroine-best pop vocal album	w6	5805	5791	10	4	230	226	55	5244
+red-album of the year	w4	1151	517	132	502	529	516	124	2
+red-best country album	w1	303	271	28	4	159	149	35	1
+roar-best pop solo performance	w3	69	38	0	31	22	21	5	0
+red-best country album	w2	90	84	6	0	65	61	10	1
+radioactive-record of the year	w5	5670	4581	52	1037	739	710	160	4205
+radioactive-record of the year	w6	5660	4577	51	1032	730	703	159	4205
+red-best country album	w4	124	110	9	5	96	91	15	0
+roar-best pop solo performance	w1	97	65	0	32	46	45	9	0
+roar-best pop solo performance	w2	76	45	0	31	27	26	7	0
+random access memories-album of the year	w5	5942	1969	291	3682	1290	1246	205	4045
+random access memories-album of the year	w6	5867	1941	277	3649	1225	1183	198	4045
+roar-best pop solo performance	w4	57	27	0	30	25	25	5	0
+red-album of the year	w5	28012	23750	702	3560	3371	3062	820	19602
+red-album of the year	w6	27895	23681	686	3528	3307	2999	799	19602
+red-best country album	w5	18356	18258	78	20	891	849	270	15081
+red-best country album	w6	18345	18249	76	20	881	839	269	15081
+roar-best pop solo performance	w5	617	572	19	26	249	243	63	23
+roar-best pop solo performance	w6	613	568	19	26	246	240	62	23
