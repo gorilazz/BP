@@ -1,13 +1,13 @@
-record of the year	Get Lucky
+best country album	Same Trailer Different Park
 album of the year	Random Access Memories
-song of the year	Royals
-best new artist	Macklemore
-best pop solo performance	Royals
-best pop duo/group performance	Get Lucky
-best pop vocal album	Unorthodox Jukebox
-best rock song	Cut Me Some Slack
-best r&b song	Pusher Love Girl
-best rap song	Thrift Shop
 best rap album	The Heist
 best country song	Merry Go 'Round
-best country album	Same Trailer Different Park
+best r&b song	Pusher Love Girl
+best rock song	Cut Me Some Slack
+record of the year	Get Lucky
+best rap song	Thrift Shop
+best new artist	Macklemore & Ryan Lewis
+best pop vocal album	Unorthodox Jukebox
+best pop duo/group performance	Get Lucky
+best pop solo performance	Royals
+song of the year	Royals

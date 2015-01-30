@@ -1,0 +1,14 @@
+	NumTweets_w4	NumDistinctTweets_w4	NumDistinctUsers_w4	PositiveRatio_w4	NonNegativeRatio_w4	NormalizedNumTweets_w4	NormalizedNumDistinctTweets_w4	NormalizedNumDistinctUsers_w4	NumTweets_w5	NumDistinctTweets_w5	NumDistinctUsers_w5	PositiveRatio_w5	NonNegativeRatio_w5	NormalizedNumTweets_w5	NormalizedNumDistinctTweets_w5	NormalizedNumDistinctUsers_w5
+best rap album	0	0	0	2	4	2	2	2	0	0	0	2	4	0	0	1
+best pop duo/group performance	0	0	0	3	4	3	4	4	0	0	0	3	4	1	1	2
+album of the year	2	2	2	3	2	3	3	3	2	2	2	3	4	0	0	1
+best country song	0	0	0	2	1	2	3	3	0	0	0	2	1	2	3	3
+best rock song	2	2	2	4	4	0	0	0	2	2	2	4	4	0	1	1
+best new artist	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0
+best rap song	2	2	2	5	0	0	1	1	2	2	2	5	0	0	0	0
+song of the year	2	2	1	0	0	2	2	2	2	1	1	0	0	2	1	2
+best r&b song	4	4	4	4	4	4	4	4	4	4	4	4	4	4	4	4
+best pop solo performance	2	2	2	4	1	4	3	3	0	2	2	4	1	4	2	3
+best pop vocal album	1	1	1	2	4	0	0	0	1	1	1	2	4	0	0	1
+best country album	1	1	1	0	3	3	3	2	1	1	1	0	3	0	0	0
+record of the year	0	0	0	2	3	4	5	3	0	0	0	3	3	1	0	0

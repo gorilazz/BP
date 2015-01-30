@@ -1,13 +1,13 @@
-record of the year	Somebody That I Used to Know
+best country album	Uncaged
 album of the year	Babel
-song of the year	We Are Young
-best new artist	Fun.
-best pop solo performance	Set Fire to the Rain
-best pop duo/group performance	Somebody That I Used to Know
-best pop vocal album	Stronger
-best rock song	Lonely Boy
-best r&b song	Adorn
-best rap song	Ni**as In Paris
 best rap album	Take Care
 best country song	Blown Away
-best country album	Uncaged
+best r&b song	Adorn
+best rock song	Lonely Boy
+record of the year	Somebody That I Used to Know
+best rap song	Niggas In Paris
+best new artist	Fun
+best pop vocal album	Stronger
+best pop duo/group performance	Somebody That I Used to Know
+best pop solo performance	Set Fire to the Rain (live)
+song of the year	We Are Young

@@ -1,0 +1,67 @@
+album of the year	beyoncÃ©,0.38004338394793924
+album of the year	x,0.2629067245119306
+album of the year	in the lonely hour,0.22581344902386116
+album of the year	girl,0.09154013015184381
+album of the year	morning phase,0.03969631236442516
+best new artist	sam smith,0.4846714826872364
+best new artist	iggy azalea,0.40278113530301785
+best new artist	bastille,0.08172223251636052
+best new artist	haim,0.029496183056230127
+best new artist	brandy clark,0.0013289664371551038
+record of the year	stay with me (darkchild version),0.22654407853193342
+record of the year	fancy,0.20896066936733673
+record of the year	chandelier,0.20452468174720465
+record of the year	all about that bass,0.1949286920111238
+record of the year	shake it off,0.16504187834240153
+song of the year	stay with me (darkchild version),0.25463462083569405
+song of the year	chandelier,0.22505328861642868
+song of the year	all about that bass,0.21947704276977942
+song of the year	shake it off,0.18457953688673553
+song of the year	take me to church,0.11625551089136238
+best rap album	the new classic,0.3265914413455397
+best rap album	oxymoron,0.23099850968703428
+best rap album	blacc hollywood,0.17245050031935277
+best rap album	because the internet,0.15839897807110923
+best rap album	nobody's smiling,0.06301894826484991
+best rap album	the marshall mathers lp 2,0.04854162231211412
+best country album	platinum,0.2975805344542462
+best country album	riser,0.27342425743865245
+best country album	12 stories,0.18342927123767008
+best country album	the outsiders,0.1547684476067843
+best country album	the way i'm livin',0.09079748926264698
+best rap song	i,0.4822607560037728
+best rap song	anaconda,0.253911823744226
+best rap song	we dem boyz,0.11739098889936879
+best rap song	0 to 100/the catch up,0.11593992599579192
+best rap song	bound 2,0.030496505356840554
+best r&b song	new flame,0.44744256180310304
+best r&b song	drunk in love,0.29256775524780765
+best r&b song	good kisser,0.11975715249394865
+best r&b song	the worst,0.11947938573866117
+best r&b song	options (wolfjames version),0.020753144716479505
+best rock song	ain't it fun,0.5398362619808307
+best rock song	lazaretto,0.22583865814696485
+best rock song	fever,0.1411741214057508
+best rock song	blue moon,0.05920527156549521
+best rock song	gimme something good,0.03394568690095846
+best pop solo performance	stay with me,0.2603437336202378
+best pop solo performance	shake it off,0.21853292504620817
+best pop solo performance	chandelier,0.2039394190184557
+best pop solo performance	all of me (live version),0.18605754641507352
+best pop solo performance	happy (live version),0.13112637590002482
+best pop duo/group performance	a sky full of stars,0.35679903730445245
+best pop duo/group performance	dark horse,0.1897084564052073
+best pop duo/group performance	bang bang,0.15910458374357292
+best pop duo/group performance	say something,0.1560414615468767
+best pop duo/group performance	fancy,0.1383464609998906
+best country song	meanwhile back at mama's,0.46722251506811235
+best country song	automatic,0.22022143521622223
+best country song	american kids,0.178045315353635
+best country song	give me back my hometown,0.1345107343620305
+best pop vocal album	bangerz,0.3339032785343675
+best pop vocal album	x,0.27840522515893756
+best pop vocal album	ghost stories,0.11218700707091767
+best pop vocal album	my everything,0.1121153171561322
+best pop vocal album	prism,0.10021192173747386
+best pop vocal album	in the lonely hour,0.0631772503421713
+

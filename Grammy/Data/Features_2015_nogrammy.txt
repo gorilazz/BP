@@ -1,0 +1,351 @@
+#Field:candidate	Id	NumTweets	NumPositive	NumNegative	NumNeutral	NumDistinctTweets	NumDistinctUsers	NumPopularTweets	NumVerifiedTweets
+my everything-best pop vocal album	w1	14	13	0	1	12	12	1	0
+my everything-best pop vocal album	w3	48	47	0	1	24	24	5	0
+0 to 100/the catch up-best rap song	w1	7	5	2	0	5	5	1	0
+0 to 100/the catch up-best rap song	w4	37	34	3	0	20	19	5	0
+0 to 100/the catch up-best rap song	w5	278	277	1	0	39	38	9	217
+my everything-best pop vocal album	w6	145	142	1	2	51	48	11	0
+my everything-best pop vocal album	w4	51	49	0	2	27	27	5	0
+0 to 100/the catch up-best rap song	w3	30	28	2	0	17	17	3	0
+0 to 100/the catch up-best rap song	w2	14	12	2	0	12	12	1	0
+0 to 100/the catch up-best rap song	w6	313	309	4	0	58	57	14	217
+my everything-best pop vocal album	w5	44	42	1	1	22	22	4	0
+my everything-best pop vocal album	w2	45	44	0	1	22	22	4	0
+new flame-best r&b song	w1	2	2	0	0	2	2	0	0
+new flame-best r&b song	w3	2	2	0	0	2	2	0	0
+12 stories-best country album	w1	8	8	0	0	3	3	2	6
+12 stories-best country album	w4	10	10	0	0	3	3	3	6
+12 stories-best country album	w5	5	5	0	0	3	3	1	0
+nobody's smiling-best rap album	w6	62	49	13	0	51	50	5	0
+new flame-best r&b song	w4	2	2	0	0	2	2	0	0
+12 stories-best country album	w3	8	8	0	0	3	3	2	6
+12 stories-best country album	w2	8	8	0	0	3	3	2	6
+12 stories-best country album	w6	22	22	0	0	20	20	1	0
+nobody's smiling-best rap album	w5	38	33	5	0	30	29	6	0
+new flame-best r&b song	w2	2	2	0	0	2	2	0	0
+nobody's smiling-best rap album	w1	294	294	0	0	44	41	11	240
+nobody's smiling-best rap album	w3	312	312	0	0	58	55	15	240
+ain't it fun-best rock song	w1	30	30	0	0	29	28	1	0
+ain't it fun-best rock song	w4	2979	2979	0	0	107	106	6	0
+ain't it fun-best rock song	w5	2998	2998	0	0	125	125	7	0
+oxymoron-best rap album	w6	200	162	37	1	144	141	32	2
+nobody's smiling-best rap album	w4	214	213	1	0	55	52	12	142
+ain't it fun-best rock song	w3	2956	2956	0	0	86	85	4	0
+ain't it fun-best rock song	w2	2904	2904	0	0	59	58	3	0
+ain't it fun-best rock song	w6	346	344	2	0	225	222	23	6
+oxymoron-best rap album	w5	115	103	11	1	90	89	21	0
+nobody's smiling-best rap album	w2	308	308	0	0	54	51	15	240
+oxymoron-best rap album	w1	20	15	5	0	17	17	3	0
+oxymoron-best rap album	w3	68	60	7	1	57	56	11	0
+all about that bass-record of the year	w1	23	15	6	2	16	16	3	0
+all about that bass-record of the year	w4	985	48	13	924	124	113	11	828
+all about that bass-record of the year	w5	976	40	10	926	119	108	10	828
+platinum-best country album	w6	43	43	0	0	17	17	7	0
+oxymoron-best rap album	w4	100	91	8	1	75	74	21	0
+all about that bass-record of the year	w3	427	48	11	368	40	34	9	352
+all about that bass-record of the year	w2	68	45	10	13	33	27	6	0
+all about that bass-record of the year	w6	1092	49	14	1029	171	163	23	840
+platinum-best country album	w5	18	18	0	0	7	7	2	0
+oxymoron-best rap album	w2	49	43	6	0	41	41	8	0
+platinum-best country album	w1	1	1	0	0	1	1	0	0
+platinum-best country album	w3	2	2	0	0	2	2	0	0
+all about that bass-song of the year	w1	23	5	3	15	20	20	2	0
+all about that bass-song of the year	w4	84	31	20	33	66	66	11	0
+all about that bass-song of the year	w5	100	44	27	29	79	77	13	0
+prism-best pop vocal album	w6	319	233	6	80	154	52	35	0
+platinum-best country album	w4	1	1	0	0	1	1	0	0
+all about that bass-song of the year	w3	58	19	11	28	48	48	8	0
+all about that bass-song of the year	w2	35	9	6	20	28	28	5	0
+all about that bass-song of the year	w6	190	79	76	35	120	117	21	0
+prism-best pop vocal album	w5	35	32	3	0	26	26	7	0
+platinum-best country album	w2	1	1	0	0	1	1	0	0
+prism-best pop vocal album	w1	20	17	3	0	7	7	3	0
+prism-best pop vocal album	w3	44	39	5	0	25	25	8	0
+anaconda-best rap song	w1	18	16	2	0	13	13	3	0
+all of me (live version)-best pop solo performance	w4	14	14	0	0	9	8	1	0
+all of me (live version)-best pop solo performance	w5	15	15	0	0	10	9	1	0
+riser-best country album	w6	14	14	0	0	11	11	2	0
+prism-best pop vocal album	w4	43	38	5	0	25	25	7	0
+all of me (live version)-best pop solo performance	w3	8	8	0	0	3	3	1	0
+all of me (live version)-best pop solo performance	w2	2	2	0	0	2	2	0	0
+all of me (live version)-best pop solo performance	w6	95	95	0	0	16	15	2	0
+riser-best country album	w5	6	6	0	0	6	6	0	0
+prism-best pop vocal album	w2	35	32	3	0	17	17	7	0
+riser-best country album	w1	6	6	0	0	2	2	1	0
+riser-best country album	w3	8	8	0	0	4	4	1	0
+automatic-best country song	w1	2	2	0	0	2	2	0	0
+american kids-best country song	w4	13	13	0	0	9	9	3	0
+american kids-best country song	w5	15	15	0	0	11	11	3	0
+sam smith-best new artist	w6	24732	1723	26	22983	23186	596	358	376
+riser-best country album	w4	9	9	0	0	5	5	1	0
+american kids-best country song	w3	4	4	0	0	3	3	1	0
+american kids-best country song	w2	2	2	0	0	1	1	1	0
+american kids-best country song	w6	32	31	0	1	17	17	4	2
+sam smith-best new artist	w5	624	208	3	413	144	137	27	376
+riser-best country album	w2	6	6	0	0	2	2	1	0
+sam smith-best new artist	w1	234	234	0	0	43	43	11	174
+sam smith-best new artist	w3	325	323	1	1	99	98	21	174
+bangerz-best pop vocal album	w1	346	341	1	4	83	23	16	0
+anaconda-best rap song	w4	155	153	2	0	69	67	16	0
+anaconda-best rap song	w5	165	161	4	0	79	76	17	0
+say something-best pop duo/group performance	w6	1	1	0	0	1	1	0	0
+sam smith-best new artist	w4	594	181	2	411	140	137	28	376
+anaconda-best rap song	w3	83	81	2	0	54	53	10	0
+anaconda-best rap song	w2	35	33	2	0	26	26	6	0
+anaconda-best rap song	w6	644	628	16	0	354	342	48	0
+shake it off-best pop solo performance	w5	9	8	0	1	8	8	1	0
+sam smith-best new artist	w2	260	258	1	1	69	69	11	174
+shake it off-best pop solo performance	w1	4	1	3	0	2	2	1	0
+shake it off-best pop solo performance	w3	11	7	3	1	8	8	2	0
+bastille-best new artist	w1	31	30	1	0	16	16	3	0
+automatic-best country song	w4	8	8	0	0	5	5	1	0
+automatic-best country song	w5	6	6	0	0	3	3	1	0
+shake it off-best pop solo performance	w6	100	99	0	1	18	17	3	0
+shake it off-best pop solo performance	w4	11	7	3	1	8	8	2	0
+automatic-best country song	w3	4	4	0	0	4	4	0	0
+automatic-best country song	w2	4	4	0	0	4	4	0	0
+automatic-best country song	w6	8	8	0	0	3	3	2	2
+shake it off-record of the year	w5	1006	65	5	936	144	138	12	828
+shake it off-best pop solo performance	w2	8	4	3	1	5	5	2	0
+shake it off-record of the year	w1	86	76	7	3	16	14	4	41
+shake it off-record of the year	w3	472	94	9	369	47	45	10	393
+because the internet-best rap album	w1	498	488	10	0	163	153	26	0
+bangerz-best pop vocal album	w4	372	365	1	6	102	42	20	0
+bangerz-best pop vocal album	w5	51	47	1	3	35	34	6	0
+shake it off-record of the year	w6	1410	334	11	1065	246	235	31	838
+shake it off-record of the year	w4	1000	59	10	931	133	127	13	828
+bangerz-best pop vocal album	w3	382	375	1	6	104	44	21	0
+bangerz-best pop vocal album	w2	369	364	1	4	94	34	18	0
+bang bang-best pop duo/group performance	w6	1	1	0	0	1	1	0	0
+shake it off-song of the year	w5	1799	433	29	1337	342	337	49	1328
+shake it off-record of the year	w2	100	85	7	8	27	25	7	41
+shake it off-song of the year	w1	133	66	5	62	127	125	4	0
+shake it off-song of the year	w3	916	135	13	768	249	246	24	635
+beyoncé-album of the year	w1	7659	960	118	6581	6553	1048	284	97
+bastille-best new artist	w4	73	70	1	2	42	42	7	0
+bastille-best new artist	w5	75	72	1	2	42	42	8	0
+shake it off-song of the year	w6	1918	525	45	1348	410	403	50	1384
+shake it off-song of the year	w4	1522	161	25	1336	320	316	42	1112
+bastille-best new artist	w3	47	44	2	1	31	31	4	0
+bastille-best new artist	w2	39	38	1	0	24	24	3	0
+bangerz-best pop vocal album	w6	120	88	5	27	82	74	21	0
+stay with me (darkchild version)-record of the year	w5	65	16	2	47	62	61	3	0
+shake it off-song of the year	w2	174	83	5	86	153	151	9	1
+stay with me (darkchild version)-record of the year	w1	11	6	1	4	7	7	1	0
+stay with me (darkchild version)-record of the year	w3	37	14	2	21	32	31	2	0
+blacc hollywood-best rap album	w1	17	17	0	0	12	12	3	0
+because the internet-best rap album	w4	214	205	9	0	81	79	21	0
+because the internet-best rap album	w5	93	84	9	0	73	72	16	0
+stay with me (darkchild version)-record of the year	w6	193	39	4	150	113	113	10	10
+stay with me (darkchild version)-record of the year	w4	55	16	2	37	50	49	2	0
+because the internet-best rap album	w3	545	532	13	0	202	192	33	0
+because the internet-best rap album	w2	527	514	13	0	190	180	28	0
+bastille-best new artist	w6	204	190	1	13	94	93	20	0
+stay with me (darkchild version)-song of the year	w5	186	71	11	104	137	134	24	2
+stay with me (darkchild version)-record of the year	w2	23	10	2	11	19	18	1	0
+stay with me (darkchild version)-song of the year	w1	27	4	3	20	17	16	2	0
+stay with me (darkchild version)-song of the year	w3	100	47	7	46	76	74	10	0
+blue moon-best rock song	w1	1	1	0	0	1	1	0	0
+beyoncé-album of the year	w4	1752	689	275	788	574	545	111	232
+beyoncé-album of the year	w5	1525	478	265	782	610	585	97	289
+stay with me (darkchild version)-song of the year	w6	769	566	25	178	502	481	49	152
+stay with me (darkchild version)-song of the year	w4	138	52	13	73	95	93	17	0
+beyoncé-album of the year	w3	8476	1269	329	6878	6865	1343	346	115
+beyoncé-album of the year	w2	8202	1072	316	6814	6794	1273	332	115
+because the internet-best rap album	w6	186	160	26	0	143	142	28	1
+stay with me-best pop solo performance	w5	11	11	0	0	6	6	3	0
+stay with me (darkchild version)-song of the year	w2	51	21	3	27	37	35	4	0
+stay with me-best pop solo performance	w1	3	2	0	1	2	2	1	0
+stay with me-best pop solo performance	w3	5	4	0	1	4	4	1	0
+bound 2-best rap song	w1	5	4	1	0	4	4	1	0
+blacc hollywood-best rap album	w4	26	25	1	0	19	19	5	0
+blacc hollywood-best rap album	w5	17	16	1	0	14	14	3	0
+stay with me-best pop solo performance	w6	89	89	0	0	10	10	4	0
+stay with me-best pop solo performance	w4	5	5	0	0	4	4	1	0
+blacc hollywood-best rap album	w3	26	25	1	0	18	18	6	0
+blacc hollywood-best rap album	w2	23	22	1	0	16	16	5	0
+beyoncé-album of the year	w6	1714	659	209	846	811	786	112	306
+take me to church-song of the year	w5	1399	51	13	1335	245	240	29	1110
+stay with me-best pop solo performance	w2	5	4	0	1	4	4	1	0
+take me to church-song of the year	w1	54	34	2	18	37	35	6	12
+take me to church-song of the year	w3	789	57	8	724	109	107	22	641
+brandy clark-best new artist	w1	131	131	0	0	14	14	6	115
+blue moon-best rock song	w4	2	2	0	0	2	2	0	0
+blue moon-best rock song	w5	3	3	0	0	2	2	1	0
+take me to church-song of the year	w6	1608	129	33	1446	342	333	44	1201
+take me to church-song of the year	w4	1374	56	10	1308	219	215	28	1112
+blue moon-best rock song	w3	2	2	0	0	2	2	0	0
+blue moon-best rock song	w2	2	2	0	0	2	2	0	0
+blacc hollywood-best rap album	w6	65	54	4	7	47	47	6	0
+the marshall mathers lp 2-best rap album	w5	747	733	14	0	150	147	36	239
+take me to church-song of the year	w2	82	47	3	32	60	58	10	12
+the marshall mathers lp 2-best rap album	w1	157	155	2	0	38	37	6	0
+the marshall mathers lp 2-best rap album	w3	510	500	10	0	125	121	26	239
+chandelier-best pop solo performance	w1	2	2	0	0	2	2	0	0
+bound 2-best rap song	w4	13	12	1	0	13	12	0	0
+bound 2-best rap song	w5	15	13	2	0	15	14	0	0
+the marshall mathers lp 2-best rap album	w6	1954	1924	29	1	199	194	41	230
+the marshall mathers lp 2-best rap album	w4	820	808	12	0	135	131	27	239
+bound 2-best rap song	w3	11	10	1	0	10	9	1	0
+bound 2-best rap song	w2	8	7	1	0	7	7	1	0
+blue moon-best rock song	w6	12	12	0	0	6	6	4	6
+the new classic-best rap album	w5	1040	974	65	1	338	321	85	10
+the marshall mathers lp 2-best rap album	w2	223	219	4	0	87	84	13	9
+the new classic-best rap album	w1	390	385	4	1	169	160	22	0
+the new classic-best rap album	w3	1163	1132	30	1	374	352	70	0
+chandelier-record of the year	w1	28	13	1	14	16	16	3	1
+brandy clark-best new artist	w4	451	51	0	400	44	43	7	382
+brandy clark-best new artist	w5	448	48	0	400	43	42	7	376
+the new classic-best rap album	w6	716	600	115	1	380	364	94	10
+the new classic-best rap album	w4	871	833	37	1	284	268	63	0
+brandy clark-best new artist	w3	135	135	0	0	18	18	6	115
+brandy clark-best new artist	w2	134	134	0	0	17	17	6	115
+bound 2-best rap song	w6	37	29	7	1	35	34	1	0
+the outsiders-best country album	w5	6	6	0	0	5	5	1	0
+the new classic-best rap album	w2	1042	1015	26	1	290	276	54	0
+the outsiders-best country album	w1	2	1	0	1	2	2	0	0
+the outsiders-best country album	w3	5	4	0	1	5	5	0	0
+chandelier-song of the year	w1	183	32	4	147	50	49	8	119
+chandelier-best pop solo performance	w4	7	7	0	0	7	7	0	0
+chandelier-best pop solo performance	w5	13	13	0	0	8	8	2	0
+the outsiders-best country album	w6	7	7	0	0	6	6	1	0
+the outsiders-best country album	w4	8	7	0	1	7	7	1	0
+chandelier-best pop solo performance	w3	6	6	0	0	6	6	0	0
+chandelier-best pop solo performance	w2	5	5	0	0	5	5	0	0
+brandy clark-best new artist	w6	533	133	0	400	87	84	9	377
+the way i'm livin'-best country album	w5	5	5	0	0	4	4	1	0
+the outsiders-best country album	w2	2	1	0	1	2	2	0	0
+we dem boyz-best rap song	w1	161	160	1	0	10	10	3	151
+we dem boyz-best rap song	w3	168	167	1	0	17	17	3	151
+drunk in love-best r&b song	w1	2	2	0	0	2	2	0	0
+chandelier-record of the year	w4	68	27	8	33	54	53	5	0
+chandelier-record of the year	w5	63	28	8	27	55	54	6	0
+the way i'm livin'-best country album	w6	14	14	0	0	11	11	2	0
+the way i'm livin'-best country album	w4	3	3	0	0	2	2	1	0
+chandelier-record of the year	w3	55	22	4	29	41	40	5	1
+chandelier-record of the year	w2	47	20	4	23	34	33	4	1
+chandelier-best pop solo performance	w6	112	112	0	0	16	15	5	0
+we dem boyz-best rap song	w5	12	11	1	0	12	12	0	0
+we dem boyz-best rap song	w2	167	166	1	0	16	16	3	151
+x-album of the year	w1	607	219	22	366	130	119	27	161
+x-album of the year	w3	957	311	33	613	360	344	80	204
+fancy-record of the year	w1	12	7	3	2	8	8	1	0
+chandelier-song of the year	w4	1505	94	35	1376	294	285	33	1115
+chandelier-song of the year	w5	1559	138	35	1386	307	296	39	1113
+we dem boyz-best rap song	w6	48	39	4	5	34	34	6	0
+we dem boyz-best rap song	w4	170	169	1	0	19	19	3	151
+chandelier-song of the year	w3	925	66	19	840	143	138	21	749
+chandelier-song of the year	w2	218	42	6	170	74	72	9	120
+chandelier-record of the year	w6	248	58	10	180	112	108	23	26
+x-album of the year	w5	1241	747	17	477	453	443	119	104
+x-album of the year	w2	824	247	25	552	262	247	61	195
+x-best pop vocal album	w1	10	8	2	0	7	7	2	0
+x-best pop vocal album	w3	20	18	2	0	15	15	3	0
+fever-best rock song	w1	2	2	0	0	2	2	0	0
+drunk in love-best r&b song	w4	2	2	0	0	2	2	0	0
+fancy-record of the year	w5	93	58	7	28	59	59	7	0
+x-album of the year	w6	1600	962	29	609	629	611	149	121
+x-album of the year	w4	1212	423	34	755	443	429	108	224
+drunk in love-best r&b song	w3	2	2	0	0	2	2	0	0
+drunk in love-best r&b song	w2	2	2	0	0	2	2	0	0
+chandelier-song of the year	w6	2799	1091	39	1669	399	380	59	1374
+x-best pop vocal album	w5	17	16	1	0	14	14	2	0
+x-best pop vocal album	w2	19	17	2	0	14	14	3	0
+ghost stories-best pop vocal album	w1	4	4	0	0	3	3	1	0
+fancy-record of the year	w4	84	54	6	24	47	47	7	0
+fever-best rock song	w5	10	10	0	0	10	9	0	0
+x-best pop vocal album	w6	135	134	1	0	26	25	6	0
+x-best pop vocal album	w4	19	17	2	0	14	14	3	0
+fancy-record of the year	w3	69	45	6	18	34	34	5	0
+fancy-record of the year	w2	52	42	3	7	22	22	4	0
+dark horse-best pop duo/group performance	w6	34	8	25	1	12	11	6	0
+girl-album of the year	w1	46	17	2	27	32	30	4	2
+fever-best rock song	w4	8	8	0	0	8	8	0	0
+ghost stories-best pop vocal album	w5	26	21	2	3	23	23	3	0
+fever-best rock song	w3	8	8	0	0	8	8	0	0
+fever-best rock song	w2	5	5	0	0	5	5	0	0
+fancy-record of the year	w6	253	70	17	166	141	135	25	10
+give me back my hometown-best country song	w1	2	2	0	0	2	2	0	0
+ghost stories-best pop vocal album	w4	20	17	1	2	17	17	3	0
+gimme something good-best rock song	w5	4	4	0	0	1	1	1	0
+ghost stories-best pop vocal album	w3	16	13	1	2	14	14	2	0
+ghost stories-best pop vocal album	w2	10	8	1	1	9	9	1	0
+fever-best rock song	w6	13	11	2	0	13	11	0	0
+good kisser-best r&b song	w1	2	2	0	0	2	2	0	0
+gimme something good-best rock song	w4	4	4	0	0	1	1	1	0
+girl-album of the year	w5	437	228	8	201	235	211	25	7
+gimme something good-best rock song	w3	4	4	0	0	1	1	1	0
+girl-album of the year	w2	137	32	8	97	118	110	9	9
+ghost stories-best pop vocal album	w6	80	76	1	3	45	45	13	0
+haim-best new artist	w1	5974	5973	1	0	40	40	3	5933
+girl-album of the year	w4	422	211	9	202	221	198	24	9
+give me back my hometown-best country song	w5	3	3	0	0	1	1	1	0
+girl-album of the year	w3	217	61	9	147	176	158	17	9
+give me back my hometown-best country song	w2	2	2	0	0	2	2	0	0
+gimme something good-best rock song	w6	6	5	1	0	3	3	1	0
+happy (live version)-best pop solo performance	w1	1	1	0	0	1	1	0	0
+give me back my hometown-best country song	w4	5	5	0	0	3	3	1	0
+haim-best new artist	w5	67	65	2	0	35	35	5	0
+give me back my hometown-best country song	w3	2	2	0	0	2	2	0	0
+good kisser-best r&b song	w2	2	2	0	0	2	2	0	0
+girl-album of the year	w6	738	271	5	462	241	221	32	0
+i'm not gonna missing you-best country song	w1	3	3	0	0	2	1	1	0
+good kisser-best r&b song	w4	2	2	0	0	2	2	0	0
+happy (live version)-best pop solo performance	w5	5	5	0	0	3	3	1	3
+good kisser-best r&b song	w3	2	2	0	0	2	2	0	0
+haim-best new artist	w2	5982	5980	2	0	48	48	3	5933
+give me back my hometown-best country song	w6	13	13	0	0	11	10	1	0
+i-best rap song	w1	82	71	11	0	70	59	9	0
+haim-best new artist	w4	66	65	1	0	35	35	5	0
+i'm not gonna missing you-best country song	w5	1	1	0	0	1	1	0	0
+haim-best new artist	w3	5991	5989	2	0	53	53	5	5933
+happy (live version)-best pop solo performance	w2	5	5	0	0	3	3	1	3
+haim-best new artist	w6	270	265	1	4	184	173	16	0
+iggy azalea-best new artist	w1	42	42	0	0	13	13	3	0
+happy (live version)-best pop solo performance	w4	5	5	0	0	3	3	1	3
+i-best rap song	w5	311	296	11	4	235	232	31	0
+happy (live version)-best pop solo performance	w3	5	5	0	0	3	3	1	3
+i'm not gonna missing you-best country song	w2	3	3	0	0	2	1	1	0
+happy (live version)-best pop solo performance	w6	86	86	0	0	6	6	2	0
+in the lonely hour-album of the year	w1	486	337	22	127	83	76	21	23
+i'm not gonna missing you-best country song	w4	4	4	0	0	3	2	1	0
+iggy azalea-best new artist	w5	190	186	3	1	84	83	13	0
+i'm not gonna missing you-best country song	w3	3	3	0	0	2	1	1	0
+i-best rap song	w2	213	199	14	0	171	158	20	0
+i'm not gonna missing you-best country song	w6	5	5	0	0	3	3	1	0
+in the lonely hour-best pop vocal album	w1	13	11	2	0	10	10	2	0
+i-best rap song	w4	308	292	15	1	240	226	32	0
+in the lonely hour-album of the year	w5	622	88	25	509	342	334	42	216
+i-best rap song	w3	271	255	15	1	213	200	25	0
+iggy azalea-best new artist	w2	47	47	0	0	18	18	3	0
+i-best rap song	w6	293	265	23	5	221	217	35	0
+lazaretto-best rock song	w1	28	28	0	0	26	26	1	0
+iggy azalea-best new artist	w4	115	111	3	1	43	42	9	0
+in the lonely hour-best pop vocal album	w5	19	17	1	1	15	15	3	0
+iggy azalea-best new artist	w3	110	108	2	0	36	35	9	0
+in the lonely hour-album of the year	w2	629	358	29	242	189	182	34	33
+iggy azalea-best new artist	w6	789	780	4	5	195	188	28	0
+meanwhile back at mama's-best country song	w1	1	1	0	0	1	1	0	0
+in the lonely hour-album of the year	w4	1041	397	42	602	370	356	56	239
+lazaretto-best rock song	w5	105	105	0	0	98	97	5	0
+in the lonely hour-album of the year	w3	696	382	33	281	243	235	40	33
+in the lonely hour-best pop vocal album	w2	18	15	2	1	15	15	2	0
+in the lonely hour-album of the year	w6	3340	2072	24	1244	474	461	63	2736
+morning phase-album of the year	w1	78	15	0	63	31	31	5	41
+in the lonely hour-best pop vocal album	w4	17	14	2	1	15	15	2	0
+meanwhile back at mama's-best country song	w5	4	4	0	0	3	3	1	0
+in the lonely hour-best pop vocal album	w3	22	19	2	1	18	18	3	0
+lazaretto-best rock song	w2	48	48	0	0	43	42	2	0
+in the lonely hour-best pop vocal album	w6	21	20	1	0	17	17	3	0
+lazaretto-best rock song	w4	93	93	0	0	86	85	4	0
+morning phase-album of the year	w5	214	81	2	131	209	206	5	2
+lazaretto-best rock song	w3	71	71	0	0	66	65	2	0
+meanwhile back at mama's-best country song	w2	2	2	0	0	2	2	0	0
+lazaretto-best rock song	w6	153	152	1	0	143	143	8	6
+meanwhile back at mama's-best country song	w4	4	4	0	0	3	3	1	0
+meanwhile back at mama's-best country song	w3	2	2	0	0	2	2	0	0
+morning phase-album of the year	w2	157	31	0	126	109	107	6	43
+meanwhile back at mama's-best country song	w6	7	6	0	1	5	5	2	0
+morning phase-album of the year	w4	183	59	1	123	173	170	5	4
+morning phase-album of the year	w3	185	38	0	147	137	135	6	43
+morning phase-album of the year	w6	441	249	5	187	337	326	19	55

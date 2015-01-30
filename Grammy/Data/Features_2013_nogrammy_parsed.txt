@@ -1,0 +1,63 @@
+"candidate"	"NumTweets_w4"	"NumPositive_w4"	"NumNegative_w4"	"NumNeutral_w4"	"NumDistinctTweets_w4"	"NumDistinctUsers_w4"	"NumPopularTweets_w4"	"NumVerifiedTweets_w4"	"NumTweets_w5"	"NumPositive_w5"	"NumNegative_w5"	"NumNeutral_w5"	"NumDistinctTweets_w5"	"NumDistinctUsers_w5"	"NumPopularTweets_w5"	"NumVerifiedTweets_w5"
+"adorn-song of the year"	268	109	10	149	229	218	29	0	334	131	14	189	284	271	38	0
+"lonely boy-best rock song"	4	4	0	0	3	3	1	0	7	7	0	0	5	4	2	0
+"babel-album of the year"	225	127	13	85	185	179	15	0	255	143	13	99	211	205	18	0
+"lonely boy-record of the year"	30	11	10	9	30	29	0	0	21	7	9	5	20	20	1	0
+"based on a t.r.u. story-best rap album"	94	83	6	5	91	87	3	1	332	314	15	3	257	250	36	1
+"lotus flower bomb-best rap song"	21	19	0	2	15	15	2	0	18	15	0	3	14	14	1	0
+"blown away-best country song"	6	6	0	0	6	6	0	0	7	7	0	0	7	7	0	0
+"madness-best rock song"	13	13	0	0	12	12	1	0	16	15	1	0	15	15	1	0
+"blunderbuss-album of the year"	167	82	1	84	132	132	5	0	97	51	6	40	94	94	3	0
+"mercy-best rap song"	49	45	4	0	42	42	6	0	44	42	2	0	37	37	6	0
+"call me maybe-best pop solo performance"	15	13	1	1	9	9	1	0	3	2	1	0	3	3	0	0
+"niggas in paris-best rap song"	25	24	1	0	24	23	1	0	17	16	1	0	17	17	0	0
+"call me maybe-song of the year"	669	253	71	345	559	546	47	37	1957	1393	104	460	738	724	61	1131
+"overexposed-best pop vocal album"	61	61	0	0	11	11	4	0	52	52	0	0	11	11	3	0
+"ceremonials-best pop vocal album"	5	5	0	0	5	5	0	0	5	5	0	0	5	5	0	0
+"payphone-best pop duo/group performance"	63	63	0	0	13	13	4	0	51	51	0	0	10	10	3	0
+"channel orange-album of the year"	887	484	86	317	761	740	69	12	1408	873	110	425	1205	1173	100	42
+"refill-best r&b song"	1	1	0	0	1	1	0	0	NA	NA	NA	NA	NA	NA	NA	NA
+"daughters-best rap song"	24	23	0	1	23	23	1	0	22	21	0	1	21	21	1	0
+"set fire to the rain (live)-best pop solo performance"	127	122	2	3	18	18	2	0	127	123	2	2	17	17	3	0
+"el camino-album of the year"	167	33	4	130	145	142	10	10	140	30	5	105	117	115	11	10
+"sexy and i know it-best pop duo/group performance"	2	2	0	0	2	2	0	0	2	2	0	0	2	2	0	0
+"even if it breaks your heart-best country song"	5	3	2	0	4	4	1	0	6	5	1	0	5	5	1	0
+"shake it out-best pop duo/group performance"	2	2	0	0	2	2	0	0	3	3	0	0	3	3	0	0
+"food & liquor ii-best rap album"	20	19	1	0	18	16	1	0	23	20	3	0	23	21	0	0
+"so you don't have to love me anymore-best country song"	2	2	0	0	2	2	0	0	NA	NA	NA	NA	NA	NA	NA	NA
+"frank ocean-best new artist"	73	72	0	1	70	69	3	0	80	78	1	1	76	75	4	0
+"some nights-album of the year"	108	95	3	10	106	104	2	0	167	154	5	8	140	137	4	0
+"freedom at 21-best rock song"	5	5	0	0	4	4	1	0	8	8	0	0	7	6	1	0
+"some nights-best pop vocal album"	10	10	0	0	10	10	0	0	9	9	0	0	9	9	0	0
+"fun-best new artist"	65	60	4	1	56	56	5	0	68	64	3	1	58	58	5	0
+"somebody that i used to know-best pop duo/group performance"	4	4	0	0	4	4	0	0	3	3	0	0	3	3	0	0
+"god forgives i don't-best rap album"	41	40	1	0	41	40	0	0	103	97	5	1	63	62	5	39
+"somebody that i used to know-record of the year"	43	17	7	19	35	35	3	0	50	17	7	26	42	41	3	0
+"hunter hayes-best country album"	2	2	0	0	2	2	0	0	3	3	0	0	3	3	0	0
+"springsteen-best country song"	29	26	2	1	20	20	6	0	29	28	1	0	20	20	6	0
+"hunter hayes-best new artist"	56	55	1	0	40	39	7	0	58	58	0	0	42	41	7	0
+"stronger (what doesn't kill you)-best pop solo performance"	6	5	1	0	6	6	0	0	7	6	1	0	7	7	0	0
+"i will wait-best rock song"	14	13	1	0	12	12	2	0	15	14	1	0	13	13	2	0
+"stronger (what doesn't kill you)-song of the year"	36	27	3	6	32	32	4	2	41	32	3	6	37	37	4	2
+"life is good-best rap album"	197	179	14	4	180	179	11	1	253	234	15	4	218	214	13	21
+"stronger-best pop vocal album"	4	4	0	0	4	4	0	0	5	5	0	0	5	5	0	0
+"stronger-record of the year"	12	6	4	2	12	12	0	0	10	8	2	0	10	10	0	0
+"take care-best rap album"	113	105	5	3	104	103	7	0	120	112	6	2	111	111	7	0
+"the a team-song of the year"	116	81	11	24	94	92	14	2	141	86	11	44	100	98	16	2
+"the alabama shakes-best new artist"	13	12	0	1	13	13	0	0	15	14	0	1	14	14	1	0
+"the lumineers-best new artist"	45	43	2	0	43	43	2	0	43	41	2	0	41	41	2	0
+"the motto-best rap song"	32	30	1	1	26	26	6	0	42	41	0	1	37	34	5	0
+"the truth about love-best pop vocal album"	6	6	0	0	6	6	0	0	12	12	0	0	9	9	1	0
+"thinkin bout you-record of the year"	41	29	8	4	41	41	0	0	41	27	8	6	41	41	0	0
+"uncaged-best country album"	1	1	0	0	1	1	0	0	3	3	0	0	3	3	0	0
+"undun-best rap album"	27	23	4	0	27	27	0	0	32	27	5	0	32	32	0	0
+"we are never ever getting back together-record of the year"	48	24	20	4	45	44	3	0	43	23	18	2	38	38	3	0
+"we are young-best pop duo/group performance"	7	7	0	0	7	6	0	0	11	8	2	1	10	10	1	0
+"we are young-record of the year"	44	31	7	6	43	43	1	0	50	37	6	7	49	49	1	0
+"we are young-song of the year"	179	145	4	30	167	164	11	1	201	170	5	26	181	179	17	1
+"we take care of our own-best rock song"	2	2	0	0	1	1	1	0	2	2	0	0	1	1	1	0
+"where have you been-best pop solo performance"	31	28	2	1	16	16	3	0	31	28	2	1	16	16	3	0
+"wide awake-best pop solo performance"	9	6	1	2	9	9	0	0	11	9	1	1	11	11	0	0
+"young wild & free-best rap song"	10	10	0	0	10	10	0	0	10	10	0	0	10	10	0	0
+"living for a song: a tribute to hank cochran-best country album"	NA	NA	NA	NA	NA	NA	NA	NA	1	1	0	0	1	1	0	0
+"four the record-best country album"	NA	NA	NA	NA	NA	NA	NA	NA	1	1	0	0	1	1	0	0

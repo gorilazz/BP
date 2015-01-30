@@ -1,0 +1,64 @@
+"candidate"	"NumTweets_w4"	"NumPositive_w4"	"NumNegative_w4"	"NumNeutral_w4"	"NumDistinctTweets_w4"	"NumDistinctUsers_w4"	"NumPopularTweets_w4"	"NumVerifiedTweets_w4"	"NumTweets_w5"	"NumPositive_w5"	"NumNegative_w5"	"NumNeutral_w5"	"NumDistinctTweets_w5"	"NumDistinctUsers_w5"	"NumPopularTweets_w5"	"NumVerifiedTweets_w5"
+"ain't messin 'round-best rock song"	21	21	0	0	6	6	2	0	33	31	2	0	16	16	4	0
+"red-album of the year"	1162	520	132	510	534	521	124	2	28441	23802	702	3937	3381	3072	832	19963
+"based on a true story-best country album"	8	8	0	0	8	8	0	0	15564	15559	1	4	96	92	41	15400
+"red-best country album"	126	112	9	5	96	91	15	0	18370	18272	78	20	892	849	271	15081
+"begin again-best country song"	204	192	11	1	50	45	14	0	2056	2039	4	13	503	476	165	0
+"roar-best pop solo performance"	57	27	0	30	25	25	5	0	617	572	19	26	249	243	63	23
+"blurred lines-best pop duo/group performance"	29	29	0	0	20	19	4	0	2369	2352	9	8	194	180	64	2021
+"roar-song of the year"	1139	595	62	482	428	403	108	91	14575	8063	220	6292	1825	1702	462	10908
+"blurred lines-record of the year"	682	136	58	488	216	211	37	398	9719	6053	243	3423	1166	1111	272	7681
+"robin thicke-best pop vocal album"	5	5	0	0	5	5	0	0	673	665	4	4	83	82	17	474
+"brave-best pop solo performance"	23	23	0	0	20	20	1	0	285	264	12	9	143	137	29	23
+"royals-best pop solo performance"	23	21	1	1	20	20	3	0	382	372	5	5	129	126	27	3
+"cut me some slack-best rock song"	14	14	0	0	11	9	3	0	72	66	6	0	52	51	12	0
+"royals-record of the year"	181	103	19	59	121	119	16	0	6549	5074	103	1372	881	855	237	4649
+"doom and gloom-best rock song"	2	2	0	0	2	2	0	0	36	33	3	0	23	22	6	4
+"royals-song of the year"	1818	317	62	1439	1104	1069	96	196	11002	3742	140	7120	2178	2077	386	7386
+"ed sheeran-best new artist"	301	237	61	3	155	153	24	1	3360	3226	129	5	1200	1158	277	848
+"same love-song of the year"	497	267	41	189	353	347	52	22	9013	3370	74	5569	1316	1262	267	7047
+"f***in' problems-best rap song"	221	173	44	4	93	92	20	20	1228	1146	69	13	293	283	86	365
+"same trailer different park-best country album"	11	11	0	0	10	10	1	0	15552	15546	2	4	105	103	32	15384
+"get lucky-best pop duo/group performance"	20	20	0	0	19	18	1	0	2507	2489	5	13	233	223	72	2131
+"started from the bottom-best rap song"	230	168	58	4	92	91	22	20	1311	1205	88	18	327	317	100	365
+"get lucky-record of the year"	156	104	21	31	118	116	10	12	7720	6546	77	1097	779	753	179	6153
+"stay-best pop duo/group performance"	97	93	1	3	33	33	9	0	3884	3799	7	78	393	373	129	2252
+"god is dead-best rock song"	333	331	1	1	19	19	7	309	377	370	6	1	46	45	13	309
+"suit & tie-best pop duo/group performance"	23	23	0	0	7	7	3	0	269	265	1	3	84	80	29	101
+"good kid m.a.a.d city-album of the year"	2113	1504	46	563	793	774	152	205	13500	9077	182	4241	2365	2304	549	9159
+"the 20/20 experience – the complete experience-best pop vocal album"	4	4	0	0	4	4	0	0	123	118	0	5	53	52	12	0
+"good kid m.a.a.d city-best rap album"	1013	977	5	31	237	232	54	39	5190	5129	20	41	637	620	158	3617
+"the blessed unrest-album of the year"	599	268	25	306	273	267	48	98	22528	19528	92	2908	1203	1147	214	20757
+"holy grail-best rap song"	103	80	23	0	64	61	17	0	444	396	45	3	207	203	54	20
+"the heist-album of the year"	1947	1353	124	470	681	660	149	871	27067	21508	678	4881	2436	2325	528	23156
+"i drive your truck-best country song"	8	8	0	0	7	7	1	0	27	26	0	1	19	19	5	0
+"the heist-best rap album"	680	582	60	38	399	383	101	71	5364	5115	192	57	1358	1294	371	3052
+"james blake-best new artist"	357	327	24	6	221	215	19	64	4426	4341	72	13	890	868	159	3196
+"thrift shop-best rap song"	80	56	23	1	54	53	14	0	394	346	46	2	177	172	50	0
+"just give me a reason-best pop duo/group performance"	18	15	1	2	17	16	1	0	1944	1931	3	10	185	176	60	1597
+"two lanes of freedom-best country album"	6	6	0	0	6	6	0	0	1128	1125	0	3	96	95	34	972
+"just give me a reason-song of the year"	487	190	13	284	199	193	43	1	11920	6095	33	5792	910	861	220	10324
+"unorthodox jukebox-best pop vocal album"	11	11	0	0	10	10	1	0	5742	5729	1	12	173	162	52	5238
+"kacey musgraves-best new artist"	97	97	0	0	23	23	1	75	761	747	10	4	209	198	65	406
+"when i was your man-best pop solo performance"	22	19	2	1	15	15	4	0	415	389	9	17	158	153	37	0
+"kendrick lamar-best new artist"	417	367	22	28	254	250	30	64	6051	5929	75	47	954	921	245	4643
+"yeezus-best rap album"	762	652	77	33	490	478	105	33	5957	5675	232	50	1363	1306	315	3571
+"locked out of heaven-record of the year"	59	33	5	21	54	53	5	0	4094	1667	33	2394	556	537	157	2719
+"locked out of heaven-song of the year"	172	67	3	102	108	106	24	0	11589	6173	23	5393	798	753	221	10012
+"macklemore & ryan lewis-best new artist"	255	196	14	45	177	172	28	0	5926	5751	70	105	1046	1007	233	4235
+"magna carta...holy grail-best rap album"	258	218	4	36	157	157	32	75	1967	1905	23	39	399	394	100	1415
+"mama's broken heart-best country song"	3	3	0	0	3	3	0	0	24	23	0	1	20	20	2	0
+"merry go 'round-best country song"	88	88	0	0	20	20	1	0	3121	3120	0	1	44	44	8	3002
+"mine would be you-best country song"	21	21	0	0	12	11	4	0	43	42	0	1	29	27	8	0
+"mirrors-best pop solo performance"	10	9	0	1	9	9	1	0	288	273	6	9	135	132	30	0
+"new slaves-best rap song"	154	118	36	0	112	108	20	8	823	746	70	7	355	342	69	28
+"night train-best country album"	10	10	0	0	8	8	1	0	1290	1285	1	4	117	115	45	1029
+"nothing was the same-best rap album"	598	531	21	46	400	390	72	73	5480	5329	92	59	1381	1321	311	2831
+"panic station-best rock song"	3177	3175	2	0	181	177	37	2898	3622	3612	7	3	324	313	65	2898
+"paradise-best pop vocal album"	67	67	0	0	49	48	8	0	7070	7065	2	3	501	480	104	5252
+"pure heroine-best pop vocal album"	63	63	0	0	30	30	9	0	5806	5792	10	4	231	227	55	5244
+"radioactive-record of the year"	153	87	10	56	113	105	13	9	5672	4581	52	1039	739	710	160	4205
+"random access memories-album of the year"	789	234	113	442	482	466	63	52	9823	5042	292	4489	1324	1274	238	7815
+"without me-best r&b song"	NA	NA	NA	NA	NA	NA	NA	NA	2	0	1	1	2	2	0	0
+"love and war-best r&b song"	NA	NA	NA	NA	NA	NA	NA	NA	1	1	0	0	1	1	0	0
+"only one-best r&b song"	NA	NA	NA	NA	NA	NA	NA	NA	26	26	0	0	1	1	1	0

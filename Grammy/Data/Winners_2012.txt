@@ -1,13 +1,13 @@
-record of the year	Rolling in the Deep
+best country album	own the night
 album of the year	21
-song of the year	Rolling in the Deep
-best new artist	Bon Iver
-best pop solo performance	Someone like You
-best pop duo/group performance	Body and Soul
-best pop vocal album	21
-best rock song	Walk
-best r&b song	Fool for You
-best rap song	All of the Lights
 best rap album	My Beautiful Dark Twisted Fantasy
-best country song	Mean
-best country album	Own the Night
+best country song	mean
+best r&b song	Fool for You
+best rock song	walk
+record of the year	Rolling in the Deep
+best rap song	All of the Lights
+best new artist	Bon Iver
+best pop vocal album	21
+best pop duo/group performance	Body and Soul
+best pop solo performance	Someone like You
+song of the year	Rolling in the Deep
