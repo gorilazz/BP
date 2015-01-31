@@ -1,7 +1,7 @@
 import csv
 
-with open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Model\\201412\\CV\\UserNormalized\\experiments_Text_Model_1_unrevised_mean.csv','rt',encoding='utf-8') as csv_combos, \
-open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Model\\201412\\CV\\UserNormalized\\experiments_Text_Model_1_unrevised_mean_FeatureImportance.csv','wt',encoding='utf-8') as csv_importance:
+with open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Model\\201501\\CV\\experiments_Combination_1_mean.csv','rt',encoding='utf-8') as csv_combos, \
+open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Model\\201501\\CV\\experiments_Combination_1_mean_FeatureImportance.csv','wt',encoding='utf-8') as csv_importance:
 	
 	combos = csv.reader(csv_combos,delimiter=',')
 	next(combos)
@@ -9,12 +9,12 @@ open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Model\\201412\\CV\\UserNormalize
 	goodCombos = dict()
 
 	for row in combos:
-		combo = row[1]
-		L1 = float(row[2])
-		Win = float(row[6])
-		DWin = float(row[7])
+		combo = row[0]
+		L1 = float(row[1])
+		Win = float(row[5])
+		DWin = float(row[6])
 
-		if L1<50 and DWin>3.5:
+		if L1<50 and DWin>4:
 			features = combo.split('+')
 			for feature in features:
 				if not feature in goodCombos:
