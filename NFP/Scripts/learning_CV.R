@@ -5,15 +5,15 @@ source('../../Utility/NFP_utility.R');
 
 lambda = 0.0;
 aggregationType = c("median","mean");
-labelType = "unrevised"
+# labelType = "unrevised"
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
-path_featureSocial = "../Features/201412/UserNormalized/DaysBack_7_Features_Text_candidate_seperated_AbsoluteFull.csv";
+path_featureSocial = "../Features/201501/DaysBack_7_Features_All_candidate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
-path_IJC = "../Features/IJC/IJC_3_weeks.csv";
+path_IJC = "../Features/IJC/IJC_Monthly.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv"
-path_outMetric = paste(paste("../Model/201412/CV/UserNormalized/experiments_Text_Model_1", labelType, sep="_"),".csv",sep="");
+path_outMetric = paste("../Model/201501/CV/experiments_Combination_1",".csv",sep="");
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -47,8 +47,8 @@ for(i in 1:nrow(labelFull))
 }
 
 # get the data
-data_start = "201103";		# earliest data to use	
-data_end = "201408";	# latest data to use for testing
+data_start = "201105";		# earliest data to use	
+data_end = "201410";	# latest data to use
 
 # subset the data frames to get the right segments
 start_featureAR = which(featureARFull$Date==data_start)[1];
@@ -68,13 +68,7 @@ featureSocial = featureSocialFull[start_featureSocial:end_featureSocial,];
 featureIJC = IJCFull[start_featureIJC:end_featureIJC,];
 consensus = consensusFull[start_consensus:end_consensus,];		#consensus to be used for testing
 
-if(labelType=='unrevised')
-{
-	label = labelFull[start_label:end_label,]$Delta_Unrevised;
-}else
-{
-	label = labelFull[start_label:end_label,]$Delta_Revised;
-}
+label = labelFull[start_label:end_label,]$Delta_Unrevised;
 
 # merge AR, social, consensus, IJC features to get the full feature set
 featureFull = merge(featureAR, featureSocial, by="Date");

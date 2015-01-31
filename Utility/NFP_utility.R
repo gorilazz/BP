@@ -60,12 +60,12 @@ PrepareFeatureCombos_Social = function()
 	
 	rawFeatureNames = c("NumTweets","NumPopularTweets","NumVerifiedTweets","NumDistinctTweets","NumDistinctUsers");
 	timeIntervals = c("Month1","Month2","Week1","Week2");
-	processingTypes = c("Absolute","AbsoluteDelta");
+	processingTypes = c("A","N", "AD", "ND");
 	filteringTypes = c("all","allold","opportunity","opening","posting","hiring","hashtags");
 
 	Combos_rawFeatureNames = GetAllSubsets(rawFeatureNames, 2);
 	Combos_timeIntervals = GetAllSubsets(timeIntervals, 2);
-	Combos_processingTypes = GetAllSubsets(processingTypes, 2);
+	Combos_processingTypes = GetAllSubsets(processingTypes, 1);
 	Combos_filteringTypes = GetAllSubsets(filteringTypes, 2);
 
 	pos = 1;
