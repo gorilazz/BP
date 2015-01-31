@@ -40,7 +40,7 @@ PrepareFeatureCombos_IJC = function(features)
 
 	featureCombos[[1]] = c(NULL);
 	featureCombos[[2]] = c("IJC");
-	featureCombos[[3]] = c("4wk");
+	featureCombos[[3]] = c("IJC_4wk");
 	
 	return(featureCombos);
 }
