@@ -2,8 +2,8 @@
 
 require('plyr');
 
-rawData = '../Features/201412/UserNormalized/IsTitleTweet_False_DaysBack_7_Features.txt';
-parsedData = '../Features/201412/UserNormalized/DaysBack_7_Features_Text_candidate_seperated_Absolute';
+rawData = '../Features/201501/All_True_DaysBack_7_Features_v1.txt';
+parsedData = '../Features/201501/DaysBack_7_Features_All_candidate_seperated_Absolute';
 startMonth = '201101';
 endMonth = '201412';
 
@@ -65,16 +65,40 @@ Features_A = subset(Features_A, strtoi(Features_A$MonthId)<=strtoi(endMonth))
 
 # Features_Full = Features_Full[2:ncol(Features_Full)];
 
-write.csv(Features_A, file=paste(parsedData,'.csv',sep=''), row.names=F);
+write.csv(Features_A, file=paste(parsedData,'_v1.csv',sep=''), row.names=F);
 
-output_path_d = paste(parsedData,'Delta.csv',sep='');
-output_path_f = paste(parsedData,'Full.csv',sep='');
-
-Features_D = data.frame();
-for(i in 2:nrow(Features_A))
+# Get normalized features (normalized by past three month rolling average)
+output_path_n = paste(parsedData,'Normalized_v1.csv',sep='');
+Features_N = data.frame();
+for(i in 4:nrow(Features_A))
 {
-	prev = Features_A[i-1,];
-	current = Features_A[i,];
+	current = Features_A[i, ];
+	header = current[1];
+	normalized = current[2:ncol(current)]/colSums(Features_A[(i-3):(i-1), 2:ncol(current)]);
+	Features_N = rbind(Features_N, c(header, normalized));
+}
+write.csv(Features_N, file = output_path_n, row.names=F);
+
+names_a = names(Features_A);
+names_a = paste(names_a,'A',sep='_');
+names_a[1]='Date';
+colnames(Features_A)<-names_a;
+
+names_n = names(Features_N);
+names_n = paste(names_n,'N',sep='_');
+names_n[1]='Date';
+colnames(Features_N)<-names_n;
+
+Features_Full = join_all(list(Features_A,Features_N),by='Date',type='inner');
+
+# Get delta features
+output_path_d = paste(parsedData,'Delta_v1.csv',sep='');
+output_path_f = paste(parsedData,'Full_v1.csv',sep='');
+Features_D = data.frame();
+for(i in 2:nrow(Features_Full))
+{
+	prev = Features_Full[i-1,];
+	current = Features_Full[i,];
 
 	header = current[1];
 
@@ -84,17 +108,12 @@ for(i in 2:nrow(Features_A))
 
 write.csv(Features_D, file = output_path_d, row.names=F);
 
-names_a = names(Features_A);
-names_a = paste(names_a,'Absolute',sep='_');
-names_a[1]='Date';
-colnames(Features_A)<-names_a;
-
 names_d = names(Features_D);
-names_d = paste(names_d,'AbsoluteDelta',sep='_');
+names_d = paste(names_d,'D',sep='');
 names_d[1]='Date';
 colnames(Features_D)<-names_d;
 
 
-Features_Full = join_all(list(Features_A,Features_D),by='Date',type='inner');
+Features_Full = join_all(list(Features_Full,Features_D),by='Date',type='inner');
 
 write.csv(Features_Full, file=output_path_f, row.names=F);
