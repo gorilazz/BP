@@ -2,7 +2,7 @@
 
 require('plyr');
 
-rawData = '../Features/201501/Job/All_True_DaysBack_7_Features_v1.txt';
+rawData = '../Features/201501/Job/All_True_DaysBack_7_Features.txt';
 parsedData = '../Features/201501/Job/DaysBack_7_Features_All_candidate_seperated_Absolute';
 startMonth = '201101';
 endMonth = '201412';
@@ -65,16 +65,16 @@ Features_A = subset(Features_A, strtoi(Features_A$MonthId)<=strtoi(endMonth))
 
 # Features_Full = Features_Full[2:ncol(Features_Full)];
 
-write.csv(Features_A, file=paste(parsedData,'_v1.csv',sep=''), row.names=F);
+write.csv(Features_A, file=paste(parsedData,'.csv',sep=''), row.names=F);
 
 # Get normalized features (normalized by past three month rolling average)
-output_path_n = paste(parsedData,'Normalized_v1.csv',sep='');
+output_path_n = paste(parsedData,'Normalized.csv',sep='');
 Features_N = data.frame();
 for(i in 4:nrow(Features_A))
 {
 	current = Features_A[i, ];
 	header = current[1];
-	normalized = current[2:ncol(current)]/colSums(Features_A[(i-3):(i-1), 2:ncol(current)]);
+	normalized = current[2:ncol(current)]/(1+colSums(Features_A[(i-3):(i-1), 2:ncol(current)]));
 	Features_N = rbind(Features_N, c(header, normalized));
 }
 write.csv(Features_N, file = output_path_n, row.names=F);
@@ -92,8 +92,8 @@ colnames(Features_N)<-names_n;
 Features_Full = join_all(list(Features_A,Features_N),by='Date',type='inner');
 
 # Get delta features
-output_path_d = paste(parsedData,'Delta_v1.csv',sep='');
-output_path_f = paste(parsedData,'Full_v1.csv',sep='');
+output_path_d = paste(parsedData,'Delta.csv',sep='');
+output_path_f = paste(parsedData,'Full.csv',sep='');
 Features_D = data.frame();
 for(i in 2:nrow(Features_Full))
 {
