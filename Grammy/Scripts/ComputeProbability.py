@@ -3,9 +3,9 @@ import operator
 
 
 def main():
-	features = csv.reader(open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\ranking_2015_nogrammy.txt', 'rt', encoding='utf-8'), delimiter='\t')
-	probabilities = open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\probabilities_2015_nogrammy.txt', 'wt', encoding='utf-8')
-	parsed_probabilities = open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\probabilities_2015_nogrammy_parsed.txt', 'wt', encoding='utf-8')
+	features = csv.reader(open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\general\\0202\\ranking_2015.txt', 'rt', encoding='utf-8'), delimiter='\t')
+	probabilities = open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\general\\0202\\probabilities_2015.txt', 'wt', encoding='utf-8')
+	parsed_probabilities = open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\general\\0202\\probabilities_2015_parsed.txt', 'wt', encoding='utf-8')
 	
 	feature_names = next(features)[1:]
 	prob = {}

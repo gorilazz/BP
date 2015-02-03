@@ -3,8 +3,8 @@ import operator
 
 
 def main():
-	features = csv.reader(open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\general\\Features_2012_parsed.txt', 'rt', encoding='utf-8'), delimiter='\t')
-	ranking_file = open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\general\\ranking_2012.txt', 'wt', encoding='utf-8')
+	features = csv.reader(open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\general\\0202\\Features_2015_parsed.txt', 'rt', encoding='utf-8'), delimiter='\t')
+	ranking_file = open('C:\\Users\\yuzhan\\Git\\Predictions\\Grammy\\Data\\general\\0202\\ranking_2015.txt', 'wt', encoding='utf-8')
 	parsed_features = {}
 	awards = {}
 	feature_names = next(features)[1:]

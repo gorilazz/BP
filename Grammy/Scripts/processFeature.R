@@ -2,15 +2,15 @@
 
 require('plyr');
 
-rawData = '../Data/general/Features_2014.txt';
-parsedData = '../Data/general/Features_2014_parsed.txt';
+rawData = '../Data/general/0202/Features_2015.txt';
+parsedData = '../Data/general/0202/Features_2015_parsed.txt';
 
 Raw_Features = read.csv(file=rawData,sep='\t', head=TRUE);
 
 colnames(Raw_Features)[1] = 'candidate';
 
 # Ids = unique(as.character(Raw_Features$Id));
-Ids = c("w3","w4");
+Ids = c("w2");
 
 features_wanted = c("candidate", "NumDistinctTweets", "PositiveRatio", "NonNegativeRatio", "NormalizedNumDistinctTweets");
 

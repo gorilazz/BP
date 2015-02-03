@@ -9,11 +9,11 @@ aggregationType = c("median","mean");
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
-path_featureSocial = "../Features/201501/DaysBack_7_Features_All_candidate_seperated_AbsoluteFull.csv";
+path_featureSocial = "../Features/201501/Job/DaysBack_7_Features_All_candidate_seperated_AbsoluteFull_v1.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC_Monthly.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv"
-path_outMetric = paste("../Model/201501/CV/experiments_Combination_1",".csv",sep="");
+path_outMetric = paste("../Model/201501/CV/Job/V1/experiments_Combination_1",".csv",sep="");
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
