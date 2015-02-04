@@ -7,14 +7,14 @@ source('../../Utility/learning_utility.R');
 source('../../Utility/automation_utility.R');
 algo = 'lr';
 
-for(i in 6:6)
+for(i in 1:3)
 {
 #readin data & initialization
-path_prediction = paste(paste(paste("../Prediction/201501/SingleCombo/Overall/Model",i,sep="_"), algo, sep="_"),"Predictions.csv", sep="_");
+path_prediction = paste(paste(paste("../Prediction/201501/SingleCombo/Test/Model",i,sep="_"), algo, sep="_"),"Predictions.csv", sep="_");
 path_consensus = "../GroundTruth/Consensus.csv";
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
 
-path_outDir = "../Simulation/201501/SingleCombo/Overall";
+path_outDir = "../Simulation/201501/SingleCombo/Test";
 if(!file.exists(path_outDir))
 {
 	dir.create(path_outDir, recursive=TRUE);

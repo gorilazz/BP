@@ -89,7 +89,8 @@ names_n = paste(names_n,'N',sep='_');
 names_n[1]='Date';
 colnames(Features_N)<-names_n;
 
-Features_Full = join_all(list(Features_A,Features_N),by='Date',type='inner');
+# Features_Full = join_all(list(Features_A,Features_N),by='Date',type='inner');
+Features_Full = Features_A;
 
 # Get delta features
 output_path_d = paste(parsedData,'Delta.csv',sep='');

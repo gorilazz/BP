@@ -19,35 +19,24 @@ path_consensus = "../GroundTruth/Consensus.csv";
 path_IJC = "../Features/IJC/IJC_Monthly.csv";
 path_sentiment = "../Features/Sentiment/Sentiment.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv";
-path_outDir = "../Prediction/201501/SingleCombo/Overall";
+path_outDir = "../Prediction/201501/SingleCombo/Test/";
 if(!file.exists(path_outDir))
 {
 	dir.create(path_outDir, recursive=TRUE);
 }
 
-# featureNames = list(
-# 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute','NumVerifiedTweets_Month1_posting_AbsoluteDelta', 'NumVerifiedTweets_Month1_posting_Absolute'),
-# 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute','NumVerifiedTweets_Month1_posting_AbsoluteDelta'),
-# 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumDistinctUsers_Month1_posting_Absolute'),
-# 	c('Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta'),
-# 	c('Consensus2'));
-
-# featureNames = list(
-# 	c('IJC', 'Consensus1', 'Consensus2', 'pos_sector', 'neg_sector', 'NumVerifiedTweets_Month2_opening_Absolute','NumVerifiedTweets_Month2_opportunity_Absolute','NumDistinctUsers_Month1_posting_AbsoluteDelta'));
-
-# featureNames = list(
-# 	c('IJC', 'Consensus1', 'Consensus2', 'pos_sector', 'neg_sector', 'NumDistinctTweets_Week2_opening_Absolute','NumPopularTweets_Week1_hiring_AbsoluteDelta','NumPopularTweets_Week1_allold_AbsoluteDelta', 'NumVerifiedTweets_Week2_opening_Absolute'));
-
 featureNames = list(
-	c('IJC', 'IJC_4wk', 'Consensus1', 'Consensus2', 'NumDistinctUsers_Month1_posting_AD','NumDistinctUsers_Month1_posting_ND'));
+	c('Consensus1', 'Consensus2', 'IJC', 'NumDistinctUsers_Month1_posting_AD', 'NumVerifiedTweets_Month1_posting_AD'),
+	c('Consensus1', 'Consensus2', 'IJC'),
+	c('Consensus1', 'Consensus2'));
 
 
-for(i in 6:6)
+for(i in 1:3)
 {
 file_outPrediction = paste(paste(paste("Model",i,sep="_"), algo, sep="_"),"Predictions.csv",sep="_");
 path_outPrediction = file.path(path_outDir,file_outPrediction);
 
-features = list(featureNames[[i-5]]);
+features = list(featureNames[[i]]);
 
 # read in data
 featureARFull = read.csv(file=path_featureAR, head=TRUE, sep=",");
@@ -88,7 +77,7 @@ for(i in 1:nrow(labelFull))
 }
 
 # get the data
-data_start = "201105";		# earliest data to use	
+data_start = "201102";		# earliest data to use	
 data_end = "201501";	# latest data to use for testing
 
 # subset the data frames to get the right segments
