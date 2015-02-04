@@ -5,7 +5,7 @@ require('plyr');
 rawData = '../Features/201501/Job/All_True_DaysBack_7_Features.txt';
 parsedData = '../Features/201501/Job/DaysBack_7_Features_All_candidate_seperated_Absolute';
 startMonth = '201101';
-endMonth = '201412';
+endMonth = '201501';
 
 Raw_Features = read.csv(file=rawData,sep='\t');
 

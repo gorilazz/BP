@@ -116,5 +116,5 @@ metricList = CompileTrainingResults_CV(featureFull,featureFullCombos,label,conse
 for(type in aggregationType)
 {
 	path_outMetric_type = gsub(".csv", paste(paste("_",type,sep=""),".csv",sep=""), path_outMetric);
-	write.csv(metricList[[type]], file = path_outMetric_type);
+	write.csv(metricList[[type]], file = path_outMetric_type, row.names=F);
 }

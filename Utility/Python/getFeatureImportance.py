@@ -1,7 +1,7 @@
 import csv
 
-with open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Model\\201501\\CV\\experiments_Combination_1_mean.csv','rt',encoding='utf-8') as csv_combos, \
-open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Model\\201501\\CV\\experiments_Combination_1_mean_FeatureImportance.csv','wt',encoding='utf-8') as csv_importance:
+with open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Model\\201501\\CV\\Job\\experiments_Combination_1_mean.csv','rt',encoding='utf-8') as csv_combos, \
+open('C:\\Users\\yuzhan\\Git\\Predictions\\NFP\\Model\\201501\\CV\\Job\\experiments_Combination_1_mean_FeatureImportance.csv','wt',encoding='utf-8') as csv_importance:
 	
 	combos = csv.reader(csv_combos,delimiter=',')
 	next(combos)

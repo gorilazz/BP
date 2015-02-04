@@ -14,15 +14,15 @@ numFeatures = 3;
 
 # path initialization
 path_featureAR = "../Features/AR/ARDelta_Full.csv";
-path_featureSocial = "../Features/201412/DaysBack_7_Features_All_candidate_seperated_AbsoluteFull.csv";
+path_featureSocial = "../Features/201501/DaysBack_7_Features_All_candidate_seperated_AbsoluteFull.csv";
 path_consensus = "../GroundTruth/Consensus.csv";
-path_IJC = "../Features/IJC/IJC_3_weeks.csv";
+path_IJC = "../Features/IJC/IJC_Monthly.csv";
 path_sentiment = "../Features/Sentiment/Sentiment.csv";
 path_label = "../GroundTruth/NonFarmPayrollHistoryDelta.csv";
-path_outDir = "../Prediction/201412/SingleCombo";
+path_outDir = "../Prediction/201501/SingleCombo/Overall";
 if(!file.exists(path_outDir))
 {
-	dir.create(path_outDir);
+	dir.create(path_outDir, recursive=TRUE);
 }
 
 # featureNames = list(
@@ -39,7 +39,7 @@ if(!file.exists(path_outDir))
 # 	c('IJC', 'Consensus1', 'Consensus2', 'pos_sector', 'neg_sector', 'NumDistinctTweets_Week2_opening_Absolute','NumPopularTweets_Week1_hiring_AbsoluteDelta','NumPopularTweets_Week1_allold_AbsoluteDelta', 'NumVerifiedTweets_Week2_opening_Absolute'));
 
 featureNames = list(
-	c('IJC', 'Consensus1', 'Consensus2', 'NumDistinctUsers_Month1_posting_AbsoluteDelta','NumVerifiedTweets_Month1_posting_AbsoluteDelta'));
+	c('IJC', 'IJC_4wk', 'Consensus1', 'Consensus2', 'NumDistinctUsers_Month1_posting_AD','NumDistinctUsers_Month1_posting_ND'));
 
 
 for(i in 6:6)
@@ -88,8 +88,8 @@ for(i in 1:nrow(labelFull))
 }
 
 # get the data
-data_start = "201103";		# earliest data to use	
-data_end = "201412";	# latest data to use for testing
+data_start = "201105";		# earliest data to use	
+data_end = "201501";	# latest data to use for testing
 
 # subset the data frames to get the right segments
 start_featureAR = which(featureARFull$Date==data_start)[1];
